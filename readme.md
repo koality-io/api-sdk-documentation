@@ -3,9 +3,20 @@
 > **Note**
 > We highly recommend not to use the plan HTTP API endpoints. The KoalityEngine provided different SDK that should be used instead. 
 
-## Documentation
+## Standard Workflows
 
-Standard Workflow
+### Create systems
+
+- Login with username and password
+- Create a new project
+- Add new system to project
+
+### Retrieve data
+
+- Get scores
+- Get get historical data
+
+## Documentation
 
 ### Examples
 
