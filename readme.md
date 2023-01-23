@@ -1,5 +1,5 @@
 > **Warning**
-> This API documentation is work in progress and only ALPHA. 
+> This API documentation is work in progress and only ALPHA. Please do not use it at the moment.
 
 # KoalityEngine API documentation
 
