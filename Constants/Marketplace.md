@@ -1,0 +1,19 @@
+export default {
+    FEATURE_LANGUAGE_MULTI : 'feature.language_multi',
+    FEATURE_EXTRA_RESULTS : 'plugins.extra.results',
+    FEATURE_PASSWORD : 'feature.password',
+    FEATURE_PAYMENT : 'feature.payment',
+    FEATURE_ALPHA : 'feature.alpha',
+    STATUS_TIME_SERIES_NUMERIC : 'time_series_numeric',
+    STATUS_TIME_SERIES_PERCENT : 'time_series_percent',
+    FEATURE_STATUS_IDEA : '100',
+    FEATURE_STATUS_ALPHA : '200',
+    FEATURE_STATUS_BETA : '300',
+    FEATURE_STATUS_LIVE : '400',
+    FEATURE_CRAWL_DEPTH_2000 : 'plugins.crawl_depth_2000',
+    FEATURE_CRAWL_DEPTH_5000 : 'plugins.crawl_depth_5000',
+    FEATURE_COMPONENT_LIMIT_30 : 'plugins.component_limit30',
+    FEATURE_COMPONENT_LIMIT_50 : 'plugins.component_limit50',
+    FEATURE_COMPONENT_LIMIT_100 : 'plugins.component_limit100',
+    _GENERATED  : true
+}

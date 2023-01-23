@@ -1,0 +1,10 @@
+export default {
+    CRAWL_URL_CHECK_TYPE_BROKEN_RESOURCES : 'BrokenLink',
+    CRAWL_URL_CHECK_TYPE_DEAD_LINKS : 'DeadLink',
+    CRAWL_URL_CHECK_TYPE_JS_ERROR_INTERNAL : 'JsErrorScanner',
+    CRAWL_URL_CHECK_TYPE_JS_ERROR_EXTERNAL : 'JsErrorScanner_external',
+    CRAWL_URL_CHECK_TYPE_SITE_INFO_BIG_FILES : 'SiteInfoBigFile',
+    CRAWL_URL_CHECK_TYPE_SITE_INFO_DOCUMENT : 'SiteInfoFileSize',
+    CRAWL_URL_STATUS_FALSE_POSITIVE : 'false_positive',
+    _GENERATED  : true
+}
