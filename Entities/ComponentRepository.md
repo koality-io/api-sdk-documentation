@@ -1,7 +1,9 @@
 # API endpoints for Component repository
 
 
-## showComponents
+## `showComponents`
+
+Get all information about the given component.
 
 ### Endpoint
 
@@ -16,9 +18,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - component
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -34,7 +39,9 @@ const result = await repository.showComponents($component)
 ```
 
 
-## createComponent
+## `createComponent`
+
+Create a new component.
 
 ### Endpoint
 
@@ -46,11 +53,16 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
-- system - 
-- enableToolsBySystem - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| system  | `INTEGER` |  yes        |            |
+| enableToolsBySystem  | `BOOLEAN` |  no        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -66,7 +78,9 @@ const result = await repository.createComponent()
 ```
 
 
-## createComponents
+## `createComponents`
+
+Create a set of new components for a given system.
 
 ### Endpoint
 
@@ -78,13 +92,18 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
-- system - The system the components are part of,
-- enableToolsBySystem - If true all checks from the parent system are inherited.
-- updateIfComponentSuggestionExists - If true and a component with the same suggestion id already exists it will be updated.
-- components - List of components that should be created/updated.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| system  | `INTEGER` |  yes        | The system the components are part of,           |
+| enableToolsBySystem  | `BOOLEAN` |  no        | If true all checks from the parent system are inherited.           |
+| updateIfComponentSuggestionExists  | `BOOLEAN` |  no        | If true and a component with the same suggestion id already exists it will be updated.           |
+| components  | `LIST` |  yes        | List of components that should be created/updated.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -100,7 +119,9 @@ const result = await repository.createComponents()
 ```
 
 
-## updateComponent
+## `updateComponent`
+
+Update the given component.
 
 ### Endpoint
 
@@ -115,9 +136,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - component
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -133,7 +157,9 @@ const result = await repository.updateComponent($component)
 ```
 
 
-## deleteComponent
+## `deleteComponent`
+
+Mark the given component as deleted.
 
 ### Endpoint
 
@@ -148,9 +174,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - component
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -166,7 +195,9 @@ const result = await repository.deleteComponent($component)
 ```
 
 
-## showComponentTypes
+## `showComponentTypes`
+
+Show all existing component types.
 
 ### Endpoint
 
@@ -181,9 +212,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

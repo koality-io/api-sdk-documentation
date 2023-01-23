@@ -1,7 +1,9 @@
 # API endpoints for project repository
 
 
-## getStatus
+## `getStatus`
+
+This endpoint will return a detailed onboarding status.
 
 ### Endpoint
 
@@ -16,9 +18,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -34,7 +39,9 @@ const result = await repository.getStatus($project)
 ```
 
 
-## search
+## `search`
+
+Return all projects and the user roles for a given user.
 
 ### Endpoint
 
@@ -46,15 +53,20 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
-- user - The users id
-- with_next_full_run - If true the next approximated hourly run will be returned; the value is the time in seconds till the next run
-- with_onboarding_status - If true the projects onboarding status is added to the response.
-- with_features - If true the projects marketplace features are added to the response.
-- owned_by_user - If true the only projects owned by this user are returned.
-- filter_empty_projects - If true the only projects with systems are returned
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| user  | `INTEGER` |  yes        | The users id           |
+| with_next_full_run  | `BOOLEAN` |  no        | If true the next approximated hourly run will be returned; the value is the time in seconds till the next run           |
+| with_onboarding_status  | `BOOLEAN` |  no        | If true the projects onboarding status is added to the response.           |
+| with_features  | `BOOLEAN` |  no        | If true the projects marketplace features are added to the response.           |
+| owned_by_user  | `BOOLEAN` |  no        | If true the only projects owned by this user are returned.           |
+| filter_empty_projects  | `BOOLEAN` |  no        | If true the only projects with systems are returned           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -70,7 +82,9 @@ const result = await repository.search()
 ```
 
 
-## searchAll
+## `searchAll`
+
+Return all projects and the user roles for a given user.
 
 ### Endpoint
 
@@ -85,9 +99,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - providerIdentifier
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -103,7 +120,9 @@ const result = await repository.searchAll($providerIdentifier)
 ```
 
 
-## delete
+## `delete`
+
+Delete the given project.
 
 ### Endpoint
 
@@ -118,9 +137,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -136,7 +158,9 @@ const result = await repository.delete($project)
 ```
 
 
-## update
+## `update`
+
+Update the given project.
 
 ### Endpoint
 
@@ -151,10 +175,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
-- name - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| name  | `STRING` |  yes        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -170,7 +199,9 @@ const result = await repository.update($project)
 ```
 
 
-## getUsers
+## `getUsers`
+
+Return all users for the given project.
 
 ### Endpoint
 
@@ -185,9 +216,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -203,7 +237,9 @@ const result = await repository.getUsers($project)
 ```
 
 
-## removeUser
+## `removeUser`
+
+Remove a given user from the project.
 
 ### Endpoint
 
@@ -219,9 +255,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
  - user
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

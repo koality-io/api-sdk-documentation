@@ -1,7 +1,9 @@
 # API endpoints for metric repository
 
 
-## findBySystem
+## `findBySystem`
+
+Search for the metrics for all eventIdentifiers in the given projects that are defined by the given tool.
 
 ### Endpoint
 
@@ -16,14 +18,19 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
-- tool - A single tool id or the identifier of a tool.
-- tools - A list of tool ids. For every tool there will be a metric array returned.
-- metric_type - The engine stores to kinds of metrics. Status and Value. The status is the ratio between successful checks and failed in percent, the value is the average value of the checks result.
-- filter_trailing_nulls - Remove null values from the metric if they are at the beginning. Trailing nulls are used of the metric does not provide values for a given time spam.
-- min_value - Replace all values that are smaller than the min value with the min value.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| tool  | `MIXED` |  no        | A single tool id or the identifier of a tool.           |
+| tools  | `LIST` |  no        | A list of tool ids. For every tool there will be a metric array returned.           |
+| metric_type  | `MIXED` |  no        | The engine stores to kinds of metrics. Status and Value. The status is the ratio between successful checks and failed in percent, the value is the average value of the checks result.           |
+| filter_trailing_nulls  | `BOOLEAN` |  no        | Remove null values from the metric if they are at the beginning. Trailing nulls are used of the metric does not provide values for a given time spam.           |
+| min_value  | `INTEGER` |  no        | Replace all values that are smaller than the min value with the min value.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

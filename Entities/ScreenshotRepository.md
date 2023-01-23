@@ -1,7 +1,9 @@
 # API endpoints for Screenshot repository
 
 
-## getSystemScreenshots
+## `getSystemScreenshots`
+
+Return the screenshots for all components in the given project.
 
 ### Endpoint
 
@@ -16,9 +18,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -34,7 +39,9 @@ const result = await repository.getSystemScreenshots($system)
 ```
 
 
-## getScreenshot
+## `getScreenshot`
+
+Return the screenshots for a single component.
 
 ### Endpoint
 
@@ -49,9 +56,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

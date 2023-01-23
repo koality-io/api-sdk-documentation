@@ -1,7 +1,9 @@
 # API endpoints for Nixstats repository
 
 
-## createWebsiteMonitor
+## `createWebsiteMonitor`
+
+Create a new 360 website monitor.
 
 ### Endpoint
 
@@ -16,10 +18,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
-- url - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| url  | `STRING` |  yes        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

@@ -1,7 +1,9 @@
 # API endpoints for CheckMobileFriendly repository
 
 
-## getResults
+## `getResults`
+
+Get the mobile friendly result for the given system. Returns a &quot;skipped&quot; status if the test never ran.
 
 ### Endpoint
 
@@ -16,9 +18,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

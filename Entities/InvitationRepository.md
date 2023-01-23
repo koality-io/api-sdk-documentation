@@ -1,7 +1,9 @@
 # API endpoints for Invitation repository
 
 
-## invite
+## `invite`
+
+This endpoint invites a new user to the project.
 
 ### Endpoint
 
@@ -16,12 +18,17 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
-- email - The invitations e-mail address
-- user_name - The users company name.
-- user_role - The projects role of the newly added user.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| email  | `STRING` |  yes        | The invitations e-mail address           |
+| user_name  | `STRING` |  no        | The users company name.           |
+| user_role  | `INTEGER` |  no        | The projects role of the newly added user.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -37,7 +44,9 @@ const result = await repository.invite($project)
 ```
 
 
-## abort
+## `abort`
+
+This endpoint aborts a given invitation.
 
 ### Endpoint
 
@@ -52,9 +61,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - invitation
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -70,7 +82,9 @@ const result = await repository.abort($invitation)
 ```
 
 
-## getOpenInvitations
+## `getOpenInvitations`
+
+This endpoint returns a list of all open invitations for the given project.
 
 ### Endpoint
 
@@ -85,9 +99,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

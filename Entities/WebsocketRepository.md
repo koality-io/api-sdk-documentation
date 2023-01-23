@@ -1,7 +1,9 @@
 # API endpoints for websocket repository
 
 
-## getRooms
+## `getRooms`
+
+Return a websocket server with the room names for the given user.
 
 ### Endpoint
 
@@ -13,9 +15,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -31,7 +36,9 @@ const result = await repository.getRooms()
 ```
 
 
-## getAllRooms
+## `getAllRooms`
+
+Return all websocket server with the room names.
 
 ### Endpoint
 
@@ -43,9 +50,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

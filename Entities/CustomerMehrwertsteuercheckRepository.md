@@ -1,7 +1,9 @@
 # API endpoints for CustomerMehrwertsteuercheck repository
 
 
-## runMwstCrawl
+## `runMwstCrawl`
+
+Mehrwertsteuer Check only: Start a new crawl for the given start page. Max. 100 urls are crawled with 4 parallel requests.
 
 ### Endpoint
 
@@ -13,11 +15,16 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
-- email_address - The email address the crawl result is send to.
-- start_url - The url the crawler should start with.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| email_address  | `STRING` |  yes        | The email address the crawl result is send to.           |
+| start_url  | `URL` |  yes        | The url the crawler should start with.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -33,7 +40,9 @@ const result = await repository.runMwstCrawl()
 ```
 
 
-## showCrawlResult
+## `showCrawlResult`
+
+Mehrwertsteuer Check only: get the status and check result of the crawl with the given unique identifier
 
 ### Endpoint
 
@@ -48,9 +57,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - crawlIdentifier
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

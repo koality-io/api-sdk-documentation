@@ -1,7 +1,9 @@
 # API endpoints for crawler repository
 
 
-## runCompanyCrawl
+## `runCompanyCrawl`
+
+Run a crawl for a given checklist
 
 ### Endpoint
 
@@ -16,16 +18,21 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
-- user - The user (id) that starts the crawl and gets informed when the crawl finishes
-- checklist_name - The check lists name
-- collections - The additional collections
-- name - The crawls name
-- depth - Number of URLs to be crawled
-- path - The URL the crawler starts to crawl
-- parallel_requests - Number of parallel requests that can be done
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| user  | `INTEGER` |  yes        | The user (id) that starts the crawl and gets informed when the crawl finishes           |
+| checklist_name  | `STRING` |  no        | The check lists name           |
+| collections  | `LIST` |  no        | The additional collections           |
+| name  | `STRING` |  yes        | The crawls name           |
+| depth  | `INTEGER` |  no        | Number of URLs to be crawled           |
+| path  | `STRING` |  yes        | The URL the crawler starts to crawl           |
+| parallel_requests  | `INTEGER` |  no        | Number of parallel requests that can be done           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -41,7 +48,9 @@ const result = await repository.runCompanyCrawl($company)
 ```
 
 
-## runCrawl
+## `runCrawl`
+
+Run a crawl for a given checklist
 
 ### Endpoint
 
@@ -56,17 +65,22 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
-- user - The user (id) that starts the crawl and gets informed when the crawl finishes
-- checklist_name - The check lists name
-- collections - The additional collections
-- name - The crawls name
-- system - The systems id
-- depth - Number of URLs to be crawled
-- path - The URL the crawler starts to crawl
-- parallel_requests - Number of parallel requests that can be done
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| user  | `INTEGER` |  yes        | The user (id) that starts the crawl and gets informed when the crawl finishes           |
+| checklist_name  | `STRING` |  no        | The check lists name           |
+| collections  | `LIST` |  no        | The additional collections           |
+| name  | `STRING` |  yes        | The crawls name           |
+| system  | `INTEGER` |  yes        | The systems id           |
+| depth  | `INTEGER` |  no        | Number of URLs to be crawled           |
+| path  | `STRING` |  no        | The URL the crawler starts to crawl           |
+| parallel_requests  | `INTEGER` |  no        | Number of parallel requests that can be done           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -82,7 +96,9 @@ const result = await repository.runCrawl($project)
 ```
 
 
-## getCrawlableCollections
+## `getCrawlableCollections`
+
+Get all collections that can be crawled.
 
 ### Endpoint
 
@@ -94,9 +110,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -112,7 +131,9 @@ const result = await repository.getCrawlableCollections()
 ```
 
 
-## abortCrawl
+## `abortCrawl`
+
+Abort a running crawl. The effect can take up to 5 minutes.
 
 ### Endpoint
 
@@ -128,9 +149,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
  - crawl
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -146,7 +170,9 @@ const result = await repository.abortCrawl($project, $crawl)
 ```
 
 
-## listCrawls
+## `listCrawls`
+
+Return all crawl by the given parameters
 
 ### Endpoint
 
@@ -161,11 +187,16 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
-- checklist_name - The check lists name
-- system - The systems id
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| checklist_name  | `STRING` |  no        | The check lists name           |
+| system  | `INTEGER` |  yes        | The systems id           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -181,7 +212,9 @@ const result = await repository.listCrawls($project)
 ```
 
 
-## listCompanyCrawls
+## `listCompanyCrawls`
+
+Return all crawl of the given company
 
 ### Endpoint
 
@@ -196,13 +229,18 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
-- pagination_start - 
-- pagination_size - 
-- include_collections - 
-- crawl_schedule - Only show results for given crawl schedule
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| pagination_start  | `INTEGER` |  no        |            |
+| pagination_size  | `INTEGER` |  no        |            |
+| include_collections  | `BOOLEAN` |  no        |            |
+| crawl_schedule  | `INTEGER` |  no        | Only show results for given crawl schedule           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -218,7 +256,9 @@ const result = await repository.listCompanyCrawls($company)
 ```
 
 
-## getCrawlCsv
+## `getCrawlCsv`
+
+Return the detailed information for a given crawl with all results (as CSV).
 
 ### Endpoint
 
@@ -234,9 +274,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - crawl
  - downloadSecret
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -252,7 +295,9 @@ const result = await repository.getCrawlCsv($crawl, $downloadSecret)
 ```
 
 
-## getCrawl
+## `getCrawl`
+
+Return the detailed information for a given crawl with all results.
 
 ### Endpoint
 
@@ -267,9 +312,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - crawl
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -285,7 +333,9 @@ const result = await repository.getCrawl($crawl)
 ```
 
 
-## getCrawlerStatus
+## `getCrawlerStatus`
+
+Return the crawler status for a given project.
 
 ### Endpoint
 
@@ -300,9 +350,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -318,7 +371,9 @@ const result = await repository.getCrawlerStatus($project)
 ```
 
 
-## getCompanyCrawlerStatus
+## `getCompanyCrawlerStatus`
+
+Return the crawler status for a given company.
 
 ### Endpoint
 
@@ -333,9 +388,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -351,7 +409,9 @@ const result = await repository.getCompanyCrawlerStatus($company)
 ```
 
 
-## setCheckStatus
+## `setCheckStatus`
+
+Set check status for a single url
 
 ### Endpoint
 
@@ -366,12 +426,17 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
-- check_type - The check type (DeadLink)
-- check_status - The status that should be set
-- url - The url that status is valid for
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| check_type  | `MIXED` |  yes        | The check type (DeadLink)           |
+| check_status  | `MIXED` |  yes        | The status that should be set           |
+| url  | `STRING` |  yes        | The url that status is valid for           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -387,7 +452,9 @@ const result = await repository.setCheckStatus($company)
 ```
 
 
-## deleteCheckStatus
+## `deleteCheckStatus`
+
+Delete check status by id
 
 ### Endpoint
 
@@ -403,9 +470,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - company
  - crawlUrlStatus
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -421,7 +491,9 @@ const result = await repository.deleteCheckStatus($company, $crawlUrlStatus)
 ```
 
 
-## listCheckStatus
+## `listCheckStatus`
+
+List check status by company
 
 ### Endpoint
 
@@ -436,9 +508,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -454,7 +529,9 @@ const result = await repository.listCheckStatus($company)
 ```
 
 
-## listCrawlSchedules
+## `listCrawlSchedules`
+
+List scheduled crawls by company
 
 ### Endpoint
 
@@ -469,9 +546,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -487,7 +567,9 @@ const result = await repository.listCrawlSchedules($company)
 ```
 
 
-## showCrawlSchedule
+## `showCrawlSchedule`
+
+Show scheduled crawl by id
 
 ### Endpoint
 
@@ -503,9 +585,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - company
  - crawlSchedule
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -521,7 +606,9 @@ const result = await repository.showCrawlSchedule($company, $crawlSchedule)
 ```
 
 
-## createCrawlSchedule
+## `createCrawlSchedule`
+
+Create a crawl schedule
 
 ### Endpoint
 
@@ -536,17 +623,22 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
-- path - The URL the crawler starts to crawl
-- depth - Number of URLs to be crawled
-- parallel_requests - Number of parallel requests that can be done
-- interval - Interval at which a crawl is started
-- timeslot - Time window in which a crawl is started
-- day_of_month_or_week - Day of month or week on which a crawl is started if interval is weekly or monthly
-- collections - The additional collections
-- timezone - The time zone for which the timeslot applies
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| path  | `STRING` |  yes        | The URL the crawler starts to crawl           |
+| depth  | `INTEGER` |  no        | Number of URLs to be crawled           |
+| parallel_requests  | `INTEGER` |  no        | Number of parallel requests that can be done           |
+| interval  | `MIXED` |  yes        | Interval at which a crawl is started           |
+| timeslot  | `MIXED` |  yes        | Time window in which a crawl is started           |
+| day_of_month_or_week  | `INTEGER` |  no        | Day of month or week on which a crawl is started if interval is weekly or monthly           |
+| collections  | `LIST` |  yes        | The additional collections           |
+| timezone  | `STRING` |  yes        | The time zone for which the timeslot applies           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -562,7 +654,9 @@ const result = await repository.createCrawlSchedule($company)
 ```
 
 
-## updateCrawlSchedule
+## `updateCrawlSchedule`
+
+Update a crawl schedule by id
 
 ### Endpoint
 
@@ -578,18 +672,23 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - company
  - crawlSchedule
 
-#### Payload
-- path - The URL the crawler starts to crawl
-- depth - Number of URLs to be crawled
-- parallel_requests - Number of parallel requests that can be done
-- interval - Interval at which a crawl is started
-- timeslot - Time window in which a crawl is started
-- day_of_month_or_week - Day of month or week on which a crawl is started if interval is weekly or monthly
-- collections - The additional collections
-- enabled - Enable or disable the schedule
-- timezone - The time zone for which the timeslot applies
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| path  | `STRING` |  no        | The URL the crawler starts to crawl           |
+| depth  | `INTEGER` |  no        | Number of URLs to be crawled           |
+| parallel_requests  | `INTEGER` |  no        | Number of parallel requests that can be done           |
+| interval  | `MIXED` |  no        | Interval at which a crawl is started           |
+| timeslot  | `MIXED` |  no        | Time window in which a crawl is started           |
+| day_of_month_or_week  | `INTEGER` |  no        | Day of month or week on which a crawl is started if interval is weekly or monthly           |
+| collections  | `LIST` |  no        | The additional collections           |
+| enabled  | `BOOLEAN` |  no        | Enable or disable the schedule           |
+| timezone  | `STRING` |  no        | The time zone for which the timeslot applies           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -605,7 +704,9 @@ const result = await repository.updateCrawlSchedule($company, $crawlSchedule)
 ```
 
 
-## deleteCrawlSchedule
+## `deleteCrawlSchedule`
+
+Delete crawl schedule by id
 
 ### Endpoint
 
@@ -621,9 +722,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - company
  - crawlSchedule
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -639,7 +743,9 @@ const result = await repository.deleteCrawlSchedule($company, $crawlSchedule)
 ```
 
 
-## runScheduledCrawl
+## `runScheduledCrawl`
+
+Run a scheduled crawl immediately
 
 ### Endpoint
 
@@ -655,9 +761,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - company
  - crawlSchedule
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

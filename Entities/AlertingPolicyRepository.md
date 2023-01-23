@@ -1,7 +1,9 @@
 # API endpoints for AlertingPolicy repository
 
 
-## list
+## `list`
+
+List all policies for the given project
 
 ### Endpoint
 
@@ -16,9 +18,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -34,7 +39,9 @@ const result = await repository.list($project)
 ```
 
 
-## create
+## `create`
+
+
 
 ### Endpoint
 
@@ -49,13 +56,18 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
-- name - 
-- interval - 
-- severities - 
-- channels - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| name  | `STRING` |  yes        |            |
+| interval  | `STRING` |  no        |            |
+| severities  | `LIST` |  no        |            |
+| channels  | `INTEGER` |  no        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -71,7 +83,9 @@ const result = await repository.create($project)
 ```
 
 
-## update
+## `update`
+
+
 
 ### Endpoint
 
@@ -87,13 +101,18 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
  - policy
 
-#### Payload
-- name - 
-- interval - 
-- severities - 
-- channels - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| name  | `STRING` |  no        |            |
+| interval  | `STRING` |  no        |            |
+| severities  | `LIST` |  no        |            |
+| channels  | `INTEGER` |  no        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -109,7 +128,9 @@ const result = await repository.update($project, $policy)
 ```
 
 
-## delete
+## `delete`
+
+Delete the given policy
 
 ### Endpoint
 
@@ -125,9 +146,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
  - policy
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

@@ -1,7 +1,9 @@
 # API endpoints for CheckFileSize repository
 
 
-## getResults
+## `getResults`
+
+
 
 ### Endpoint
 
@@ -16,9 +18,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -34,7 +39,9 @@ const result = await repository.getResults($system)
 ```
 
 
-## ignorePattern
+## `ignorePattern`
+
+Add a new ignore pattern to the configuration.
 
 ### Endpoint
 
@@ -49,10 +56,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
-- patterns - List of URLs (strings) that will be excluded from the dead link crawl
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| patterns  | `LIST` |  yes        | List of URLs (strings) that will be excluded from the dead link crawl           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

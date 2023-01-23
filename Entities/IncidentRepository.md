@@ -1,7 +1,9 @@
 # API endpoints for incident repository
 
 
-## search
+## `search`
+
+Find all open incidents for the given project. Optionally it can be filtered by system.
 
 ### Endpoint
 
@@ -16,10 +18,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
-- system - the system filter
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| system  | `INTEGER` |  no        | the system filter           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -35,7 +42,9 @@ const result = await repository.search($project)
 ```
 
 
-## since
+## `since`
+
+Find all incidents that where open in the last days.
 
 ### Endpoint
 
@@ -50,10 +59,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
-- days - The number of days the incidents can old
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| days  | `INTEGER` |  yes        | The number of days the incidents can old           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -69,7 +83,9 @@ const result = await repository.since($project)
 ```
 
 
-## find
+## `find`
+
+Find a single incident by id
 
 ### Endpoint
 
@@ -85,9 +101,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
  - incident
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -103,7 +122,9 @@ const result = await repository.find($project, $incident)
 ```
 
 
-## findByCompany
+## `findByCompany`
+
+Find all open incidents for the given company.
 
 ### Endpoint
 
@@ -118,9 +139,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -136,7 +160,9 @@ const result = await repository.findByCompany($company)
 ```
 
 
-## getConfig
+## `getConfig`
+
+This endpoint returns the the configuration (errors_in_a_row, success_in_a_row) of all tools in the given project. It also handles tool inheritance.
 
 ### Endpoint
 
@@ -151,9 +177,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

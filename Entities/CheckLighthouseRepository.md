@@ -1,7 +1,9 @@
 # API endpoints for CheckLighthouse repository
 
 
-## getResults
+## `getResults`
+
+Return all current lighthouse results for the given systems components.
 
 ### Endpoint
 
@@ -17,11 +19,16 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - system
  - category
 
-#### Payload
-- targetGroup - The target group. It can be either an integer or a string.
-- use_cache - Use the cache for json document fetch
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| targetGroup  | `MIXED` |  no        | The target group. It can be either an integer or a string.           |
+| use_cache  | `BOOLEAN` |  no        | Use the cache for json document fetch           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

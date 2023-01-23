@@ -1,7 +1,9 @@
 # API endpoints for check repository
 
 
-## addByRecipe
+## `addByRecipe`
+
+
 
 ### Endpoint
 
@@ -13,11 +15,16 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
-- component - 
-- cookbook - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| component  | `INTEGER` |  yes        |            |
+| cookbook  | `INTEGER` |  yes        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -33,7 +40,9 @@ const result = await repository.addByRecipe()
 ```
 
 
-## addByChecklist
+## `addByChecklist`
+
+
 
 ### Endpoint
 
@@ -48,12 +57,17 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
-- checklist - 
-- clear_before - 
-- activate_checks - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| checklist  | `MIXED` |  yes        |            |
+| clear_before  | `BOOLEAN` |  no        |            |
+| activate_checks  | `BOOLEAN` |  no        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -69,7 +83,9 @@ const result = await repository.addByChecklist($system)
 ```
 
 
-## runChecksForSystem
+## `runChecksForSystem`
+
+Run checks defined by tool identifier for all components within this system.
 
 ### Endpoint
 
@@ -85,9 +101,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - system
  - toolIdentifier
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -103,7 +122,9 @@ const result = await repository.runChecksForSystem($system, $toolIdentifier)
 ```
 
 
-## showCollections
+## `showCollections`
+
+Return a list of collections for the given project.
 
 ### Endpoint
 
@@ -119,10 +140,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
  - toolIdentifier
 
-#### Payload
-- group - The collection group. It is used to specify the collections.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| group  | `STRING` |  no        | The collection group. It is used to specify the collections.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -138,7 +164,9 @@ const result = await repository.showCollections($project, $toolIdentifier)
 ```
 
 
-## showActiveCollections
+## `showActiveCollections`
+
+Return a list of active collections for the given system.
 
 ### Endpoint
 
@@ -154,10 +182,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - system
  - toolIdentifier
 
-#### Payload
-- group - The collection group. It is used to specify the collections.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| group  | `STRING` |  no        | The collection group. It is used to specify the collections.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -173,7 +206,9 @@ const result = await repository.showActiveCollections($system, $toolIdentifier)
 ```
 
 
-## updateCollections
+## `updateCollections`
+
+Update the collections. WARNING: will delete the current collection connections and create new.
 
 ### Endpoint
 
@@ -188,11 +223,16 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
-- collections - 
-- group - The collection group. It is used to specify the collections.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| collections  | `LIST` |  no        |            |
+| group  | `STRING` |  no        | The collection group. It is used to specify the collections.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

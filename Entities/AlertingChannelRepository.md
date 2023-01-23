@@ -1,7 +1,9 @@
 # API endpoints for AlertingChannel repository
 
 
-## list
+## `list`
+
+List all channels for the given project.
 
 ### Endpoint
 
@@ -16,9 +18,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -34,7 +39,9 @@ const result = await repository.list($project)
 ```
 
 
-## create
+## `create`
+
+Create a new notification channel. At the moment only e-mail is provided.
 
 ### Endpoint
 
@@ -49,13 +56,18 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
-- name - The name of the alert channel
-- type - 
-- options - 
-- language - The language the alert should be send in. If not value is set the default provider language is taken.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| name  | `STRING` |  yes        | The name of the alert channel           |
+| type  | `MIXED` |  yes        |            |
+| options  | `LIST` |  yes        |            |
+| language  | `STRING` |  no        | The language the alert should be send in. If not value is set the default provider language is taken.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -71,7 +83,9 @@ const result = await repository.create($project)
 ```
 
 
-## update
+## `update`
+
+Update an existing notification channel.
 
 ### Endpoint
 
@@ -87,13 +101,18 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
  - channel
 
-#### Payload
-- name - 
-- type - 
-- options - 
-- language - The language the alert should be send in
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| name  | `STRING` |  no        |            |
+| type  | `MIXED` |  yes        |            |
+| options  | `LIST` |  no        |            |
+| language  | `STRING` |  no        | The language the alert should be send in           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -109,7 +128,9 @@ const result = await repository.update($project, $channel)
 ```
 
 
-## delete
+## `delete`
+
+Delete the given channel.
 
 ### Endpoint
 
@@ -125,9 +146,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
  - channel
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

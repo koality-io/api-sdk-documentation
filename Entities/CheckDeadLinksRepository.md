@@ -1,7 +1,9 @@
 # API endpoints for CheckDeadLinks repository
 
 
-## getResults
+## `getResults`
+
+Return a list of dead links for every component attached to the given system.
 
 ### Endpoint
 
@@ -16,9 +18,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -34,7 +39,9 @@ const result = await repository.getResults($system)
 ```
 
 
-## getResultsByCompany
+## `getResultsByCompany`
+
+Return a list of dead links for every component in every project owned by the company.
 
 ### Endpoint
 
@@ -49,9 +56,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -67,7 +77,9 @@ const result = await repository.getResultsByCompany($company)
 ```
 
 
-## getConfiguration
+## `getConfiguration`
+
+Return the dead link check configuration for the given system.
 
 ### Endpoint
 
@@ -82,9 +94,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -100,7 +115,9 @@ const result = await repository.getConfiguration($system)
 ```
 
 
-## ignorePattern
+## `ignorePattern`
+
+Add a new ignore pattern to the configuration.
 
 ### Endpoint
 
@@ -115,10 +132,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
-- patterns - List of URLs (strings) that will be excluded from the dead link crawl
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| patterns  | `LIST` |  yes        | List of URLs (strings) that will be excluded from the dead link crawl           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -134,7 +156,9 @@ const result = await repository.ignorePattern($system)
 ```
 
 
-## unignorePattern
+## `unignorePattern`
+
+Remove an ignore pattern from the configuration.
 
 ### Endpoint
 
@@ -149,10 +173,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
-- pattern_id - Single URL that will not be excluded anymore in the dead link crawl
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| pattern_id  | `INTEGER` |  yes        | Single URL that will not be excluded anymore in the dead link crawl           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -168,7 +197,9 @@ const result = await repository.unignorePattern($system)
 ```
 
 
-## getBlockedPatterns
+## `getBlockedPatterns`
+
+Return a list patterns that should be blocked in the dead link checker.
 
 ### Endpoint
 
@@ -180,9 +211,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

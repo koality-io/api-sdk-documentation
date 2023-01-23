@@ -1,7 +1,9 @@
 # API endpoints for auth repository
 
 
-## createTokenByCredentials
+## `createTokenByCredentials`
+
+This function creates an access token with all the permissions for the given user. The returned token has to be in the payload for every later request.
 
 ### Endpoint
 
@@ -13,13 +15,18 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
-- username - 
-- password - 
-- expire - 
-- with_memories - If true all Memory entities will be attached in the answer.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| username  | `STRING` |  yes        | The username you want to log in with.           |
+| password  | `STRING` |  yes        | The users password.           |
+| expire  | `BOOLEAN` |  no        | If true the token will not expire (only available for admin users).           |
+| with_memories  | `BOOLEAN` |  no        | If true all memory entities will be attached in the answer.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -35,7 +42,9 @@ const result = await repository.createTokenByCredentials()
 ```
 
 
-## createTokenByRefreshToken
+## `createTokenByRefreshToken`
+
+
 
 ### Endpoint
 
@@ -50,10 +59,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - user
 
-#### Payload
-- with_memories - If true all Memory entities will be attached in the answer.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| with_memories  | `BOOLEAN` |  no        | If true all Memory entities will be attached in the answer.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

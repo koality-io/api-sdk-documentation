@@ -1,7 +1,9 @@
 # API endpoints for memory repository
 
 
-## set
+## `set`
+
+
 
 ### Endpoint
 
@@ -17,11 +19,16 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - objectType
  - objectId
 
-#### Payload
-- key - 
-- value - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| key  | `STRING` |  yes        |            |
+| value  | `STRING` |  yes        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -37,7 +44,9 @@ const result = await repository.set($objectType, $objectId)
 ```
 
 
-## getAll
+## `getAll`
+
+
 
 ### Endpoint
 
@@ -53,9 +62,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - objectType
  - objectId
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

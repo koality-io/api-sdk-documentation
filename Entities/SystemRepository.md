@@ -1,7 +1,9 @@
 # API endpoints for system repository
 
 
-## createSystem
+## `createSystem`
+
+Create a new system.
 
 ### Endpoint
 
@@ -13,17 +15,22 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
-- project - The project the system should be part of. If the project is not set a new project will be created with the systems name.
-- add_standard_alerting - If true add a standard channel and alerting policy for the owner.
-- name - The shops name.
-- base_url - The shops base url with scheme, subdomain and domain.
-- owner - The shops owner (id).
-- system_type - The shops system type (id).
-- add_checklist_checks - If true all checks of the checklist connected to the main system type are added.
-- add_support_user - Add the support user for support requests
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| project  | `INTEGER` |  no        | The project the system should be part of. If the project is not set a new project will be created with the systems name.           |
+| add_standard_alerting  | `BOOLEAN` |  no        | If true add a standard channel and alerting policy for the owner.           |
+| name  | `STRING` |  yes        | The shops name.           |
+| base_url  | `URL` |  yes        | The shops base url with scheme, subdomain and domain.           |
+| owner  | `INTEGER` |  yes        | The shops owner (id).           |
+| system_type  | `INTEGER` |  yes        | The shops system type (id).           |
+| add_checklist_checks  | `BOOLEAN` |  no        | If true all checks of the checklist connected to the main system type are added.           |
+| add_support_user  | `BOOLEAN` |  no        | Add the support user for support requests           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -39,7 +46,9 @@ const result = await repository.createSystem()
 ```
 
 
-## updateSystem
+## `updateSystem`
+
+Update an existing system.
 
 ### Endpoint
 
@@ -54,11 +63,16 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
-- name - The shops name.
-- base_url - The shops base url with scheme, subdomain and domain.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| name  | `STRING` |  no        | The shops name.           |
+| base_url  | `URL` |  no        | The shops base url with scheme, subdomain and domain.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -74,7 +88,9 @@ const result = await repository.updateSystem($system)
 ```
 
 
-## getComponents
+## `getComponents`
+
+Return all components for the given system.
 
 ### Endpoint
 
@@ -89,9 +105,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -107,7 +126,9 @@ const result = await repository.getComponents($system)
 ```
 
 
-## getSystemTypes
+## `getSystemTypes`
+
+Return all system types for the given provider.
 
 ### Endpoint
 
@@ -122,9 +143,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - providerIdentifier
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -140,7 +164,9 @@ const result = await repository.getSystemTypes($providerIdentifier)
 ```
 
 
-## getComponentSuggestions
+## `getComponentSuggestions`
+
+Return all suggested component types for the given system.
 
 ### Endpoint
 
@@ -155,9 +181,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -173,7 +202,9 @@ const result = await repository.getComponentSuggestions($system)
 ```
 
 
-## changeLastFullRun
+## `changeLastFullRun`
+
+Set the last full run timestamp on a system.
 
 ### Endpoint
 
@@ -189,9 +220,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - system
  - status
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -207,7 +241,9 @@ const result = await repository.changeLastFullRun($system, $status)
 ```
 
 
-## triggerComponentFinder
+## `triggerComponentFinder`
+
+Trigger the component finder for a given system.
 
 ### Endpoint
 
@@ -224,9 +260,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - system
  - user
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -242,7 +281,9 @@ const result = await repository.triggerComponentFinder($project, $system, $user)
 ```
 
 
-## getNextLastFullRun
+## `getNextLastFullRun`
+
+Return the approximated time in seconds when the next full check run is triggered.
 
 ### Endpoint
 
@@ -257,9 +298,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -275,7 +319,9 @@ const result = await repository.getNextLastFullRun($system)
 ```
 
 
-## getComponentLimit
+## `getComponentLimit`
+
+Return the maximum number of components that can be added to the given system.
 
 ### Endpoint
 
@@ -290,9 +336,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

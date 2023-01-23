@@ -1,7 +1,9 @@
 # API endpoints for score repository
 
 
-## getScoresByUser
+## `getScoresByUser`
+
+Return a list of scores by the given score names for all projects and systems the user is part of.
 
 ### Endpoint
 
@@ -16,12 +18,17 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - user
 
-#### Payload
-- scores - List of score names
-- with_sub_scores - NOT IMPLEMENTED YET: If true detailed information about the score will be provided.
-- filter_empty_projects - If true the only projects with systems are returned
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| scores  | `LIST` |  yes        | List of score names           |
+| with_sub_scores  | `BOOLEAN` |  no        | NOT IMPLEMENTED YET: If true detailed information about the score will be provided.           |
+| filter_empty_projects  | `BOOLEAN` |  no        | If true the only projects with systems are returned           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -37,7 +44,9 @@ const result = await repository.getScoresByUser($user)
 ```
 
 
-## getScore
+## `getScore`
+
+Return the score for a given score name.
 
 ### Endpoint
 
@@ -53,9 +62,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - system
  - scoreName
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -71,7 +83,9 @@ const result = await repository.getScore($system, $scoreName)
 ```
 
 
-## getScores
+## `getScores`
+
+Return a list of scores by the given score names.
 
 ### Endpoint
 
@@ -86,10 +100,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
-- scores - list of score names
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| scores  | `LIST` |  yes        | list of score names           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

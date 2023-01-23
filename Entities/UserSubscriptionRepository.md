@@ -1,7 +1,9 @@
 # API endpoints for UserSubscription repository
 
 
-## update
+## `update`
+
+Update the subscription for a given user.
 
 ### Endpoint
 
@@ -16,10 +18,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - user
 
-#### Payload
-- system_count - The number of systems the user is allowed to create.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| system_count  | `INTEGER` |  yes        | The number of systems the user is allowed to create.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

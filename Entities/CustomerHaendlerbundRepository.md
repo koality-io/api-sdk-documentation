@@ -1,7 +1,9 @@
 # API endpoints for CustomerHaendlerbund repository
 
 
-## createShop
+## `createShop`
+
+Händlerbund only: the function is used to create a shop.
 
 ### Endpoint
 
@@ -13,13 +15,18 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
-- name - The shops name.
-- base_url - The shops base url with scheme, subdomain and domain.
-- owner - The shops owner (id).
-- size - The shop size. It determines if the checks are done on a daily or hourly base.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| name  | `STRING` |  yes        | The shops name.           |
+| base_url  | `URL` |  yes        | The shops base url with scheme, subdomain and domain.           |
+| owner  | `INTEGER` |  yes        | The shops owner (id).           |
+| size  | `MIXED` |  no        | The shop size. It determines if the checks are done on a daily or hourly base.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -35,7 +42,9 @@ const result = await repository.createShop()
 ```
 
 
-## updateShop
+## `updateShop`
+
+Händlerbund only: the function is used to update a shop.
 
 ### Endpoint
 
@@ -50,11 +59,16 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
-- name - The shops name.
-- base_url - The shops base url with scheme, subdomain and domain. When changing the base url all shop pages will change their base as well.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| name  | `STRING` |  no        | The shops name.           |
+| base_url  | `URL` |  no        | The shops base url with scheme, subdomain and domain. When changing the base url all shop pages will change their base as well.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

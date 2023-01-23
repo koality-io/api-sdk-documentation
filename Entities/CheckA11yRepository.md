@@ -1,7 +1,9 @@
 # API endpoints for CheckA11y repository
 
 
-## getResults
+## `getResults`
+
+Return all current accessibility audit results for the given systems components.
 
 ### Endpoint
 
@@ -16,9 +18,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

@@ -1,7 +1,9 @@
 # API endpoints for marketplace repository
 
 
-## getActiveProviderFeatures
+## `getActiveProviderFeatures`
+
+Return all features that are active for the given provider.
 
 ### Endpoint
 
@@ -16,9 +18,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - providerIdentifier
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -34,7 +39,9 @@ const result = await repository.getActiveProviderFeatures($providerIdentifier)
 ```
 
 
-## getActiveProjectFeatures
+## `getActiveProjectFeatures`
+
+Return all features that are active for the given project.
 
 ### Endpoint
 
@@ -49,9 +56,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -67,7 +77,9 @@ const result = await repository.getActiveProjectFeatures($project)
 ```
 
 
-## getSystemPluginStatus
+## `getSystemPluginStatus`
+
+Return all the status of the health checks of the systems components.
 
 ### Endpoint
 
@@ -82,9 +94,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - system
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -100,7 +115,9 @@ const result = await repository.getSystemPluginStatus($system)
 ```
 
 
-## getUserPluginStatus
+## `getUserPluginStatus`
+
+Return all the status of the health checks of the systems components.
 
 ### Endpoint
 
@@ -115,9 +132,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - user
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -133,7 +153,9 @@ const result = await repository.getUserPluginStatus($user)
 ```
 
 
-## getComponents
+## `getComponents`
+
+Return all component suggestions that are enabled by the active features.
 
 ### Endpoint
 
@@ -149,9 +171,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - system
  - featureIdentifier
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -167,7 +192,9 @@ const result = await repository.getComponents($system, $featureIdentifier)
 ```
 
 
-## setComponent
+## `setComponent`
+
+Set a component using a given suggestion as template.
 
 ### Endpoint
 
@@ -183,10 +210,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - system
  - suggestionIdentifier
 
-#### Payload
-- url - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| url  | `STRING` |  yes        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -202,7 +234,9 @@ const result = await repository.setComponent($system, $suggestionIdentifier)
 ```
 
 
-## getFeatures
+## `getFeatures`
+
+Return all features that can be activated for the given company and provider.
 
 ### Endpoint
 
@@ -218,9 +252,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - providerIdentifier
  - company
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -236,7 +273,9 @@ const result = await repository.getFeatures($providerIdentifier, $company)
 ```
 
 
-## getAvailableFeatures
+## `getAvailableFeatures`
+
+Return all features that are activated for the given project.
 
 ### Endpoint
 
@@ -251,10 +290,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
-- status - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| status  | `INTEGER` |  no        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -270,7 +314,9 @@ const result = await repository.getAvailableFeatures($project)
 ```
 
 
-## getAllFeatures
+## `getAllFeatures`
+
+Return all features that exists.
 
 ### Endpoint
 
@@ -282,9 +328,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -300,7 +349,9 @@ const result = await repository.getAllFeatures()
 ```
 
 
-## getFavourites
+## `getFavourites`
+
+Return a list of features that where marked as favourites.
 
 ### Endpoint
 
@@ -312,9 +363,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -330,7 +384,9 @@ const result = await repository.getFavourites()
 ```
 
 
-## getActiveFeatures
+## `getActiveFeatures`
+
+Return all features that are activated for the given project.
 
 ### Endpoint
 
@@ -345,9 +401,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -363,7 +422,9 @@ const result = await repository.getActiveFeatures($project)
 ```
 
 
-## activateFeature
+## `activateFeature`
+
+Activate the given feature for the given projects.
 
 ### Endpoint
 
@@ -379,10 +440,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - company
  - featureIdentifier
 
-#### Payload
-- projects - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| projects  | `LIST` |  yes        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -398,7 +464,9 @@ const result = await repository.activateFeature($company, $featureIdentifier)
 ```
 
 
-## deactivateFeature
+## `deactivateFeature`
+
+Deactivate the given feature for the given projects.
 
 ### Endpoint
 
@@ -414,10 +482,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - company
  - featureIdentifier
 
-#### Payload
-- projects - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| projects  | `LIST` |  yes        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -433,7 +506,9 @@ const result = await repository.deactivateFeature($company, $featureIdentifier)
 ```
 
 
-## getBookingLog
+## `getBookingLog`
+
+Show the booking logs for the company.
 
 ### Endpoint
 
@@ -448,9 +523,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -466,7 +544,9 @@ const result = await repository.getBookingLog($company)
 ```
 
 
-## restProxy
+## `restProxy`
+
+Proxy a REST request 
 
 ### Endpoint
 
@@ -482,9 +562,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - secret
  - url
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -500,7 +583,9 @@ const result = await repository.restProxy($secret, $url)
 ```
 
 
-## getHealthStatus
+## `getHealthStatus`
+
+Return all the status of the health checks of the systems components.
 
 ### Endpoint
 
@@ -516,11 +601,16 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - system
  - featureIdentifier
 
-#### Payload
-- from - 
-- time - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| from  | `STRING` |  no        |            |
+| time  | `STRING` |  no        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

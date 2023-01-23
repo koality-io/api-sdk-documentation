@@ -1,7 +1,9 @@
 # API endpoints for ClusterCompany repository
 
 
-## create
+## `create`
+
+Create a new company
 
 ### Endpoint
 
@@ -16,11 +18,16 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - providerIdentifier
 
-#### Payload
-- name - The companies name
-- master_id - The master id from the auth2 server
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| name  | `STRING` |  yes        | The companies name           |
+| master_id  | `INTEGER` |  yes        | The master id from the auth2 server           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -36,7 +43,9 @@ const result = await repository.create($providerIdentifier)
 ```
 
 
-## connectUser
+## `connectUser`
+
+Connect a given user to a company
 
 ### Endpoint
 
@@ -52,10 +61,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - company
  - user
 
-#### Payload
-- user_role - The users company role
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| user_role  | `INTEGER` |  no        | The users company role           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -71,7 +85,9 @@ const result = await repository.connectUser($company, $user)
 ```
 
 
-## exists
+## `exists`
+
+Check if the given company name already exists
 
 ### Endpoint
 
@@ -83,10 +99,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
-- company_name - The companies name
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| company_name  | `STRING` |  yes        | The companies name           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -102,7 +123,9 @@ const result = await repository.exists()
 ```
 
 
-## search
+## `search`
+
+Search for a given company by provider and name
 
 ### Endpoint
 
@@ -117,10 +140,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - providerIdentifier
 
-#### Payload
-- company_name - The companies name
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| company_name  | `STRING` |  yes        | The companies name           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -136,7 +164,9 @@ const result = await repository.search($providerIdentifier)
 ```
 
 
-## findAll
+## `findAll`
+
+Return a list of all companies for the given provider.
 
 ### Endpoint
 
@@ -151,9 +181,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - providerIdentifier
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -169,7 +202,9 @@ const result = await repository.findAll($providerIdentifier)
 ```
 
 
-## updateMasterId
+## `updateMasterId`
+
+This endpoint updates an existing companies master id.
 
 ### Endpoint
 
@@ -184,10 +219,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
-- master_id - The users master id.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| master_id  | `INTEGER` |  yes        | The users master id.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

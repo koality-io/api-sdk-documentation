@@ -1,7 +1,9 @@
 # API endpoints for subscription repository
 
 
-## getCompanySubscription
+## `getCompanySubscription`
+
+Get the companies subscription information.
 
 ### Endpoint
 
@@ -16,9 +18,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -34,7 +39,9 @@ const result = await repository.getCompanySubscription($company)
 ```
 
 
-## setCompanyCreditCardPlans
+## `setCompanyCreditCardPlans`
+
+Set the companies credit card plans.
 
 ### Endpoint
 
@@ -49,10 +56,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
-- quantity - The number of packets to be used
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| quantity  | `INTEGER` |  yes        | The number of packets to be used           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -68,7 +80,9 @@ const result = await repository.setCompanyCreditCardPlans($company)
 ```
 
 
-## setCompanyFreePlans
+## `setCompanyFreePlans`
+
+Set the companies free plans.
 
 ### Endpoint
 
@@ -83,10 +97,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
-- quantity - The number of packets to be used
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| quantity  | `INTEGER` |  yes        | The number of packets to be used           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -102,7 +121,9 @@ const result = await repository.setCompanyFreePlans($company)
 ```
 
 
-## setCompanyFreePlansByUser
+## `setCompanyFreePlansByUser`
+
+Set the companies free plans by user.
 
 ### Endpoint
 
@@ -117,10 +138,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - user
 
-#### Payload
-- quantity - The number of packets to be used
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| quantity  | `INTEGER` |  yes        | The number of packets to be used           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -136,7 +162,9 @@ const result = await repository.setCompanyFreePlansByUser($user)
 ```
 
 
-## setCreditCard
+## `setCreditCard`
+
+Set the companies credit card.
 
 ### Endpoint
 
@@ -151,12 +179,17 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
-- stripe_cc_source - The stripe credit card id
-- last_digits - The last 4 digits of the credit card
-- brand - The credit cards brand
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| stripe_cc_source  | `MIXED` |  yes        | The stripe credit card id           |
+| last_digits  | `STRING` |  yes        | The last 4 digits of the credit card           |
+| brand  | `STRING` |  yes        | The credit cards brand           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -172,7 +205,9 @@ const result = await repository.setCreditCard($company)
 ```
 
 
-## setBillingAddress
+## `setBillingAddress`
+
+Set the billing address information for the given company.
 
 ### Endpoint
 
@@ -187,16 +222,21 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
-- company_name - The companies name.
-- country - The companies billing address country.
-- postal_code - The companies billing address postal code.
-- city - The companies billing address city.
-- street - The companies billing address street.
-- usident - The companies &quot;Umsatzsteuer-Identifikationsnummer&quot;.
-- email - The email address the invoice information gets send to.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| company_name  | `STRING` |  yes        | The companies name.           |
+| country  | `STRING` |  yes        | The companies billing address country.           |
+| postal_code  | `STRING` |  yes        | The companies billing address postal code.           |
+| city  | `STRING` |  yes        | The companies billing address city.           |
+| street  | `STRING` |  yes        | The companies billing address street.           |
+| usident  | `STRING` |  no        | The companies &quot;Umsatzsteuer-Identifikationsnummer&quot;.           |
+| email  | `STRING` |  no        | The email address the invoice information gets send to.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -212,7 +252,9 @@ const result = await repository.setBillingAddress($company)
 ```
 
 
-## getBillingAddress
+## `getBillingAddress`
+
+Get the billing address information for the given company.
 
 ### Endpoint
 
@@ -227,9 +269,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -245,7 +290,9 @@ const result = await repository.getBillingAddress($company)
 ```
 
 
-## getSubscribedFeatures
+## `getSubscribedFeatures`
+
+Get a list of features that are active.
 
 ### Endpoint
 
@@ -260,9 +307,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -278,7 +328,9 @@ const result = await repository.getSubscribedFeatures($company)
 ```
 
 
-## getCompanyInvoices
+## `getCompanyInvoices`
+
+Get a list invoices for the given company.
 
 ### Endpoint
 
@@ -293,9 +345,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -311,7 +366,9 @@ const result = await repository.getCompanyInvoices($company)
 ```
 
 
-## setSubscriptionPlan
+## `setSubscriptionPlan`
+
+Set the subscription plan of the given user.
 
 ### Endpoint
 
@@ -326,10 +383,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - user
 
-#### Payload
-- identifier - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| identifier  | `STRING` |  yes        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -345,7 +407,9 @@ const result = await repository.setSubscriptionPlan($user)
 ```
 
 
-## getQuota
+## `getQuota`
+
+Get current quota for the company.
 
 ### Endpoint
 
@@ -360,9 +424,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - company
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -378,7 +445,9 @@ const result = await repository.getQuota($company)
 ```
 
 
-## endTrials
+## `endTrials`
+
+End all trials.
 
 ### Endpoint
 
@@ -393,9 +462,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - providerIdentifier
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

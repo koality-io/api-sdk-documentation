@@ -1,7 +1,9 @@
 # API endpoints for Tool repository
 
 
-## getChangedConfiguration
+## `getChangedConfiguration`
+
+Get the tool configurations for all tools that changed.
 
 ### Endpoint
 
@@ -13,11 +15,16 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
-- newerThan - 
-- minifyOutput - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| newerThan  | `INTEGER` |  yes        |            |
+| minifyOutput  | `BOOLEAN` |  no        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -33,7 +40,9 @@ const result = await repository.getChangedConfiguration()
 ```
 
 
-## findByProject
+## `findByProject`
+
+Return all tools for the given project.
 
 ### Endpoint
 
@@ -48,9 +57,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -66,7 +78,9 @@ const result = await repository.findByProject($project)
 ```
 
 
-## overwrite
+## `overwrite`
+
+Overwrite tool configuration.
 
 ### Endpoint
 
@@ -82,11 +96,16 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
  - toolIdentifier
 
-#### Payload
-- errors_in_a_row - Number of errors in a row before marked as failure
-- success_in_a_row - Number of successes in a row before marked as passed
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| errors_in_a_row  | `INTEGER` |  no        | Number of errors in a row before marked as failure           |
+| success_in_a_row  | `INTEGER` |  no        | Number of successes in a row before marked as passed           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -102,7 +121,9 @@ const result = await repository.overwrite($project, $toolIdentifier)
 ```
 
 
-## getConfiguration
+## `getConfiguration`
+
+Get the tool configuration.
 
 ### Endpoint
 
@@ -118,9 +139,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
  - toolIdentifier
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

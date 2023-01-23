@@ -1,7 +1,9 @@
 # API endpoints for sequence repository
 
 
-## getCommands
+## `getCommands`
+
+Get a list of possible commands
 
 ### Endpoint
 
@@ -16,9 +18,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -34,7 +39,9 @@ const result = await repository.getCommands($project)
 ```
 
 
-## getSequences
+## `getSequences`
+
+Get a list of possible commands
 
 ### Endpoint
 
@@ -49,9 +56,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -67,7 +77,9 @@ const result = await repository.getSequences($project)
 ```
 
 
-## createSequence
+## `createSequence`
+
+Create a new sequence.
 
 ### Endpoint
 
@@ -82,12 +94,17 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
-- name - The human readable name of the sequence.
-- startUrl - The url the sequence starts at.
-- steps - List of steps of the sequence.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| name  | `STRING` |  yes        | The human readable name of the sequence.           |
+| startUrl  | `STRING` |  yes        | The url the sequence starts at.           |
+| steps  | `LIST` |  no        | List of steps of the sequence.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -103,7 +120,9 @@ const result = await repository.createSequence($project)
 ```
 
 
-## updateSequence
+## `updateSequence`
+
+Update an existing sequence
 
 ### Endpoint
 
@@ -118,12 +137,17 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - project
 
-#### Payload
-- name - The human readable name of the sequence.
-- startUrl - The url the sequence starts at.
-- steps - List of steps of the sequence.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| name  | `STRING` |  no        | The human readable name of the sequence.           |
+| startUrl  | `STRING` |  no        | The url the sequence starts at.           |
+| steps  | `LIST` |  no        | List of steps of the sequence.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -139,7 +163,9 @@ const result = await repository.updateSequence($project)
 ```
 
 
-## activateSequence
+## `activateSequence`
+
+Activate an existing sequence.
 
 ### Endpoint
 
@@ -154,9 +180,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - sequence
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -172,7 +201,9 @@ const result = await repository.activateSequence($sequence)
 ```
 
 
-## deactivateSequence
+## `deactivateSequence`
+
+Deactivate an existing sequence.
 
 ### Endpoint
 
@@ -187,9 +218,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - sequence
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -205,7 +239,9 @@ const result = await repository.deactivateSequence($sequence)
 ```
 
 
-## getRecentRuns
+## `getRecentRuns`
+
+Return a list of recent runs.
 
 ### Endpoint
 
@@ -220,9 +256,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - sequence
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php

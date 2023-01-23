@@ -1,7 +1,9 @@
 # API endpoints for ClusterUser repository
 
 
-## activate
+## `activate`
+
+Activate an user account. The endpoint will return a valid access and refresh token so the user can be logged in without re-entering username and password.
 
 ### Endpoint
 
@@ -13,10 +15,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
-- activation_key - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| activation_key  | `STRING` |  yes        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -32,7 +39,9 @@ const result = await repository.activate()
 ```
 
 
-## create
+## `create`
+
+This endpoint creates a new user. The given provider (url param) will be attached.
 
 ### Endpoint
 
@@ -47,22 +56,27 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - provider
 
-#### Payload
-- username - The new users name.
-- master_id - The users id on the master server.
-- suppress_activation - If true no activation mail will be send..
-- activate - If true no activation mail will be send..
-- email - The email address of the new user.
-- preferred_language - The users preferred interface language.
-- company_id - The companies numeric id of the new user.
-- create_company - Create a new company if none exists.
-- full_name - The users full name.
-- first_name - The users first name.
-- last_name - The users last name.
-- password - 
-- _attributes - Additional attributes for the user
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| username  | `STRING` |  no        | The new users name.           |
+| master_id  | `INTEGER` |  no        | The users id on the master server.           |
+| suppress_activation  | `BOOLEAN` |  no        | If true no activation mail will be send..           |
+| activate  | `BOOLEAN` |  no        | If true no activation mail will be send..           |
+| email  | `STRING` |  yes        | The email address of the new user.           |
+| preferred_language  | `STRING` |  no        | The users preferred interface language.           |
+| company_id  | `INTEGER` |  no        | The companies numeric id of the new user.           |
+| create_company  | `BOOLEAN` |  no        | Create a new company if none exists.           |
+| full_name  | `STRING` |  no        | The users full name.           |
+| first_name  | `STRING` |  no        | The users first name.           |
+| last_name  | `STRING` |  no        | The users last name.           |
+| password  | `STRING` |  yes        |            |
+| _attributes  | `LIST` |  no        | Additional attributes for the user           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -78,7 +92,9 @@ const result = await repository.create($provider)
 ```
 
 
-## setPreferredLanguage
+## `setPreferredLanguage`
+
+Update the users preferred language.
 
 ### Endpoint
 
@@ -93,10 +109,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - user
 
-#### Payload
-- language - The users preferred interface language.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| language  | `STRING` |  yes        | The users preferred interface language.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -112,7 +133,9 @@ const result = await repository.setPreferredLanguage($user)
 ```
 
 
-## connectOAuthAccount
+## `connectOAuthAccount`
+
+This endpoint connects an OAuth provider with the current user.
 
 ### Endpoint
 
@@ -127,11 +150,16 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - user
 
-#### Payload
-- provider - The OAuth provider.
-- provider_user_id - The OAuth provider user id.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| provider  | `MIXED` |  yes        | The OAuth provider.           |
+| provider_user_id  | `STRING` |  yes        | The OAuth provider user id.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -147,7 +175,9 @@ const result = await repository.connectOAuthAccount($user)
 ```
 
 
-## changePassword
+## `changePassword`
+
+Change the users password. This can only be done by the master server.
 
 ### Endpoint
 
@@ -162,10 +192,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - user
 
-#### Payload
-- password_new - 
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| password_new  | `STRING` |  yes        |            |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -181,7 +216,9 @@ const result = await repository.changePassword($user)
 ```
 
 
-## exists
+## `exists`
+
+This endpoint returns true if a user exists that matches the given search criteria.
 
 ### Endpoint
 
@@ -193,10 +230,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
-- query - The key value pairs for the search.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| query  | `LIST` |  yes        | The key value pairs for the search.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -212,7 +254,9 @@ const result = await repository.exists()
 ```
 
 
-## find
+## `find`
+
+This endpoint returns a user that matches the given search criteria.
 
 ### Endpoint
 
@@ -224,10 +268,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
-- query - The key value pairs for the search.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| query  | `LIST` |  yes        | The key value pairs for the search.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -243,7 +292,9 @@ const result = await repository.find()
 ```
 
 
-## delete
+## `delete`
+
+Delete the given user and all owned projects.
 
 ### Endpoint
 
@@ -258,9 +309,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - user
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -276,7 +330,9 @@ const result = await repository.delete($user)
 ```
 
 
-## isDeletable
+## `isDeletable`
+
+Checks if the user can be deleted.
 
 ### Endpoint
 
@@ -291,9 +347,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - user
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -309,7 +368,9 @@ const result = await repository.isDeletable($user)
 ```
 
 
-## deleteByEmail
+## `deleteByEmail`
+
+ the given user (by email) and all owned projects.
 
 ### Endpoint
 
@@ -321,10 +382,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
-- email - The users email address
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| email  | `STRING` |  yes        | The users email address           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -340,7 +406,9 @@ const result = await repository.deleteByEmail()
 ```
 
 
-## updateUser
+## `updateUser`
+
+This endpoint updates an existing user.
 
 ### Endpoint
 
@@ -355,14 +423,19 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - user
 
-#### Payload
-- email - The email address of the new user.
-- preferred_language - The users preferred interface language.
-- company_id - The companies numeric id of the new user.
-- first_name - The users first name.
-- last_name - The users last name.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| email  | `STRING` |  no        | The email address of the new user.           |
+| preferred_language  | `STRING` |  no        | The users preferred interface language.           |
+| company_id  | `INTEGER` |  no        | The companies numeric id of the new user.           |
+| first_name  | `STRING` |  no        | The users first name.           |
+| last_name  | `STRING` |  no        | The users last name.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -378,7 +451,9 @@ const result = await repository.updateUser($user)
 ```
 
 
-## updateMasterId
+## `updateMasterId`
+
+This endpoint updates an existing users master id.
 
 ### Endpoint
 
@@ -393,10 +468,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - user
 
-#### Payload
-- master_id - The users master id.
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| master_id  | `INTEGER` |  yes        | The users master id.           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -412,7 +492,9 @@ const result = await repository.updateMasterId($user)
 ```
 
 
-## requestPasswordReset
+## `requestPasswordReset`
+
+Request password change e-mail.
 
 ### Endpoint
 
@@ -424,10 +506,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 ### Parameters
 
-#### Payload
-- email - The users email address
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| email  | `STRING` |  yes        | The users email address           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -443,7 +530,9 @@ const result = await repository.requestPasswordReset()
 ```
 
 
-## resetPassword
+## `resetPassword`
+
+Reset the password.
 
 ### Endpoint
 
@@ -458,10 +547,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - user
 
-#### Payload
-- password - The new password
+#### Payload parameters
+
+| Name                  | Type  | Required  | Desciption   |
+|-----------------------|-------|-----------|--------------|
+| password  | `STRING` |  yes        | The new password           |
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
@@ -477,7 +571,9 @@ const result = await repository.resetPassword($user)
 ```
 
 
-## findAll
+## `findAll`
+
+Return a list of all users for the given company.
 
 ### Endpoint
 
@@ -492,9 +588,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 #### URL parameters
  - providerIdentifier
 
-#### Payload
+#### Payload parameters
+
 
 ### SDK
+
+We strongly recommend to use the SDK that are provided.
 
 #### PHP
 ```php
