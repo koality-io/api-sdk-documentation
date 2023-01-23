@@ -40,6 +40,12 @@ const repository = koalityEngineClient.getRepository('Screenshot')
 const result = await repository.getSystemScreenshots($system)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/screenshots/{system}
+```
+
 
 ## `getScreenshot`
 
@@ -78,5 +84,11 @@ $result = $repository->getScreenshot($system);
 ```javascript
 const repository = koalityEngineClient.getRepository('Screenshot')
 const result = await repository.getScreenshot($system)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/screenshot/{system}
 ```
 

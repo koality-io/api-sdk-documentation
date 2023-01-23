@@ -43,6 +43,12 @@ const repository = koalityEngineClient.getRepository('auth')
 const result = await repository.createTokenByCredentials()
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/auth/tokens/access
+```
+
 
 ## `createTokenByRefreshToken`
 
@@ -84,5 +90,11 @@ $result = $repository->createTokenByRefreshToken($user);
 ```javascript
 const repository = koalityEngineClient.getRepository('auth')
 const result = await repository.createTokenByRefreshToken($user)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/auth/tokens/refresh/{user}
 ```
 

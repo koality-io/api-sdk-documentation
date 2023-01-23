@@ -41,6 +41,12 @@ const repository = koalityEngineClient.getRepository('check')
 const result = await repository.addByRecipe()
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/checks/cookbook
+```
+
 
 ## `addByChecklist`
 
@@ -86,6 +92,12 @@ const repository = koalityEngineClient.getRepository('check')
 const result = await repository.addByChecklist($system)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/checks/{system}/checklist
+```
+
 
 ## `runChecksForSystem`
 
@@ -125,6 +137,12 @@ $result = $repository->runChecksForSystem($system, $toolIdentifier);
 ```javascript
 const repository = koalityEngineClient.getRepository('check')
 const result = await repository.runChecksForSystem($system, $toolIdentifier)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/checks/run/{system}/{toolIdentifier}
 ```
 
 
@@ -171,6 +189,12 @@ const repository = koalityEngineClient.getRepository('check')
 const result = await repository.showCollections($project, $toolIdentifier)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/collections/{project}/{toolIdentifier}
+```
+
 
 ## `showActiveCollections`
 
@@ -215,6 +239,12 @@ const repository = koalityEngineClient.getRepository('check')
 const result = await repository.showActiveCollections($system, $toolIdentifier)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/collections/system/active/{system}/{toolIdentifier}
+```
+
 
 ## `updateCollections`
 
@@ -257,5 +287,11 @@ $result = $repository->updateCollections($system);
 ```javascript
 const repository = koalityEngineClient.getRepository('check')
 const result = await repository.updateCollections($system)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/check/collections/system/{system}
 ```
 

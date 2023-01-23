@@ -40,6 +40,12 @@ const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.getActiveProviderFeatures($providerIdentifier)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/features/provider/{providerIdentifier}
+```
+
 
 ## `getActiveProjectFeatures`
 
@@ -78,6 +84,12 @@ $result = $repository->getActiveProjectFeatures($project);
 ```javascript
 const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.getActiveProjectFeatures($project)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/features/project/{project}
 ```
 
 
@@ -120,6 +132,12 @@ const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.getSystemPluginStatus($system)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/plugins/incidents/system/{system}
+```
+
 
 ## `getUserPluginStatus`
 
@@ -158,6 +176,12 @@ $result = $repository->getUserPluginStatus($user);
 ```javascript
 const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.getUserPluginStatus($user)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/plugins/incidents/user/{user}
 ```
 
 
@@ -199,6 +223,12 @@ $result = $repository->getComponents($system, $featureIdentifier);
 ```javascript
 const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.getComponents($system, $featureIdentifier)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/features/components/{system}/{featureIdentifier}
 ```
 
 
@@ -245,6 +275,12 @@ const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.setComponent($system, $suggestionIdentifier)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/marketplace/features/components/{system}/{suggestionIdentifier}
+```
+
 
 ## `getFeatures`
 
@@ -284,6 +320,12 @@ $result = $repository->getFeatures($providerIdentifier, $company);
 ```javascript
 const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.getFeatures($providerIdentifier, $company)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/marketplace/features/{providerIdentifier}/{company}
 ```
 
 
@@ -329,6 +371,12 @@ const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.getAvailableFeatures($project)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/available/{project}
+```
+
 
 ## `getAllFeatures`
 
@@ -366,6 +414,12 @@ const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.getAllFeatures()
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/all
+```
+
 
 ## `getFavourites`
 
@@ -401,6 +455,12 @@ $result = $repository->getFavourites();
 ```javascript
 const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.getFavourites()
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/marketplace/favourites
 ```
 
 
@@ -441,6 +501,12 @@ $result = $repository->getActiveFeatures($project);
 ```javascript
 const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.getActiveFeatures($project)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/active/{project}
 ```
 
 
@@ -487,6 +553,12 @@ const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.activateFeature($company, $featureIdentifier)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/activate/{company}/{featureIdentifier}
+```
+
 
 ## `deactivateFeature`
 
@@ -531,6 +603,12 @@ const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.deactivateFeature($company, $featureIdentifier)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/deactivate/{company}/{featureIdentifier}
+```
+
 
 ## `getBookingLog`
 
@@ -569,6 +647,12 @@ $result = $repository->getBookingLog($company);
 ```javascript
 const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.getBookingLog($company)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/log/company/{company}
 ```
 
 
@@ -610,6 +694,12 @@ $result = $repository->restProxy($secret, $url);
 ```javascript
 const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.restProxy($secret, $url)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/proxy/{secret}/{url}
 ```
 
 
@@ -655,5 +745,11 @@ $result = $repository->getHealthStatus($system, $featureIdentifier);
 ```javascript
 const repository = koalityEngineClient.getRepository('marketplace')
 const result = await repository.getHealthStatus($system, $featureIdentifier)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/features/status/{system}/{featureIdentifier}
 ```
 

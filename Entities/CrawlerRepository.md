@@ -49,6 +49,12 @@ const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.runCompanyCrawl($company)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/crawl/company/{company}
+```
+
 
 ## `runCrawl`
 
@@ -99,6 +105,12 @@ const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.runCrawl($project)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/crawl/{project}
+```
+
 
 ## `getCrawlableCollections`
 
@@ -134,6 +146,12 @@ $result = $repository->getCrawlableCollections();
 ```javascript
 const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.getCrawlableCollections()
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/collections
 ```
 
 
@@ -175,6 +193,12 @@ $result = $repository->abortCrawl($project, $crawl);
 ```javascript
 const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.abortCrawl($project, $crawl)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/crawler/crawl/{project}/{crawl}
 ```
 
 
@@ -219,6 +243,12 @@ $result = $repository->listCrawls($project);
 ```javascript
 const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.listCrawls($project)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/crawl/{project}/crawls
 ```
 
 
@@ -267,6 +297,12 @@ const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.listCompanyCrawls($company)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/crawl/company/{company}/crawls
+```
+
 
 ## `getCrawlCsv`
 
@@ -306,6 +342,12 @@ $result = $repository->getCrawlCsv($crawl, $downloadSecret);
 ```javascript
 const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.getCrawlCsv($crawl, $downloadSecret)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/crawler/crawl/detail/csv/{crawl}/{downloadSecret}
 ```
 
 
@@ -348,6 +390,12 @@ const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.getCrawl($crawl)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/crawl/detail/{crawl}
+```
+
 
 ## `getCrawlerStatus`
 
@@ -388,6 +436,12 @@ const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.getCrawlerStatus($project)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/crawler/status/{project}
+```
+
 
 ## `getCompanyCrawlerStatus`
 
@@ -426,6 +480,12 @@ $result = $repository->getCompanyCrawlerStatus($company);
 ```javascript
 const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.getCompanyCrawlerStatus($company)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/status/company/{company}
 ```
 
 
@@ -473,6 +533,12 @@ const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.setCheckStatus($company)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/company/{company}/check/status
+```
+
 
 ## `deleteCheckStatus`
 
@@ -512,6 +578,12 @@ $result = $repository->deleteCheckStatus($company, $crawlUrlStatus);
 ```javascript
 const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.deleteCheckStatus($company, $crawlUrlStatus)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/crawler/company/{company}/check/status/{crawlUrlStatus}
 ```
 
 
@@ -554,6 +626,12 @@ const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.listCheckStatus($company)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/crawler/company/{company}/check/status
+```
+
 
 ## `listCrawlSchedules`
 
@@ -592,6 +670,12 @@ $result = $repository->listCrawlSchedules($company);
 ```javascript
 const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.listCrawlSchedules($company)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules
 ```
 
 
@@ -633,6 +717,12 @@ $result = $repository->showCrawlSchedule($company, $crawlSchedule);
 ```javascript
 const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.showCrawlSchedule($company, $crawlSchedule)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}
 ```
 
 
@@ -683,6 +773,12 @@ $result = $repository->createCrawlSchedule($company);
 ```javascript
 const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.createCrawlSchedule($company)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules
 ```
 
 
@@ -737,6 +833,12 @@ const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.updateCrawlSchedule($company, $crawlSchedule)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PATCH https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}
+```
+
 
 ## `deleteCrawlSchedule`
 
@@ -778,6 +880,12 @@ const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.deleteCrawlSchedule($company, $crawlSchedule)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}
+```
+
 
 ## `runScheduledCrawl`
 
@@ -817,5 +925,11 @@ $result = $repository->runScheduledCrawl($company, $crawlSchedule);
 ```javascript
 const repository = koalityEngineClient.getRepository('crawler')
 const result = await repository.runScheduledCrawl($company, $crawlSchedule)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}/crawl
 ```
 

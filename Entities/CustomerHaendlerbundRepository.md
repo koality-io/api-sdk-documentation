@@ -43,6 +43,12 @@ const repository = koalityEngineClient.getRepository('CustomerHaendlerbund')
 const result = await repository.createShop()
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/customers/haendlerbund/shops
+```
+
 
 ## `updateShop`
 
@@ -85,5 +91,11 @@ $result = $repository->updateShop($system);
 ```javascript
 const repository = koalityEngineClient.getRepository('CustomerHaendlerbund')
 const result = await repository.updateShop($system)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/customers/haendlerbund/shops/{system}
 ```
 

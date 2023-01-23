@@ -40,6 +40,12 @@ const repository = koalityEngineClient.getRepository('AlertingPolicy')
 const result = await repository.list($project)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/alerting/policies/{project}
+```
+
 
 ## `create`
 
@@ -84,6 +90,12 @@ $result = $repository->create($project);
 ```javascript
 const repository = koalityEngineClient.getRepository('AlertingPolicy')
 const result = await repository.create($project)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/alerting/policies/{project}
 ```
 
 
@@ -133,6 +145,12 @@ const repository = koalityEngineClient.getRepository('AlertingPolicy')
 const result = await repository.update($project, $policy)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/alerting/policies/{project}/{policy}
+```
+
 
 ## `delete`
 
@@ -172,5 +190,11 @@ $result = $repository->delete($project, $policy);
 ```javascript
 const repository = koalityEngineClient.getRepository('AlertingPolicy')
 const result = await repository.delete($project, $policy)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/alerting/policies/{project}/{policy}
 ```
 

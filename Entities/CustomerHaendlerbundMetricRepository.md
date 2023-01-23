@@ -47,3 +47,9 @@ const repository = koalityEngineClient.getRepository('CustomerHaendlerbundMetric
 const result = await repository.findBySystem($system)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/customers/haendlerbund/metrics/{system}
+```
+

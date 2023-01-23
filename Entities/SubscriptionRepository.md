@@ -40,6 +40,12 @@ const repository = koalityEngineClient.getRepository('subscription')
 const result = await repository.getCompanySubscription($company)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/subscription/company/{company}/
+```
+
 
 ## `setCompanyCreditCardPlans`
 
@@ -81,6 +87,12 @@ $result = $repository->setCompanyCreditCardPlans($company);
 ```javascript
 const repository = koalityEngineClient.getRepository('subscription')
 const result = await repository.setCompanyCreditCardPlans($company)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/subscription/company/{company}/plans/creditcard
 ```
 
 
@@ -126,6 +138,12 @@ const repository = koalityEngineClient.getRepository('subscription')
 const result = await repository.setCompanyFreePlans($company)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/subscription/company/{company}/plans/free
+```
+
 
 ## `setCompanyFreePlansByUser`
 
@@ -167,6 +185,12 @@ $result = $repository->setCompanyFreePlansByUser($user);
 ```javascript
 const repository = koalityEngineClient.getRepository('subscription')
 const result = await repository.setCompanyFreePlansByUser($user)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/subscription/user/{user}/plans/free
 ```
 
 
@@ -212,6 +236,12 @@ $result = $repository->setCreditCard($company);
 ```javascript
 const repository = koalityEngineClient.getRepository('subscription')
 const result = await repository.setCreditCard($company)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/subscription/company/{company}/creditcard
 ```
 
 
@@ -263,6 +293,12 @@ const repository = koalityEngineClient.getRepository('subscription')
 const result = await repository.setBillingAddress($company)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/subscription/company/{company}/billingaddress
+```
+
 
 ## `getBillingAddress`
 
@@ -301,6 +337,12 @@ $result = $repository->getBillingAddress($company);
 ```javascript
 const repository = koalityEngineClient.getRepository('subscription')
 const result = await repository.getBillingAddress($company)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/subscription/company/{company}/billingaddress
 ```
 
 
@@ -343,6 +385,12 @@ const repository = koalityEngineClient.getRepository('subscription')
 const result = await repository.getSubscribedFeatures($company)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/subscription/company/{company}/features
+```
+
 
 ## `getCompanyInvoices`
 
@@ -381,6 +429,12 @@ $result = $repository->getCompanyInvoices($company);
 ```javascript
 const repository = koalityEngineClient.getRepository('subscription')
 const result = await repository.getCompanyInvoices($company)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/subscription/company/{company}/invoices
 ```
 
 
@@ -426,6 +480,12 @@ const repository = koalityEngineClient.getRepository('subscription')
 const result = await repository.setSubscriptionPlan($user)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/subscription/user/{user}/plan
+```
+
 
 ## `getQuota`
 
@@ -466,6 +526,12 @@ const repository = koalityEngineClient.getRepository('subscription')
 const result = await repository.getQuota($company)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/subscription/company/{company}/quota
+```
+
 
 ## `endTrials`
 
@@ -504,5 +570,11 @@ $result = $repository->endTrials($providerIdentifier);
 ```javascript
 const repository = koalityEngineClient.getRepository('subscription')
 const result = await repository.endTrials($providerIdentifier)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/subscription/trial/{providerIdentifier}/end
 ```
 

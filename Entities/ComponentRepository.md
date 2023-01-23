@@ -40,6 +40,12 @@ const repository = koalityEngineClient.getRepository('Component')
 const result = await repository.showComponents($component)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/components/{component}
+```
+
 
 ## `createComponent`
 
@@ -79,6 +85,12 @@ $result = $repository->createComponent();
 ```javascript
 const repository = koalityEngineClient.getRepository('Component')
 const result = await repository.createComponent()
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/components
 ```
 
 
@@ -124,6 +136,12 @@ const repository = koalityEngineClient.getRepository('Component')
 const result = await repository.createComponents()
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/components/many
+```
+
 
 ## `updateComponent`
 
@@ -162,6 +180,12 @@ $result = $repository->updateComponent($component);
 ```javascript
 const repository = koalityEngineClient.getRepository('Component')
 const result = await repository.updateComponent($component)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/project/components/{component}
 ```
 
 
@@ -204,6 +228,12 @@ const repository = koalityEngineClient.getRepository('Component')
 const result = await repository.deleteComponent($component)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/project/components/{component}
+```
+
 
 ## `showComponentTypes`
 
@@ -242,5 +272,11 @@ $result = $repository->showComponentTypes($project);
 ```javascript
 const repository = koalityEngineClient.getRepository('Component')
 const result = await repository.showComponentTypes($project)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/components/componenttypes/{project}
 ```
 

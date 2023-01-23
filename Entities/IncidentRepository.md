@@ -43,6 +43,12 @@ const repository = koalityEngineClient.getRepository('incident')
 const result = await repository.search($project)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/incident/incidents/{project}/search
+```
+
 
 ## `since`
 
@@ -86,6 +92,12 @@ const repository = koalityEngineClient.getRepository('incident')
 const result = await repository.since($project)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/incident/incidents/{project}/since
+```
+
 
 ## `find`
 
@@ -125,6 +137,12 @@ $result = $repository->find($project, $incident);
 ```javascript
 const repository = koalityEngineClient.getRepository('incident')
 const result = await repository.find($project, $incident)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/incident/incidents/{project}/{incident}
 ```
 
 
@@ -167,6 +185,12 @@ const repository = koalityEngineClient.getRepository('incident')
 const result = await repository.findByCompany($company)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/incident/incidents/company/{company}/search
+```
+
 
 ## `getConfig`
 
@@ -205,5 +229,11 @@ $result = $repository->getConfig($project);
 ```javascript
 const repository = koalityEngineClient.getRepository('incident')
 const result = await repository.getConfig($project)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/incident/tools/{project}
 ```
 

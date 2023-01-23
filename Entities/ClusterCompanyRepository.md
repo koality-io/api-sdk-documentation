@@ -44,6 +44,12 @@ const repository = koalityEngineClient.getRepository('ClusterCompany')
 const result = await repository.create($providerIdentifier)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/companies/{providerIdentifier}
+```
+
 
 ## `connectUser`
 
@@ -88,6 +94,12 @@ const repository = koalityEngineClient.getRepository('ClusterCompany')
 const result = await repository.connectUser($company, $user)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/companies/connect/{company}/{user}
+```
+
 
 ## `exists`
 
@@ -126,6 +138,12 @@ $result = $repository->exists();
 ```javascript
 const repository = koalityEngineClient.getRepository('ClusterCompany')
 const result = await repository.exists()
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/user/companies/exists
 ```
 
 
@@ -171,6 +189,12 @@ const repository = koalityEngineClient.getRepository('ClusterCompany')
 const result = await repository.search($providerIdentifier)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/companies/search/{providerIdentifier}
+```
+
 
 ## `findAll`
 
@@ -209,6 +233,12 @@ $result = $repository->findAll($providerIdentifier);
 ```javascript
 const repository = koalityEngineClient.getRepository('ClusterCompany')
 const result = await repository.findAll($providerIdentifier)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/companies/findall/{providerIdentifier}
 ```
 
 
@@ -252,5 +282,11 @@ $result = $repository->updateMasterId($company);
 ```javascript
 const repository = koalityEngineClient.getRepository('ClusterCompany')
 const result = await repository.updateMasterId($company)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/user/companies/{company}/masterId
 ```
 

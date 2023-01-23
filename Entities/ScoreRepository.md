@@ -45,6 +45,12 @@ const repository = koalityEngineClient.getRepository('score')
 const result = await repository.getScoresByUser($user)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/score/scores/user/{user}
+```
+
 
 ## `getScore`
 
@@ -84,6 +90,12 @@ $result = $repository->getScore($system, $scoreName);
 ```javascript
 const repository = koalityEngineClient.getRepository('score')
 const result = await repository.getScore($system, $scoreName)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/score/scores/{system}/{scoreName}
 ```
 
 
@@ -127,5 +139,11 @@ $result = $repository->getScores($system);
 ```javascript
 const repository = koalityEngineClient.getRepository('score')
 const result = await repository.getScores($system)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/score/scores/{system}
 ```
 

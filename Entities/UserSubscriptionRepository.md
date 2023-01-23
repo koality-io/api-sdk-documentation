@@ -43,3 +43,9 @@ const repository = koalityEngineClient.getRepository('UserSubscription')
 const result = await repository.update($user)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/user/subscriptions/{user}
+```
+

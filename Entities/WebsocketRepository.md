@@ -37,6 +37,12 @@ const repository = koalityEngineClient.getRepository('websocket')
 const result = await repository.getRooms()
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/websockets/rooms
+```
+
 
 ## `getAllRooms`
 
@@ -72,5 +78,11 @@ $result = $repository->getAllRooms();
 ```javascript
 const repository = koalityEngineClient.getRepository('websocket')
 const result = await repository.getAllRooms()
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/websockets/rooms/all
 ```
 

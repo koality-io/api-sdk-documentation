@@ -41,6 +41,12 @@ const repository = koalityEngineClient.getRepository('CustomerMehrwertsteuerchec
 const result = await repository.runMwstCrawl()
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/customers/mehrwertsteuer/crawl
+```
+
 
 ## `showCrawlResult`
 
@@ -79,5 +85,11 @@ $result = $repository->showCrawlResult($crawlIdentifier);
 ```javascript
 const repository = koalityEngineClient.getRepository('CustomerMehrwertsteuercheck')
 const result = await repository.showCrawlResult($crawlIdentifier)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/customers/mehrwertsteuer/crawl/{crawlIdentifier}
 ```
 

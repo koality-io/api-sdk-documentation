@@ -45,6 +45,12 @@ const repository = koalityEngineClient.getRepository('Invitation')
 const result = await repository.invite($project)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/invitation/invite/{project}
+```
+
 
 ## `abort`
 
@@ -85,6 +91,12 @@ const repository = koalityEngineClient.getRepository('Invitation')
 const result = await repository.abort($invitation)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/user/invitation/abort/{invitation}
+```
+
 
 ## `getOpenInvitations`
 
@@ -123,5 +135,11 @@ $result = $repository->getOpenInvitations($project);
 ```javascript
 const repository = koalityEngineClient.getRepository('Invitation')
 const result = await repository.getOpenInvitations($project)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/user/invitation/open/{project}
 ```
 

@@ -40,6 +40,12 @@ const repository = koalityEngineClient.getRepository('ClusterUser')
 const result = await repository.activate()
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/users/activate
+```
+
 
 ## `create`
 
@@ -95,6 +101,12 @@ const repository = koalityEngineClient.getRepository('ClusterUser')
 const result = await repository.create($provider)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/users/{provider}
+```
+
 
 ## `setPreferredLanguage`
 
@@ -136,6 +148,12 @@ $result = $repository->setPreferredLanguage($user);
 ```javascript
 const repository = koalityEngineClient.getRepository('ClusterUser')
 const result = await repository.setPreferredLanguage($user)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/user/users/preferredLanguage/{user}
 ```
 
 
@@ -182,6 +200,12 @@ const repository = koalityEngineClient.getRepository('ClusterUser')
 const result = await repository.connectOAuthAccount($user)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/user/oauth/{user}/connect
+```
+
 
 ## `changePassword`
 
@@ -225,6 +249,12 @@ const repository = koalityEngineClient.getRepository('ClusterUser')
 const result = await repository.changePassword($user)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/user/users/{user}/password
+```
+
 
 ## `exists`
 
@@ -263,6 +293,12 @@ $result = $repository->exists();
 ```javascript
 const repository = koalityEngineClient.getRepository('ClusterUser')
 const result = await repository.exists()
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/user/users/exists
 ```
 
 
@@ -305,6 +341,12 @@ const repository = koalityEngineClient.getRepository('ClusterUser')
 const result = await repository.find()
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/user/users/find
+```
+
 
 ## `delete`
 
@@ -343,6 +385,12 @@ $result = $repository->delete($user);
 ```javascript
 const repository = koalityEngineClient.getRepository('ClusterUser')
 const result = await repository.delete($user)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/user/users/{user}
 ```
 
 
@@ -385,6 +433,12 @@ const repository = koalityEngineClient.getRepository('ClusterUser')
 const result = await repository.isDeletable($user)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/users/deletable/{user}
+```
+
 
 ## `deleteByEmail`
 
@@ -423,6 +477,12 @@ $result = $repository->deleteByEmail();
 ```javascript
 const repository = koalityEngineClient.getRepository('ClusterUser')
 const result = await repository.deleteByEmail()
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/user/users/delete/email
 ```
 
 
@@ -472,6 +532,12 @@ const repository = koalityEngineClient.getRepository('ClusterUser')
 const result = await repository.updateUser($user)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/user/users/{user}
+```
+
 
 ## `updateMasterId`
 
@@ -515,6 +581,12 @@ const repository = koalityEngineClient.getRepository('ClusterUser')
 const result = await repository.updateMasterId($user)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/user/users/{user}/masterId
+```
+
 
 ## `requestPasswordReset`
 
@@ -553,6 +625,12 @@ $result = $repository->requestPasswordReset();
 ```javascript
 const repository = koalityEngineClient.getRepository('ClusterUser')
 const result = await repository.requestPasswordReset()
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/users/password/reset/request
 ```
 
 
@@ -598,6 +676,12 @@ const repository = koalityEngineClient.getRepository('ClusterUser')
 const result = await repository.resetPassword($user)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/user/users/password/reset/{user}
+```
+
 
 ## `findAll`
 
@@ -636,5 +720,11 @@ $result = $repository->findAll($providerIdentifier);
 ```javascript
 const repository = koalityEngineClient.getRepository('ClusterUser')
 const result = await repository.findAll($providerIdentifier)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/users/find/all/{providerIdentifier}
 ```
 

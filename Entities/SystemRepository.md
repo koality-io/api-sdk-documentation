@@ -47,6 +47,12 @@ const repository = koalityEngineClient.getRepository('system')
 const result = await repository.createSystem()
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/systems/system
+```
+
 
 ## `updateSystem`
 
@@ -91,6 +97,12 @@ const repository = koalityEngineClient.getRepository('system')
 const result = await repository.updateSystem($system)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/project/systems/system/{system}
+```
+
 
 ## `getComponents`
 
@@ -129,6 +141,12 @@ $result = $repository->getComponents($system);
 ```javascript
 const repository = koalityEngineClient.getRepository('system')
 const result = await repository.getComponents($system)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/systems/{system}/components
 ```
 
 
@@ -171,6 +189,12 @@ const repository = koalityEngineClient.getRepository('system')
 const result = await repository.getSystemTypes($providerIdentifier)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/systems/{providerIdentifier}/systemType
+```
+
 
 ## `getComponentSuggestions`
 
@@ -209,6 +233,12 @@ $result = $repository->getComponentSuggestions($system);
 ```javascript
 const repository = koalityEngineClient.getRepository('system')
 const result = await repository.getComponentSuggestions($system)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/systems/{system}/suggestions
 ```
 
 
@@ -250,6 +280,12 @@ $result = $repository->changeLastFullRun($system, $status);
 ```javascript
 const repository = koalityEngineClient.getRepository('system')
 const result = await repository.changeLastFullRun($system, $status)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/systems/{system}/lastFullRun/{status}
 ```
 
 
@@ -294,6 +330,12 @@ const repository = koalityEngineClient.getRepository('system')
 const result = await repository.triggerComponentFinder($project, $system, $user)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/{project}/componentfinder/{system}/{user}/trigger
+```
+
 
 ## `getNextLastFullRun`
 
@@ -334,6 +376,12 @@ const repository = koalityEngineClient.getRepository('system')
 const result = await repository.getNextLastFullRun($system)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/systems/{system}/nextFullRun
+```
+
 
 ## `getComponentLimit`
 
@@ -372,5 +420,11 @@ $result = $repository->getComponentLimit($system);
 ```javascript
 const repository = koalityEngineClient.getRepository('system')
 const result = await repository.getComponentLimit($system)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/systems/{system}/component/limit
 ```
 

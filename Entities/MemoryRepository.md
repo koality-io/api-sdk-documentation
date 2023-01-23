@@ -45,6 +45,12 @@ const repository = koalityEngineClient.getRepository('memory')
 const result = await repository.set($objectType, $objectId)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/memory/{objectType}/{objectId}
+```
+
 
 ## `getAll`
 
@@ -84,5 +90,11 @@ $result = $repository->getAll($objectType, $objectId);
 ```javascript
 const repository = koalityEngineClient.getRepository('memory')
 const result = await repository.getAll($objectType, $objectId)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/memory/{objectType}/{objectId}
 ```
 

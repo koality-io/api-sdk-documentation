@@ -40,3 +40,9 @@ const repository = koalityEngineClient.getRepository('CheckInsecureContent')
 const result = await repository.getInsecureElements($system)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/check/checks/{system}/insecure
+```
+

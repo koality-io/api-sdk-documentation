@@ -40,6 +40,12 @@ const repository = koalityEngineClient.getRepository('CheckFileSize')
 const result = await repository.getResults($system)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/check/checks/{system}/performance/big
+```
+
 
 ## `ignorePattern`
 
@@ -81,5 +87,11 @@ $result = $repository->ignorePattern($system);
 ```javascript
 const repository = koalityEngineClient.getRepository('CheckFileSize')
 const result = await repository.ignorePattern($system)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/checks/{system}/siteinfo/ignore
 ```
 

@@ -40,6 +40,12 @@ const repository = koalityEngineClient.getRepository('CheckDeadLinks')
 const result = await repository.getResults($system)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks
+```
+
 
 ## `getResultsByCompany`
 
@@ -80,6 +86,12 @@ const repository = koalityEngineClient.getRepository('CheckDeadLinks')
 const result = await repository.getResultsByCompany($company)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/check/checks/company/{company}/deadlinks
+```
+
 
 ## `getConfiguration`
 
@@ -118,6 +130,12 @@ $result = $repository->getConfiguration($system);
 ```javascript
 const repository = koalityEngineClient.getRepository('CheckDeadLinks')
 const result = await repository.getConfiguration($system)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks/config
 ```
 
 
@@ -163,6 +181,12 @@ const repository = koalityEngineClient.getRepository('CheckDeadLinks')
 const result = await repository.ignorePattern($system)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks/ignore
+```
+
 
 ## `unignorePattern`
 
@@ -206,6 +230,12 @@ const repository = koalityEngineClient.getRepository('CheckDeadLinks')
 const result = await repository.unignorePattern($system)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks/unignore
+```
+
 
 ## `getBlockedPatterns`
 
@@ -241,5 +271,11 @@ $result = $repository->getBlockedPatterns();
 ```javascript
 const repository = koalityEngineClient.getRepository('CheckDeadLinks')
 const result = await repository.getBlockedPatterns()
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/check/checks/deadlinks/blocked
 ```
 

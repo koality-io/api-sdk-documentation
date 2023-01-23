@@ -40,6 +40,12 @@ const repository = koalityEngineClient.getRepository('project')
 const result = await repository.getStatus($project)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/{project}/onboarding/status
+```
+
 
 ## `search`
 
@@ -85,6 +91,12 @@ const repository = koalityEngineClient.getRepository('project')
 const result = await repository.search()
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/projects/search
+```
+
 
 ## `searchAll`
 
@@ -125,6 +137,12 @@ const repository = koalityEngineClient.getRepository('project')
 const result = await repository.searchAll($providerIdentifier)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/{providerIdentifier}/all
+```
+
 
 ## `delete`
 
@@ -163,6 +181,12 @@ $result = $repository->delete($project);
 ```javascript
 const repository = koalityEngineClient.getRepository('project')
 const result = await repository.delete($project)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/project/projects/{project}
 ```
 
 
@@ -208,6 +232,12 @@ const repository = koalityEngineClient.getRepository('project')
 const result = await repository.update($project)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/project/projects/{project}
+```
+
 
 ## `getUsers`
 
@@ -246,6 +276,12 @@ $result = $repository->getUsers($project);
 ```javascript
 const repository = koalityEngineClient.getRepository('project')
 const result = await repository.getUsers($project)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/users/{project}
 ```
 
 
@@ -287,5 +323,11 @@ $result = $repository->removeUser($project, $user);
 ```javascript
 const repository = koalityEngineClient.getRepository('project')
 const result = await repository.removeUser($project, $user)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/project/users/{project}/{user}
 ```
 

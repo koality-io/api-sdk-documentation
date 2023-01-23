@@ -41,6 +41,12 @@ const repository = koalityEngineClient.getRepository('Tool')
 const result = await repository.getChangedConfiguration()
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/tools/changed
+```
+
 
 ## `findByProject`
 
@@ -79,6 +85,12 @@ $result = $repository->findByProject($project);
 ```javascript
 const repository = koalityEngineClient.getRepository('Tool')
 const result = await repository.findByProject($project)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/tools/{project}
 ```
 
 
@@ -126,6 +138,12 @@ const repository = koalityEngineClient.getRepository('Tool')
 const result = await repository.overwrite($project, $toolIdentifier)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/check/tools/{project}/{toolIdentifier}
+```
+
 
 ## `getConfiguration`
 
@@ -165,5 +183,11 @@ $result = $repository->getConfiguration($project, $toolIdentifier);
 ```javascript
 const repository = koalityEngineClient.getRepository('Tool')
 const result = await repository.getConfiguration($project, $toolIdentifier)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/check/tools/{project}/{toolIdentifier}
 ```
 

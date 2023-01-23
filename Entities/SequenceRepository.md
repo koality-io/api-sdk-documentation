@@ -40,6 +40,12 @@ const repository = koalityEngineClient.getRepository('sequence')
 const result = await repository.getCommands($project)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/sequences/{project}/commands
+```
+
 
 ## `getSequences`
 
@@ -78,6 +84,12 @@ $result = $repository->getSequences($project);
 ```javascript
 const repository = koalityEngineClient.getRepository('sequence')
 const result = await repository.getSequences($project)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/sequences/{project}/sequences
 ```
 
 
@@ -125,6 +137,12 @@ const repository = koalityEngineClient.getRepository('sequence')
 const result = await repository.createSequence($project)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/sequences/{project}/sequence
+```
+
 
 ## `updateSequence`
 
@@ -170,6 +188,12 @@ const repository = koalityEngineClient.getRepository('sequence')
 const result = await repository.updateSequence($project)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/sequences/{project}/sequence
+```
+
 
 ## `activateSequence`
 
@@ -208,6 +232,12 @@ $result = $repository->activateSequence($sequence);
 ```javascript
 const repository = koalityEngineClient.getRepository('sequence')
 const result = await repository.activateSequence($sequence)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/sequences/{sequence}/activate
 ```
 
 
@@ -250,6 +280,12 @@ const repository = koalityEngineClient.getRepository('sequence')
 const result = await repository.deactivateSequence($sequence)
 ```
 
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/sequences/{sequence}/deactivate
+```
+
 
 ## `getRecentRuns`
 
@@ -288,5 +324,11 @@ $result = $repository->getRecentRuns($sequence);
 ```javascript
 const repository = koalityEngineClient.getRepository('sequence')
 const result = await repository.getRecentRuns($sequence)
+```
+
+#### curl
+
+```shell
+curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/sequences/{sequence}/recent
 ```
 
