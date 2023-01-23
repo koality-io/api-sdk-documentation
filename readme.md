@@ -4,7 +4,7 @@
 # KoalityEngine API documentation
 
 > **Note**
-> We highly recommend not to use the plan HTTP API endpoints. The KoalityEngine provided different SDK that should be used instead. 
+> We highly recommend not to use the plain HTTP API endpoints. The KoalityEngine provided different SDK that should be used instead. 
 
 This is the official API documentation for the KoalityEngine. It can be used automate workflows in koality.io or even to create a new products or integrate data and functionalities into other products.
 
