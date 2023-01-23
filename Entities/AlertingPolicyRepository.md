@@ -1,4 +1,4 @@
-# API endpoints for AlertingPolicy repository
+# API endpoints for `AlertingPolicy` repository
 
 
 ## `list`
@@ -19,6 +19,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -58,12 +60,14 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| name  | `STRING` |  yes        |            |
-| interval  | `STRING` |  no        |            |
-| severities  | `LIST` |  no        |            |
-| channels  | `INTEGER` |  no        |            |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| name  | `STRING` |  yes        |   |            |
+| interval  | `STRING` |  no        | immediately  |            |
+| severities  | `LIST` |  no        |   |            |
+| channels  | `INTEGER` |  no        |   |            |
 
 ### SDK
 
@@ -103,12 +107,14 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| name  | `STRING` |  no        |            |
-| interval  | `STRING` |  no        |            |
-| severities  | `LIST` |  no        |            |
-| channels  | `INTEGER` |  no        |            |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| name  | `STRING` |  no        |   |            |
+| interval  | `STRING` |  no        |   |            |
+| severities  | `LIST` |  no        |   |            |
+| channels  | `INTEGER` |  no        |   |            |
 
 ### SDK
 
@@ -147,6 +153,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - policy
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK

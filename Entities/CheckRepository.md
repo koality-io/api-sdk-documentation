@@ -1,4 +1,4 @@
-# API endpoints for check repository
+# API endpoints for `check` repository
 
 
 ## `addByRecipe`
@@ -17,10 +17,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| component  | `INTEGER` |  yes        |            |
-| cookbook  | `INTEGER` |  yes        |            |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| component  | `INTEGER` |  yes        |   |            |
+| cookbook  | `INTEGER` |  yes        |   |            |
 
 ### SDK
 
@@ -59,11 +61,13 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| checklist  | `MIXED` |  yes        |            |
-| clear_before  | `BOOLEAN` |  no        |            |
-| activate_checks  | `BOOLEAN` |  no        |            |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| checklist  | `MIXED` |  yes        |   |            |
+| clear_before  | `BOOLEAN` |  no        | true  |            |
+| activate_checks  | `BOOLEAN` |  no        | false  |            |
 
 ### SDK
 
@@ -102,6 +106,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - toolIdentifier
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -142,9 +148,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| group  | `STRING` |  no        | The collection group. It is used to specify the collections.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| group  | `STRING` |  no        |   | The collection group. It is used to specify the collections.           |
 
 ### SDK
 
@@ -184,9 +192,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| group  | `STRING` |  no        | The collection group. It is used to specify the collections.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| group  | `STRING` |  no        |   | The collection group. It is used to specify the collections.           |
 
 ### SDK
 
@@ -225,10 +235,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| collections  | `LIST` |  no        |            |
-| group  | `STRING` |  no        | The collection group. It is used to specify the collections.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| collections  | `LIST` |  no        |   |            |
+| group  | `STRING` |  no        |   | The collection group. It is used to specify the collections.           |
 
 ### SDK
 

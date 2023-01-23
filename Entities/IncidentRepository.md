@@ -1,4 +1,4 @@
-# API endpoints for incident repository
+# API endpoints for `incident` repository
 
 
 ## `search`
@@ -20,9 +20,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| system  | `INTEGER` |  no        | the system filter           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| system  | `INTEGER` |  no        |   | the system filter           |
 
 ### SDK
 
@@ -61,9 +63,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| days  | `INTEGER` |  yes        | The number of days the incidents can old           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| days  | `INTEGER` |  yes        |   | The number of days the incidents can old           |
 
 ### SDK
 
@@ -103,6 +107,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -141,6 +147,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -178,6 +186,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK

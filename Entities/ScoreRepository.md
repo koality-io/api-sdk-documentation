@@ -1,4 +1,4 @@
-# API endpoints for score repository
+# API endpoints for `score` repository
 
 
 ## `getScoresByUser`
@@ -20,11 +20,13 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| scores  | `LIST` |  yes        | List of score names           |
-| with_sub_scores  | `BOOLEAN` |  no        | NOT IMPLEMENTED YET: If true detailed information about the score will be provided.           |
-| filter_empty_projects  | `BOOLEAN` |  no        | If true the only projects with systems are returned           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| scores  | `LIST` |  yes        |   | List of score names           |
+| with_sub_scores  | `BOOLEAN` |  no        | false  | NOT IMPLEMENTED YET: If true detailed information about the score will be provided.           |
+| filter_empty_projects  | `BOOLEAN` |  no        | false  | If true the only projects with systems are returned           |
 
 ### SDK
 
@@ -64,6 +66,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -102,9 +106,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| scores  | `LIST` |  yes        | list of score names           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| scores  | `LIST` |  yes        |   | list of score names           |
 
 ### SDK
 

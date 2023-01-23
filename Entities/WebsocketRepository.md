@@ -1,4 +1,4 @@
-# API endpoints for websocket repository
+# API endpoints for `websocket` repository
 
 
 ## `getRooms`
@@ -16,6 +16,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 ### Parameters
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -51,6 +53,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 ### Parameters
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK

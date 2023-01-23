@@ -1,4 +1,4 @@
-# API endpoints for crawler repository
+# API endpoints for `crawler` repository
 
 
 ## `runCompanyCrawl`
@@ -20,15 +20,17 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| user  | `INTEGER` |  yes        | The user (id) that starts the crawl and gets informed when the crawl finishes           |
-| checklist_name  | `STRING` |  no        | The check lists name           |
-| collections  | `LIST` |  no        | The additional collections           |
-| name  | `STRING` |  yes        | The crawls name           |
-| depth  | `INTEGER` |  no        | Number of URLs to be crawled           |
-| path  | `STRING` |  yes        | The URL the crawler starts to crawl           |
-| parallel_requests  | `INTEGER` |  no        | Number of parallel requests that can be done           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| user  | `INTEGER` |  yes        |   | The user (id) that starts the crawl and gets informed when the crawl finishes           |
+| checklist_name  | `STRING` |  no        |   | The check lists name           |
+| collections  | `LIST` |  no        |   | The additional collections           |
+| name  | `STRING` |  yes        |   | The crawls name           |
+| depth  | `INTEGER` |  no        | 50  | Number of URLs to be crawled           |
+| path  | `STRING` |  yes        |   | The URL the crawler starts to crawl           |
+| parallel_requests  | `INTEGER` |  no        | 8  | Number of parallel requests that can be done           |
 
 ### SDK
 
@@ -67,16 +69,18 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| user  | `INTEGER` |  yes        | The user (id) that starts the crawl and gets informed when the crawl finishes           |
-| checklist_name  | `STRING` |  no        | The check lists name           |
-| collections  | `LIST` |  no        | The additional collections           |
-| name  | `STRING` |  yes        | The crawls name           |
-| system  | `INTEGER` |  yes        | The systems id           |
-| depth  | `INTEGER` |  no        | Number of URLs to be crawled           |
-| path  | `STRING` |  no        | The URL the crawler starts to crawl           |
-| parallel_requests  | `INTEGER` |  no        | Number of parallel requests that can be done           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| user  | `INTEGER` |  yes        |   | The user (id) that starts the crawl and gets informed when the crawl finishes           |
+| checklist_name  | `STRING` |  no        |   | The check lists name           |
+| collections  | `LIST` |  no        |   | The additional collections           |
+| name  | `STRING` |  yes        |   | The crawls name           |
+| system  | `INTEGER` |  yes        |   | The systems id           |
+| depth  | `INTEGER` |  no        | 5  | Number of URLs to be crawled           |
+| path  | `STRING` |  no        | /  | The URL the crawler starts to crawl           |
+| parallel_requests  | `INTEGER` |  no        | 8  | Number of parallel requests that can be done           |
 
 ### SDK
 
@@ -111,6 +115,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 ### Parameters
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -151,6 +157,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -189,10 +197,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| checklist_name  | `STRING` |  no        | The check lists name           |
-| system  | `INTEGER` |  yes        | The systems id           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| checklist_name  | `STRING` |  no        |   | The check lists name           |
+| system  | `INTEGER` |  yes        |   | The systems id           |
 
 ### SDK
 
@@ -231,12 +241,14 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| pagination_start  | `INTEGER` |  no        |            |
-| pagination_size  | `INTEGER` |  no        |            |
-| include_collections  | `BOOLEAN` |  no        |            |
-| crawl_schedule  | `INTEGER` |  no        | Only show results for given crawl schedule           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| pagination_start  | `INTEGER` |  no        |   |            |
+| pagination_size  | `INTEGER` |  no        | 25  |            |
+| include_collections  | `BOOLEAN` |  no        | false  |            |
+| crawl_schedule  | `INTEGER` |  no        |   | Only show results for given crawl schedule           |
 
 ### SDK
 
@@ -276,6 +288,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -313,6 +327,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - crawl
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -352,6 +368,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -389,6 +407,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - company
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -428,11 +448,13 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| check_type  | `MIXED` |  yes        | The check type (DeadLink)           |
-| check_status  | `MIXED` |  yes        | The status that should be set           |
-| url  | `STRING` |  yes        | The url that status is valid for           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| check_type  | `MIXED` |  yes        |   | The check type (DeadLink)           |
+| check_status  | `MIXED` |  yes        |   | The status that should be set           |
+| url  | `STRING` |  yes        |   | The url that status is valid for           |
 
 ### SDK
 
@@ -472,6 +494,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -510,6 +534,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -547,6 +573,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - company
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -587,6 +615,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -625,16 +655,18 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| path  | `STRING` |  yes        | The URL the crawler starts to crawl           |
-| depth  | `INTEGER` |  no        | Number of URLs to be crawled           |
-| parallel_requests  | `INTEGER` |  no        | Number of parallel requests that can be done           |
-| interval  | `MIXED` |  yes        | Interval at which a crawl is started           |
-| timeslot  | `MIXED` |  yes        | Time window in which a crawl is started           |
-| day_of_month_or_week  | `INTEGER` |  no        | Day of month or week on which a crawl is started if interval is weekly or monthly           |
-| collections  | `LIST` |  yes        | The additional collections           |
-| timezone  | `STRING` |  yes        | The time zone for which the timeslot applies           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| path  | `STRING` |  yes        |   | The URL the crawler starts to crawl           |
+| depth  | `INTEGER` |  no        | 50  | Number of URLs to be crawled           |
+| parallel_requests  | `INTEGER` |  no        | 8  | Number of parallel requests that can be done           |
+| interval  | `MIXED` |  yes        |   | Interval at which a crawl is started           |
+| timeslot  | `MIXED` |  yes        |   | Time window in which a crawl is started           |
+| day_of_month_or_week  | `INTEGER` |  no        |   | Day of month or week on which a crawl is started if interval is weekly or monthly           |
+| collections  | `LIST` |  yes        |   | The additional collections           |
+| timezone  | `STRING` |  yes        |   | The time zone for which the timeslot applies           |
 
 ### SDK
 
@@ -674,17 +706,19 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| path  | `STRING` |  no        | The URL the crawler starts to crawl           |
-| depth  | `INTEGER` |  no        | Number of URLs to be crawled           |
-| parallel_requests  | `INTEGER` |  no        | Number of parallel requests that can be done           |
-| interval  | `MIXED` |  no        | Interval at which a crawl is started           |
-| timeslot  | `MIXED` |  no        | Time window in which a crawl is started           |
-| day_of_month_or_week  | `INTEGER` |  no        | Day of month or week on which a crawl is started if interval is weekly or monthly           |
-| collections  | `LIST` |  no        | The additional collections           |
-| enabled  | `BOOLEAN` |  no        | Enable or disable the schedule           |
-| timezone  | `STRING` |  no        | The time zone for which the timeslot applies           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| path  | `STRING` |  no        |   | The URL the crawler starts to crawl           |
+| depth  | `INTEGER` |  no        | 50  | Number of URLs to be crawled           |
+| parallel_requests  | `INTEGER` |  no        | 8  | Number of parallel requests that can be done           |
+| interval  | `MIXED` |  no        |   | Interval at which a crawl is started           |
+| timeslot  | `MIXED` |  no        |   | Time window in which a crawl is started           |
+| day_of_month_or_week  | `INTEGER` |  no        |   | Day of month or week on which a crawl is started if interval is weekly or monthly           |
+| collections  | `LIST` |  no        |   | The additional collections           |
+| enabled  | `BOOLEAN` |  no        |   | Enable or disable the schedule           |
+| timezone  | `STRING` |  no        |   | The time zone for which the timeslot applies           |
 
 ### SDK
 
@@ -724,6 +758,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -762,6 +798,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - crawlSchedule
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK

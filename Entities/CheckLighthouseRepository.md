@@ -1,4 +1,4 @@
-# API endpoints for CheckLighthouse repository
+# API endpoints for `CheckLighthouse` repository
 
 
 ## `getResults`
@@ -21,10 +21,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| targetGroup  | `MIXED` |  no        | The target group. It can be either an integer or a string.           |
-| use_cache  | `BOOLEAN` |  no        | Use the cache for json document fetch           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| targetGroup  | `MIXED` |  no        | 2000  | The target group. It can be either an integer or a string.           |
+| use_cache  | `BOOLEAN` |  no        | true  | Use the cache for json document fetch           |
 
 ### SDK
 

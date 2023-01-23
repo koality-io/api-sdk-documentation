@@ -1,4 +1,4 @@
-# API endpoints for system repository
+# API endpoints for `system` repository
 
 
 ## `createSystem`
@@ -17,16 +17,18 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| project  | `INTEGER` |  no        | The project the system should be part of. If the project is not set a new project will be created with the systems name.           |
-| add_standard_alerting  | `BOOLEAN` |  no        | If true add a standard channel and alerting policy for the owner.           |
-| name  | `STRING` |  yes        | The shops name.           |
-| base_url  | `URL` |  yes        | The shops base url with scheme, subdomain and domain.           |
-| owner  | `INTEGER` |  yes        | The shops owner (id).           |
-| system_type  | `INTEGER` |  yes        | The shops system type (id).           |
-| add_checklist_checks  | `BOOLEAN` |  no        | If true all checks of the checklist connected to the main system type are added.           |
-| add_support_user  | `BOOLEAN` |  no        | Add the support user for support requests           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| project  | `INTEGER` |  no        |   | The project the system should be part of. If the project is not set a new project will be created with the systems name.           |
+| add_standard_alerting  | `BOOLEAN` |  no        | false  | If true add a standard channel and alerting policy for the owner.           |
+| name  | `STRING` |  yes        |   | The shops name.           |
+| base_url  | `URL` |  yes        |   | The shops base url with scheme, subdomain and domain.           |
+| owner  | `INTEGER` |  yes        |   | The shops owner (id).           |
+| system_type  | `INTEGER` |  yes        |   | The shops system type (id).           |
+| add_checklist_checks  | `BOOLEAN` |  no        | true  | If true all checks of the checklist connected to the main system type are added.           |
+| add_support_user  | `BOOLEAN` |  no        | true  | Add the support user for support requests           |
 
 ### SDK
 
@@ -65,10 +67,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| name  | `STRING` |  no        | The shops name.           |
-| base_url  | `URL` |  no        | The shops base url with scheme, subdomain and domain.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| name  | `STRING` |  no        |   | The shops name.           |
+| base_url  | `URL` |  no        |   | The shops base url with scheme, subdomain and domain.           |
 
 ### SDK
 
@@ -106,6 +110,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - system
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -145,6 +151,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -182,6 +190,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - system
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -221,6 +231,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - status
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -262,6 +274,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -300,6 +314,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -337,6 +353,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - system
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK

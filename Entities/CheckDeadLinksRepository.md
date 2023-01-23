@@ -1,4 +1,4 @@
-# API endpoints for CheckDeadLinks repository
+# API endpoints for `CheckDeadLinks` repository
 
 
 ## `getResults`
@@ -19,6 +19,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - system
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -58,6 +60,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -95,6 +99,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - system
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -134,9 +140,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| patterns  | `LIST` |  yes        | List of URLs (strings) that will be excluded from the dead link crawl           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| patterns  | `LIST` |  yes        |   | List of URLs (strings) that will be excluded from the dead link crawl           |
 
 ### SDK
 
@@ -175,9 +183,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| pattern_id  | `INTEGER` |  yes        | Single URL that will not be excluded anymore in the dead link crawl           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| pattern_id  | `INTEGER` |  yes        |   | Single URL that will not be excluded anymore in the dead link crawl           |
 
 ### SDK
 
@@ -212,6 +222,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 ### Parameters
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK

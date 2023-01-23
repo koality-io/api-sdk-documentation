@@ -1,4 +1,4 @@
-# API endpoints for subscription repository
+# API endpoints for `subscription` repository
 
 
 ## `getCompanySubscription`
@@ -19,6 +19,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - company
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -58,9 +60,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| quantity  | `INTEGER` |  yes        | The number of packets to be used           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| quantity  | `INTEGER` |  yes        |   | The number of packets to be used           |
 
 ### SDK
 
@@ -99,9 +103,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| quantity  | `INTEGER` |  yes        | The number of packets to be used           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| quantity  | `INTEGER` |  yes        |   | The number of packets to be used           |
 
 ### SDK
 
@@ -140,9 +146,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| quantity  | `INTEGER` |  yes        | The number of packets to be used           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| quantity  | `INTEGER` |  yes        |   | The number of packets to be used           |
 
 ### SDK
 
@@ -181,11 +189,13 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| stripe_cc_source  | `MIXED` |  yes        | The stripe credit card id           |
-| last_digits  | `STRING` |  yes        | The last 4 digits of the credit card           |
-| brand  | `STRING` |  yes        | The credit cards brand           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| stripe_cc_source  | `MIXED` |  yes        |   | The stripe credit card id           |
+| last_digits  | `STRING` |  yes        |   | The last 4 digits of the credit card           |
+| brand  | `STRING` |  yes        |   | The credit cards brand           |
 
 ### SDK
 
@@ -224,15 +234,17 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| company_name  | `STRING` |  yes        | The companies name.           |
-| country  | `STRING` |  yes        | The companies billing address country.           |
-| postal_code  | `STRING` |  yes        | The companies billing address postal code.           |
-| city  | `STRING` |  yes        | The companies billing address city.           |
-| street  | `STRING` |  yes        | The companies billing address street.           |
-| usident  | `STRING` |  no        | The companies &quot;Umsatzsteuer-Identifikationsnummer&quot;.           |
-| email  | `STRING` |  no        | The email address the invoice information gets send to.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| company_name  | `STRING` |  yes        |   | The companies name.           |
+| country  | `STRING` |  yes        |   | The companies billing address country.           |
+| postal_code  | `STRING` |  yes        |   | The companies billing address postal code.           |
+| city  | `STRING` |  yes        |   | The companies billing address city.           |
+| street  | `STRING` |  yes        |   | The companies billing address street.           |
+| usident  | `STRING` |  no        |   | The companies &quot;Umsatzsteuer-Identifikationsnummer&quot;.           |
+| email  | `STRING` |  no        |   | The email address the invoice information gets send to.           |
 
 ### SDK
 
@@ -270,6 +282,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - company
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -309,6 +323,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -346,6 +362,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - company
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -385,9 +403,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| identifier  | `STRING` |  yes        |            |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| identifier  | `STRING` |  yes        |   |            |
 
 ### SDK
 
@@ -426,6 +446,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -463,6 +485,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - providerIdentifier
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK

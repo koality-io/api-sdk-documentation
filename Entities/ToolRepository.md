@@ -1,4 +1,4 @@
-# API endpoints for Tool repository
+# API endpoints for `Tool` repository
 
 
 ## `getChangedConfiguration`
@@ -17,10 +17,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| newerThan  | `INTEGER` |  yes        |            |
-| minifyOutput  | `BOOLEAN` |  no        |            |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| newerThan  | `INTEGER` |  yes        |   |            |
+| minifyOutput  | `BOOLEAN` |  no        | false  |            |
 
 ### SDK
 
@@ -58,6 +60,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -98,10 +102,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| errors_in_a_row  | `INTEGER` |  no        | Number of errors in a row before marked as failure           |
-| success_in_a_row  | `INTEGER` |  no        | Number of successes in a row before marked as passed           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| errors_in_a_row  | `INTEGER` |  no        |   | Number of errors in a row before marked as failure           |
+| success_in_a_row  | `INTEGER` |  no        |   | Number of successes in a row before marked as passed           |
 
 ### SDK
 
@@ -140,6 +146,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - toolIdentifier
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK

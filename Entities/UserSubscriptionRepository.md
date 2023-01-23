@@ -1,4 +1,4 @@
-# API endpoints for UserSubscription repository
+# API endpoints for `UserSubscription` repository
 
 
 ## `update`
@@ -20,9 +20,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| system_count  | `INTEGER` |  yes        | The number of systems the user is allowed to create.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| system_count  | `INTEGER` |  yes        |   | The number of systems the user is allowed to create.           |
 
 ### SDK
 

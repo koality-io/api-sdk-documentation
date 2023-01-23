@@ -1,4 +1,4 @@
-# API endpoints for CheckCookie repository
+# API endpoints for `CheckCookie` repository
 
 
 ## `getDomains`
@@ -19,6 +19,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - system
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK

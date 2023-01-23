@@ -1,4 +1,4 @@
-# API endpoints for Invitation repository
+# API endpoints for `Invitation` repository
 
 
 ## `invite`
@@ -20,11 +20,13 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| email  | `STRING` |  yes        | The invitations e-mail address           |
-| user_name  | `STRING` |  no        | The users company name.           |
-| user_role  | `INTEGER` |  no        | The projects role of the newly added user.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| email  | `STRING` |  yes        |   | The invitations e-mail address           |
+| user_name  | `STRING` |  no        |   | The users company name.           |
+| user_role  | `INTEGER` |  no        | 200  | The projects role of the newly added user.           |
 
 ### SDK
 
@@ -63,6 +65,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -100,6 +104,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK

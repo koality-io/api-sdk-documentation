@@ -1,4 +1,4 @@
-# API endpoints for CustomerMehrwertsteuercheck repository
+# API endpoints for `CustomerMehrwertsteuercheck` repository
 
 
 ## `runMwstCrawl`
@@ -17,10 +17,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| email_address  | `STRING` |  yes        | The email address the crawl result is send to.           |
-| start_url  | `URL` |  yes        | The url the crawler should start with.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| email_address  | `STRING` |  yes        |   | The email address the crawl result is send to.           |
+| start_url  | `URL` |  yes        |   | The url the crawler should start with.           |
 
 ### SDK
 
@@ -58,6 +60,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - crawlIdentifier
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK

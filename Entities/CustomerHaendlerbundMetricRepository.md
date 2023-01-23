@@ -1,4 +1,4 @@
-# API endpoints for CustomerHaendlerbundMetric repository
+# API endpoints for `CustomerHaendlerbundMetric` repository
 
 
 ## `findBySystem`
@@ -20,13 +20,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| tool  | `MIXED` |  no        | A single tool id or the identifier of a tool.           |
-| tools  | `LIST` |  no        | A list of tool ids. For every tool there will be a metric array returned.           |
-| metric_type  | `MIXED` |  no        | The engine stores to kinds of metrics. Status and Value. The status is the ratio between successful checks and failed in percent, the value is the average value of the checks result.           |
-| filter_trailing_nulls  | `BOOLEAN` |  no        | Remove null values from the metric if they are at the beginning. Trailing nulls are used of the metric does not provide values for a given time spam.           |
-| min_value  | `INTEGER` |  no        | Replace all values that are smaller than the min value with the min value.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| tool  | `MIXED` |  no        |   | A single tool id or the identifier of a tool.           |
+| tools  | `LIST` |  no        |   | A list of tool ids. For every tool there will be a metric array returned.           |
+| metric_type  | `MIXED` |  no        | value  | The engine stores to kinds of metrics. Status and Value. The status is the ratio between successful checks and failed in percent, the value is the average value of the checks result.           |
+| filter_trailing_nulls  | `BOOLEAN` |  no        | true  | Remove null values from the metric if they are at the beginning. Trailing nulls are used of the metric does not provide values for a given time spam.           |
+| min_value  | `INTEGER` |  no        |   | Replace all values that are smaller than the min value with the min value.           |
 
 ### SDK
 

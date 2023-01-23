@@ -1,4 +1,4 @@
-# API endpoints for CustomerHaendlerbund repository
+# API endpoints for `CustomerHaendlerbund` repository
 
 
 ## `createShop`
@@ -17,12 +17,14 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| name  | `STRING` |  yes        | The shops name.           |
-| base_url  | `URL` |  yes        | The shops base url with scheme, subdomain and domain.           |
-| owner  | `INTEGER` |  yes        | The shops owner (id).           |
-| size  | `MIXED` |  no        | The shop size. It determines if the checks are done on a daily or hourly base.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| name  | `STRING` |  yes        |   | The shops name.           |
+| base_url  | `URL` |  yes        |   | The shops base url with scheme, subdomain and domain.           |
+| owner  | `INTEGER` |  yes        |   | The shops owner (id).           |
+| size  | `MIXED` |  no        | large  | The shop size. It determines if the checks are done on a daily or hourly base.           |
 
 ### SDK
 
@@ -61,10 +63,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| name  | `STRING` |  no        | The shops name.           |
-| base_url  | `URL` |  no        | The shops base url with scheme, subdomain and domain. When changing the base url all shop pages will change their base as well.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| name  | `STRING` |  no        |   | The shops name.           |
+| base_url  | `URL` |  no        |   | The shops base url with scheme, subdomain and domain. When changing the base url all shop pages will change their base as well.           |
 
 ### SDK
 

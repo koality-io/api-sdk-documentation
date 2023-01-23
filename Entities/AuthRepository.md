@@ -1,4 +1,4 @@
-# API endpoints for auth repository
+# API endpoints for `auth` repository
 
 
 ## `createTokenByCredentials`
@@ -17,12 +17,14 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| username  | `STRING` |  yes        | The username you want to log in with.           |
-| password  | `STRING` |  yes        | The users password.           |
-| expire  | `BOOLEAN` |  no        | If true the token will not expire (only available for admin users).           |
-| with_memories  | `BOOLEAN` |  no        | If true all memory entities will be attached in the answer.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| username  | `STRING` |  yes        |   | The username you want to log in with.           |
+| password  | `STRING` |  yes        |   | The users password.           |
+| expire  | `BOOLEAN` |  no        | true  | If true the token will not expire (only available for admin users).           |
+| with_memories  | `BOOLEAN` |  no        | false  | If true all memory entities will be attached in the answer.           |
 
 ### SDK
 
@@ -61,9 +63,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| with_memories  | `BOOLEAN` |  no        | If true all Memory entities will be attached in the answer.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| with_memories  | `BOOLEAN` |  no        | false  | If true all Memory entities will be attached in the answer.           |
 
 ### SDK
 

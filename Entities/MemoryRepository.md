@@ -1,4 +1,4 @@
-# API endpoints for memory repository
+# API endpoints for `memory` repository
 
 
 ## `set`
@@ -21,10 +21,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| key  | `STRING` |  yes        |            |
-| value  | `STRING` |  yes        |            |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| key  | `STRING` |  yes        |   |            |
+| value  | `STRING` |  yes        |   |            |
 
 ### SDK
 
@@ -63,6 +65,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - objectId
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK

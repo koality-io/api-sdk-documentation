@@ -1,4 +1,4 @@
-# API endpoints for Component repository
+# API endpoints for `Component` repository
 
 
 ## `showComponents`
@@ -19,6 +19,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - component
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -55,10 +57,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| system  | `INTEGER` |  yes        |            |
-| enableToolsBySystem  | `BOOLEAN` |  no        |            |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| system  | `INTEGER` |  yes        |   |            |
+| enableToolsBySystem  | `BOOLEAN` |  no        | true  |            |
 
 ### SDK
 
@@ -94,12 +98,14 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| system  | `INTEGER` |  yes        | The system the components are part of,           |
-| enableToolsBySystem  | `BOOLEAN` |  no        | If true all checks from the parent system are inherited.           |
-| updateIfComponentSuggestionExists  | `BOOLEAN` |  no        | If true and a component with the same suggestion id already exists it will be updated.           |
-| components  | `LIST` |  yes        | List of components that should be created/updated.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| system  | `INTEGER` |  yes        |   | The system the components are part of,           |
+| enableToolsBySystem  | `BOOLEAN` |  no        | true  | If true all checks from the parent system are inherited.           |
+| updateIfComponentSuggestionExists  | `BOOLEAN` |  no        | false  | If true and a component with the same suggestion id already exists it will be updated.           |
+| components  | `LIST` |  yes        |   | List of components that should be created/updated.           |
 
 ### SDK
 
@@ -137,6 +143,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - component
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -176,6 +184,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -213,6 +223,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK

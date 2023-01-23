@@ -1,4 +1,4 @@
-# API endpoints for Nixstats repository
+# API endpoints for `Nixstats` repository
 
 
 ## `createWebsiteMonitor`
@@ -20,9 +20,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| url  | `STRING` |  yes        |            |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| url  | `STRING` |  yes        |   |            |
 
 ### SDK
 

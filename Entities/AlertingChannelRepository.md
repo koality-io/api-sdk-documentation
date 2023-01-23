@@ -1,4 +1,4 @@
-# API endpoints for AlertingChannel repository
+# API endpoints for `AlertingChannel` repository
 
 
 ## `list`
@@ -19,6 +19,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -58,12 +60,14 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| name  | `STRING` |  yes        | The name of the alert channel           |
-| type  | `MIXED` |  yes        |            |
-| options  | `LIST` |  yes        |            |
-| language  | `STRING` |  no        | The language the alert should be send in. If not value is set the default provider language is taken.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| name  | `STRING` |  yes        |   | The name of the alert channel           |
+| type  | `MIXED` |  yes        |   |            |
+| options  | `LIST` |  yes        |   |            |
+| language  | `STRING` |  no        |   | The language the alert should be send in. If not value is set the default provider language is taken.           |
 
 ### SDK
 
@@ -103,12 +107,14 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| name  | `STRING` |  no        |            |
-| type  | `MIXED` |  yes        |            |
-| options  | `LIST` |  no        |            |
-| language  | `STRING` |  no        | The language the alert should be send in           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| name  | `STRING` |  no        |   |            |
+| type  | `MIXED` |  yes        |   |            |
+| options  | `LIST` |  no        |   |            |
+| language  | `STRING` |  no        |   | The language the alert should be send in           |
 
 ### SDK
 
@@ -147,6 +153,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - channel
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK

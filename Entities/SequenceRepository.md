@@ -1,4 +1,4 @@
-# API endpoints for sequence repository
+# API endpoints for `sequence` repository
 
 
 ## `getCommands`
@@ -19,6 +19,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - project
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -58,6 +60,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -96,11 +100,13 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| name  | `STRING` |  yes        | The human readable name of the sequence.           |
-| startUrl  | `STRING` |  yes        | The url the sequence starts at.           |
-| steps  | `LIST` |  no        | List of steps of the sequence.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| name  | `STRING` |  yes        |   | The human readable name of the sequence.           |
+| startUrl  | `STRING` |  yes        |   | The url the sequence starts at.           |
+| steps  | `LIST` |  no        |   | List of steps of the sequence.           |
 
 ### SDK
 
@@ -139,11 +145,13 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| name  | `STRING` |  no        | The human readable name of the sequence.           |
-| startUrl  | `STRING` |  no        | The url the sequence starts at.           |
-| steps  | `LIST` |  no        | List of steps of the sequence.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| name  | `STRING` |  no        |   | The human readable name of the sequence.           |
+| startUrl  | `STRING` |  no        |   | The url the sequence starts at.           |
+| steps  | `LIST` |  no        |   | List of steps of the sequence.           |
 
 ### SDK
 
@@ -181,6 +189,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - sequence
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -220,6 +230,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -257,6 +269,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - sequence
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK

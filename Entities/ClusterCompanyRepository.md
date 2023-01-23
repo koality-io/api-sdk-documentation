@@ -1,4 +1,4 @@
-# API endpoints for ClusterCompany repository
+# API endpoints for `ClusterCompany` repository
 
 
 ## `create`
@@ -20,10 +20,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| name  | `STRING` |  yes        | The companies name           |
-| master_id  | `INTEGER` |  yes        | The master id from the auth2 server           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| name  | `STRING` |  yes        |   | The companies name           |
+| master_id  | `INTEGER` |  yes        |   | The master id from the auth2 server           |
 
 ### SDK
 
@@ -63,9 +65,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| user_role  | `INTEGER` |  no        | The users company role           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| user_role  | `INTEGER` |  no        | 1000  | The users company role           |
 
 ### SDK
 
@@ -101,9 +105,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| company_name  | `STRING` |  yes        | The companies name           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| company_name  | `STRING` |  yes        |   | The companies name           |
 
 ### SDK
 
@@ -142,9 +148,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| company_name  | `STRING` |  yes        | The companies name           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| company_name  | `STRING` |  yes        |   | The companies name           |
 
 ### SDK
 
@@ -182,6 +190,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - providerIdentifier
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -221,9 +231,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| master_id  | `INTEGER` |  yes        | The users master id.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| master_id  | `INTEGER` |  yes        |   | The users master id.           |
 
 ### SDK
 

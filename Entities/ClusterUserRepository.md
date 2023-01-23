@@ -1,4 +1,4 @@
-# API endpoints for ClusterUser repository
+# API endpoints for `ClusterUser` repository
 
 
 ## `activate`
@@ -17,9 +17,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| activation_key  | `STRING` |  yes        |            |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| activation_key  | `STRING` |  yes        |   |            |
 
 ### SDK
 
@@ -58,21 +60,23 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| username  | `STRING` |  no        | The new users name.           |
-| master_id  | `INTEGER` |  no        | The users id on the master server.           |
-| suppress_activation  | `BOOLEAN` |  no        | If true no activation mail will be send..           |
-| activate  | `BOOLEAN` |  no        | If true no activation mail will be send..           |
-| email  | `STRING` |  yes        | The email address of the new user.           |
-| preferred_language  | `STRING` |  no        | The users preferred interface language.           |
-| company_id  | `INTEGER` |  no        | The companies numeric id of the new user.           |
-| create_company  | `BOOLEAN` |  no        | Create a new company if none exists.           |
-| full_name  | `STRING` |  no        | The users full name.           |
-| first_name  | `STRING` |  no        | The users first name.           |
-| last_name  | `STRING` |  no        | The users last name.           |
-| password  | `STRING` |  yes        |            |
-| _attributes  | `LIST` |  no        | Additional attributes for the user           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| username  | `STRING` |  no        |   | The new users name.           |
+| master_id  | `INTEGER` |  no        | -1  | The users id on the master server.           |
+| suppress_activation  | `BOOLEAN` |  no        | false  | If true no activation mail will be send..           |
+| activate  | `BOOLEAN` |  no        | true  | If true no activation mail will be send..           |
+| email  | `STRING` |  yes        |   | The email address of the new user.           |
+| preferred_language  | `STRING` |  no        |   | The users preferred interface language.           |
+| company_id  | `INTEGER` |  no        |   | The companies numeric id of the new user.           |
+| create_company  | `BOOLEAN` |  no        | false  | Create a new company if none exists.           |
+| full_name  | `STRING` |  no        |   | The users full name.           |
+| first_name  | `STRING` |  no        |   | The users first name.           |
+| last_name  | `STRING` |  no        |   | The users last name.           |
+| password  | `STRING` |  yes        |   |            |
+| _attributes  | `LIST` |  no        |   | Additional attributes for the user           |
 
 ### SDK
 
@@ -111,9 +115,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| language  | `STRING` |  yes        | The users preferred interface language.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| language  | `STRING` |  yes        |   | The users preferred interface language.           |
 
 ### SDK
 
@@ -152,10 +158,12 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| provider  | `MIXED` |  yes        | The OAuth provider.           |
-| provider_user_id  | `STRING` |  yes        | The OAuth provider user id.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| provider  | `MIXED` |  yes        |   | The OAuth provider.           |
+| provider_user_id  | `STRING` |  yes        |   | The OAuth provider user id.           |
 
 ### SDK
 
@@ -194,9 +202,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| password_new  | `STRING` |  yes        |            |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| password_new  | `STRING` |  yes        |   |            |
 
 ### SDK
 
@@ -232,9 +242,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| query  | `LIST` |  yes        | The key value pairs for the search.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| query  | `LIST` |  yes        |   | The key value pairs for the search.           |
 
 ### SDK
 
@@ -270,9 +282,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| query  | `LIST` |  yes        | The key value pairs for the search.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| query  | `LIST` |  yes        |   | The key value pairs for the search.           |
 
 ### SDK
 
@@ -310,6 +324,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - user
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
@@ -349,6 +365,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
+All payload parameters have to be encrypted as a JSON body in the request.
+
 
 ### SDK
 
@@ -384,9 +402,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| email  | `STRING` |  yes        | The users email address           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| email  | `STRING` |  yes        |   | The users email address           |
 
 ### SDK
 
@@ -425,13 +445,15 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| email  | `STRING` |  no        | The email address of the new user.           |
-| preferred_language  | `STRING` |  no        | The users preferred interface language.           |
-| company_id  | `INTEGER` |  no        | The companies numeric id of the new user.           |
-| first_name  | `STRING` |  no        | The users first name.           |
-| last_name  | `STRING` |  no        | The users last name.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| email  | `STRING` |  no        |   | The email address of the new user.           |
+| preferred_language  | `STRING` |  no        |   | The users preferred interface language.           |
+| company_id  | `INTEGER` |  no        |   | The companies numeric id of the new user.           |
+| first_name  | `STRING` |  no        |   | The users first name.           |
+| last_name  | `STRING` |  no        |   | The users last name.           |
 
 ### SDK
 
@@ -470,9 +492,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| master_id  | `INTEGER` |  yes        | The users master id.           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| master_id  | `INTEGER` |  yes        |   | The users master id.           |
 
 ### SDK
 
@@ -508,9 +532,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| email  | `STRING` |  yes        | The users email address           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| email  | `STRING` |  yes        |   | The users email address           |
 
 ### SDK
 
@@ -549,9 +575,11 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
 
 #### Payload parameters
 
-| Name                  | Type  | Required  | Desciption   |
-|-----------------------|-------|-----------|--------------|
-| password  | `STRING` |  yes        | The new password           |
+All payload parameters have to be encrypted as a JSON body in the request.
+
+| Name                    | Type  | Required  | Default   | Desciption   |
+|:----|:------|:----------|:-------------|:-------------|
+| password  | `STRING` |  yes        |   | The new password           |
 
 ### SDK
 
@@ -589,6 +617,8 @@ Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logge
  - providerIdentifier
 
 #### Payload parameters
+
+All payload parameters have to be encrypted as a JSON body in the request.
 
 
 ### SDK
