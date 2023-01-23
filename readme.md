@@ -16,6 +16,7 @@
 
 ### Retrieve data
 
+- [List all projects](examples/listProjects.md)
 - Get scores
 - Get get historical data
 
