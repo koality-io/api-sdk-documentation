@@ -7,6 +7,7 @@ A system always needs to have a system type. The list of types can be fetched vi
 
 - All system specific methods can be found in the [System repository](../../Repositories/SystemRepository.md).
 - The [create method](../../Repositories/SystemRepository.md#createsystem) in system repository
+- [getSystemType example](../read/getSystemTypes.md)
 
 ## PHP
 
