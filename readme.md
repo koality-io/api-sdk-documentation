@@ -6,8 +6,15 @@
 
 ## SDK
 
-PHP SDK
+### PHP SDK
 
-JavaScript SDKs
+- [Go to PHP GitHub Repository](https://github.com/leankoala-gmbh/leankoala-client-php)
 
-## 
+### JavaScript SDKs
+
+- [Go to TypeScript GitHub Repository](https://github.com/leankoala-gmbh/leankoala-client-javascript)
+
+### TypeScript SDKs
+
+- [Go to JavaScript GitHub Repository](https://github.com/leankoala-gmbh/leankoala-client-typescript)
+
