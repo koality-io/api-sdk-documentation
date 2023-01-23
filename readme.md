@@ -17,7 +17,7 @@ We provide a list of standard workflows that should be part of every application
 ### Create systems
 
 - [Login with username and password](examples/create/login.md)
-- [Create a new project](examples/create/createProject.md)
+- [Create a new system](examples/create/createSystem.md)
 - [Add new component (url) to project](examples/create/newComponent.md)
 
 ### Retrieve data
