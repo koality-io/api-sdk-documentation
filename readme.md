@@ -47,7 +47,7 @@ The koality.io team is also using those SDKs so you can be sure those are always
 
 ### JavaScript SDKs
 
-- [Go to TypeScript GitHub Repository](https://github.com/leankoala-gmbh/leankoala-client-javascript)
+- [Go to JavaScript GitHub Repository](https://github.com/leankoala-gmbh/leankoala-client-javascript)
 
 
 
