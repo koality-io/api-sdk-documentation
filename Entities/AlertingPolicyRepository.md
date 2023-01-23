@@ -25,7 +25,7 @@ All payload parameters have to be encrypted as a JSON body in the request.
 
 ### SDK
 
-We strongly recommend to use the SDK that are provided.
+We strongly recommend to use the SDK that are provided. At the moment JavaScript and PHP SDKs are available.
 
 #### PHP
 ```php
@@ -71,7 +71,7 @@ All payload parameters have to be encrypted as a JSON body in the request.
 
 ### SDK
 
-We strongly recommend to use the SDK that are provided.
+We strongly recommend to use the SDK that are provided. At the moment JavaScript and PHP SDKs are available.
 
 #### PHP
 ```php
@@ -118,7 +118,7 @@ All payload parameters have to be encrypted as a JSON body in the request.
 
 ### SDK
 
-We strongly recommend to use the SDK that are provided.
+We strongly recommend to use the SDK that are provided. At the moment JavaScript and PHP SDKs are available.
 
 #### PHP
 ```php
@@ -159,7 +159,7 @@ All payload parameters have to be encrypted as a JSON body in the request.
 
 ### SDK
 
-We strongly recommend to use the SDK that are provided.
+We strongly recommend to use the SDK that are provided. At the moment JavaScript and PHP SDKs are available.
 
 #### PHP
 ```php
