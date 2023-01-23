@@ -1,3 +1,6 @@
+> **Warning**
+> This API documentation is work in progress and only ALPHA. 
+
 # KoalityEngine API documentation
 
 > **Note**
