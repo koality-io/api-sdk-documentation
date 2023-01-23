@@ -1,3 +1,7 @@
+# List of available repositories
+
+A repository or repo is a collection of API functions that belong together.
+
  - [AlertingChannel](./Entities/AlertingChannelRepository.md)
  - [AlertingPolicy](./Entities/AlertingPolicyRepository.md)
  - [Auth](./Entities/AuthRepository.md)
