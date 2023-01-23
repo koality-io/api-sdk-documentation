@@ -10,16 +10,21 @@ This is the official API documentation for the KoalityEngine. It can be used aut
 
 This documentation is a living document. If something is missing please contact out support team (support@koality.io).
 
+## Applications
+
+When using the KoalityEngine API you will often see the `Application` as a concept. If you just want to use the API to manage your koality.io accounts the application id will be `koality`, if you create your own independent application you will get your own application id from our team.
+
 ## Standard Workflows
 
 We provide a list of standard workflows that should be part of every application that is build on the shoulders of the KoalityEngine. 
 
 ### Create systems
 
+- [Create a new user](examples/create/createUser.md)
 - [Login with username and password](examples/create/login.md)
 - [Create a new system](examples/create/createSystem.md)
   - [Get all system types](examples/read/getSystemTypes.md)
-- [Add new component (url) to project](examples/create/newComponent.md)
+- [Add new component (url) to project](examples/create/createComponent.md)
 
 ### Retrieve data
 
@@ -49,5 +54,6 @@ The koality.io team is also using those SDKs so you can be sure those are always
 
 - [Go to TypeScript GitHub Repository](https://github.com/leankoala-gmbh/leankoala-client-javascript)
 
+### CLI Client (beta)
 
-
+- [Go to CLI client GitHub Repository](https://github.com/koality-io/KoalityEngineCli)
