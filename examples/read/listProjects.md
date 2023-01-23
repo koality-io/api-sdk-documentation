@@ -1,11 +1,11 @@
-[back to overview](../readme.md)
+[back to overview](../../readme.md)
 # List projects
 
 This example shows how to use the API to list all projects of a given user. The projects ids 
 
-- All project specific methods can be found in the [Project repository](../Repositories/ProjectRepository.md).
-- Project list method [documentation](../Repositories/ProjectRepository.md#search)
-- [How to log in](login.md) example
+- All project specific methods can be found in the [Project repository](../../Repositories/ProjectRepository.md).
+- Project list method [documentation](../../Repositories/ProjectRepository.md#search)
+- [How to log in](../create/login.md) example
 
 ## JavaScript
 

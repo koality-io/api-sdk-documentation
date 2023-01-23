@@ -10,13 +10,13 @@
 
 ### Create systems
 
-- Login with username and password
-- Create a new project
-- Add new system to project
+- [Login with username and password](examples/create/login.md)
+- [Create a new project](examples/create/createProject.md)
+- [Add new component (url) to project](examples/create/newComponent.md)
 
 ### Retrieve data
 
-- [List all projects](examples/listProjects.md)
+- [List all projects](examples/read/listProjects.md)
 - Get scores
 - Get get historical data
 
