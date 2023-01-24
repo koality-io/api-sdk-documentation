@@ -56,6 +56,8 @@ const result = await repository.list($project)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/alerting/policies/{project}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `create`
 
@@ -107,6 +109,8 @@ const result = await repository.create($project)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/alerting/policies/{project}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `update`
@@ -161,6 +165,8 @@ const result = await repository.update($project, $policy)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/alerting/policies/{project}/{policy}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `delete`
 
@@ -207,4 +213,6 @@ const result = await repository.delete($project, $policy)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/alerting/policies/{project}/{policy}
 ```
+
+[top](#list-of-all-available-methods)
 

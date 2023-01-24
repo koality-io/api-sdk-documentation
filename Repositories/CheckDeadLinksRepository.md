@@ -58,6 +58,8 @@ const result = await repository.getResults($system)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getResultsByCompany`
 
@@ -104,6 +106,8 @@ const result = await repository.getResultsByCompany($company)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/check/checks/company/{company}/deadlinks
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getConfiguration`
 
@@ -149,6 +153,8 @@ const result = await repository.getConfiguration($system)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks/config
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `ignorePattern`
@@ -199,6 +205,8 @@ const result = await repository.ignorePattern($system)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks/ignore
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `unignorePattern`
 
@@ -248,6 +256,8 @@ const result = await repository.unignorePattern($system)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks/unignore
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getBlockedPatterns`
 
@@ -290,4 +300,6 @@ const result = await repository.getBlockedPatterns()
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/check/checks/deadlinks/blocked
 ```
+
+[top](#list-of-all-available-methods)
 

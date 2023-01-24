@@ -57,6 +57,8 @@ const result = await repository.createTokenByCredentials()
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/auth/tokens/access
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `createTokenByRefreshToken`
 
@@ -105,4 +107,6 @@ const result = await repository.createTokenByRefreshToken($user)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/auth/tokens/refresh/{user}
 ```
+
+[top](#list-of-all-available-methods)
 

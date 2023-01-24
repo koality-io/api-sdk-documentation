@@ -55,6 +55,8 @@ const result = await repository.runMwstCrawl()
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/customers/mehrwertsteuer/crawl
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `showCrawlResult`
 
@@ -100,4 +102,6 @@ const result = await repository.showCrawlResult($crawlIdentifier)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/customers/mehrwertsteuer/crawl/{crawlIdentifier}
 ```
+
+[top](#list-of-all-available-methods)
 

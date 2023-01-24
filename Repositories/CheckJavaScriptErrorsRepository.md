@@ -53,3 +53,5 @@ const result = await repository.getResults($system)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/check/checks/{system}/jserrors
 ```
 
+[top](#list-of-all-available-methods)
+

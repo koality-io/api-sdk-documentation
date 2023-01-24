@@ -59,6 +59,8 @@ const result = await repository.getCommands($project)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/sequences/{project}/commands
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getSequences`
 
@@ -104,6 +106,8 @@ const result = await repository.getSequences($project)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/sequences/{project}/sequences
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `createSequence`
@@ -156,6 +160,8 @@ const result = await repository.createSequence($project)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/sequences/{project}/sequence
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `updateSequence`
 
@@ -207,6 +213,8 @@ const result = await repository.updateSequence($project)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/sequences/{project}/sequence
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `activateSequence`
 
@@ -252,6 +260,8 @@ const result = await repository.activateSequence($sequence)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/sequences/{sequence}/activate
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `deactivateSequence`
@@ -299,6 +309,8 @@ const result = await repository.deactivateSequence($sequence)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/sequences/{sequence}/deactivate
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getRecentRuns`
 
@@ -344,4 +356,6 @@ const result = await repository.getRecentRuns($sequence)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/sequences/{sequence}/recent
 ```
+
+[top](#list-of-all-available-methods)
 

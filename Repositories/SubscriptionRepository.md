@@ -64,6 +64,8 @@ const result = await repository.getCompanySubscription($company)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/subscription/company/{company}/
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `setCompanyCreditCardPlans`
 
@@ -112,6 +114,8 @@ const result = await repository.setCompanyCreditCardPlans($company)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/subscription/company/{company}/plans/creditcard
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `setCompanyFreePlans`
@@ -162,6 +166,8 @@ const result = await repository.setCompanyFreePlans($company)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/subscription/company/{company}/plans/free
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `setCompanyFreePlansByUser`
 
@@ -210,6 +216,8 @@ const result = await repository.setCompanyFreePlansByUser($user)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/subscription/user/{user}/plans/free
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `setCreditCard`
@@ -261,6 +269,8 @@ const result = await repository.setCreditCard($company)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/subscription/company/{company}/creditcard
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `setBillingAddress`
@@ -317,6 +327,8 @@ const result = await repository.setBillingAddress($company)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/subscription/company/{company}/billingaddress
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getBillingAddress`
 
@@ -362,6 +374,8 @@ const result = await repository.getBillingAddress($company)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/subscription/company/{company}/billingaddress
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `getSubscribedFeatures`
@@ -409,6 +423,8 @@ const result = await repository.getSubscribedFeatures($company)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/subscription/company/{company}/features
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getCompanyInvoices`
 
@@ -454,6 +470,8 @@ const result = await repository.getCompanyInvoices($company)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/subscription/company/{company}/invoices
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `setSubscriptionPlan`
@@ -504,6 +522,8 @@ const result = await repository.setSubscriptionPlan($user)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/subscription/user/{user}/plan
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getQuota`
 
@@ -550,6 +570,8 @@ const result = await repository.getQuota($company)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/subscription/company/{company}/quota
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `endTrials`
 
@@ -595,4 +617,6 @@ const result = await repository.endTrials($providerIdentifier)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/subscription/trial/{providerIdentifier}/end
 ```
+
+[top](#list-of-all-available-methods)
 

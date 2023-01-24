@@ -68,6 +68,8 @@ const result = await repository.createSystem()
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/systems/system
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `updateSystem`
 
@@ -118,6 +120,8 @@ const result = await repository.updateSystem($system)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/project/systems/system/{system}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getComponents`
 
@@ -163,6 +167,8 @@ const result = await repository.getComponents($system)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/systems/{system}/components
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `getSystemTypes`
@@ -210,6 +216,8 @@ const result = await repository.getSystemTypes($providerIdentifier)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/systems/{providerIdentifier}/systemType
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getComponentSuggestions`
 
@@ -255,6 +263,8 @@ const result = await repository.getComponentSuggestions($system)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/systems/{system}/suggestions
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `changeLastFullRun`
@@ -302,6 +312,8 @@ const result = await repository.changeLastFullRun($system, $status)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/systems/{system}/lastFullRun/{status}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `triggerComponentFinder`
@@ -351,6 +363,8 @@ const result = await repository.triggerComponentFinder($project, $system, $user)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/{project}/componentfinder/{system}/{user}/trigger
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getNextLastFullRun`
 
@@ -397,6 +411,8 @@ const result = await repository.getNextLastFullRun($system)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/systems/{system}/nextFullRun
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getComponentLimit`
 
@@ -442,4 +458,6 @@ const result = await repository.getComponentLimit($system)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/systems/{system}/component/limit
 ```
+
+[top](#list-of-all-available-methods)
 

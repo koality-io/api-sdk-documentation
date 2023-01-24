@@ -59,6 +59,8 @@ const result = await repository.set($objectType, $objectId)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/memory/{objectType}/{objectId}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getAll`
 
@@ -105,4 +107,6 @@ const result = await repository.getAll($objectType, $objectId)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/memory/{objectType}/{objectId}
 ```
+
+[top](#list-of-all-available-methods)
 

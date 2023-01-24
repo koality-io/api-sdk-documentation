@@ -56,3 +56,5 @@ const result = await repository.createWebsiteMonitor($company)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/nixtstats/{company}/monitor/website
 ```
 
+[top](#list-of-all-available-methods)
+

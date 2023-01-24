@@ -51,6 +51,8 @@ const result = await repository.getRooms()
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/websockets/rooms
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getAllRooms`
 
@@ -93,4 +95,6 @@ const result = await repository.getAllRooms()
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/websockets/rooms/all
 ```
+
+[top](#list-of-all-available-methods)
 

@@ -80,6 +80,8 @@ const result = await repository.runCompanyCrawl($company)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/crawl/company/{company}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `runCrawl`
 
@@ -136,6 +138,8 @@ const result = await repository.runCrawl($project)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/crawl/{project}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getCrawlableCollections`
 
@@ -178,6 +182,8 @@ const result = await repository.getCrawlableCollections()
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/collections
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `abortCrawl`
@@ -225,6 +231,8 @@ const result = await repository.abortCrawl($project, $crawl)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/crawler/crawl/{project}/{crawl}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `listCrawls`
@@ -275,6 +283,8 @@ const result = await repository.listCrawls($project)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/crawl/{project}/crawls
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `listCompanyCrawls`
@@ -328,6 +338,8 @@ const result = await repository.listCompanyCrawls($company)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/crawl/company/{company}/crawls
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getCrawlCsv`
 
@@ -375,6 +387,8 @@ const result = await repository.getCrawlCsv($crawl, $downloadSecret)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/crawler/crawl/detail/csv/{crawl}/{downloadSecret}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getCrawl`
 
@@ -420,6 +434,8 @@ const result = await repository.getCrawl($crawl)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/crawl/detail/{crawl}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `getCrawlerStatus`
@@ -467,6 +483,8 @@ const result = await repository.getCrawlerStatus($project)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/crawler/status/{project}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getCompanyCrawlerStatus`
 
@@ -512,6 +530,8 @@ const result = await repository.getCompanyCrawlerStatus($company)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/status/company/{company}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `setCheckStatus`
@@ -564,6 +584,8 @@ const result = await repository.setCheckStatus($company)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/company/{company}/check/status
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `deleteCheckStatus`
 
@@ -611,6 +633,8 @@ const result = await repository.deleteCheckStatus($company, $crawlUrlStatus)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/crawler/company/{company}/check/status/{crawlUrlStatus}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `listCheckStatus`
 
@@ -656,6 +680,8 @@ const result = await repository.listCheckStatus($company)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/crawler/company/{company}/check/status
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `listCrawlSchedules`
@@ -703,6 +729,8 @@ const result = await repository.listCrawlSchedules($company)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `showCrawlSchedule`
 
@@ -749,6 +777,8 @@ const result = await repository.showCrawlSchedule($company, $crawlSchedule)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `createCrawlSchedule`
@@ -805,6 +835,8 @@ const result = await repository.createCrawlSchedule($company)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `updateCrawlSchedule`
@@ -864,6 +896,8 @@ const result = await repository.updateCrawlSchedule($company, $crawlSchedule)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PATCH https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `deleteCrawlSchedule`
 
@@ -911,6 +945,8 @@ const result = await repository.deleteCrawlSchedule($company, $crawlSchedule)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `runScheduledCrawl`
 
@@ -957,4 +993,6 @@ const result = await repository.runScheduledCrawl($company, $crawlSchedule)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}/crawl
 ```
+
+[top](#list-of-all-available-methods)
 

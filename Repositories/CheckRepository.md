@@ -59,6 +59,8 @@ const result = await repository.addByRecipe()
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/checks/cookbook
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `addByChecklist`
 
@@ -110,6 +112,8 @@ const result = await repository.addByChecklist($system)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/checks/{system}/checklist
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `runChecksForSystem`
 
@@ -156,6 +160,8 @@ const result = await repository.runChecksForSystem($system, $toolIdentifier)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/checks/run/{system}/{toolIdentifier}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `showCollections`
@@ -207,6 +213,8 @@ const result = await repository.showCollections($project, $toolIdentifier)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/collections/{project}/{toolIdentifier}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `showActiveCollections`
 
@@ -257,6 +265,8 @@ const result = await repository.showActiveCollections($system, $toolIdentifier)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/collections/system/active/{system}/{toolIdentifier}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `updateCollections`
 
@@ -306,4 +316,6 @@ const result = await repository.updateCollections($system)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/check/collections/system/{system}
 ```
+
+[top](#list-of-all-available-methods)
 

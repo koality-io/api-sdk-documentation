@@ -54,6 +54,8 @@ const result = await repository.getResults($system)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/check/checks/{system}/performance/big
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `ignorePattern`
 
@@ -102,4 +104,6 @@ const result = await repository.ignorePattern($system)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/checks/{system}/siteinfo/ignore
 ```
+
+[top](#list-of-all-available-methods)
 

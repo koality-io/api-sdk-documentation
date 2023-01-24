@@ -60,6 +60,8 @@ const result = await repository.getScoresByUser($user)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/score/scores/user/{user}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getScore`
 
@@ -106,6 +108,8 @@ const result = await repository.getScore($system, $scoreName)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/score/scores/{system}/{scoreName}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `getScores`
@@ -155,4 +159,6 @@ const result = await repository.getScores($system)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/score/scores/{system}
 ```
+
+[top](#list-of-all-available-methods)
 

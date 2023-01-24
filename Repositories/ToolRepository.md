@@ -57,6 +57,8 @@ const result = await repository.getChangedConfiguration()
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/tools/changed
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `findByProject`
 
@@ -102,6 +104,8 @@ const result = await repository.findByProject($project)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/check/tools/{project}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `overwrite`
@@ -154,6 +158,8 @@ const result = await repository.overwrite($project, $toolIdentifier)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/check/tools/{project}/{toolIdentifier}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getConfiguration`
 
@@ -200,4 +206,6 @@ const result = await repository.getConfiguration($project, $toolIdentifier)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/check/tools/{project}/{toolIdentifier}
 ```
+
+[top](#list-of-all-available-methods)
 

@@ -62,6 +62,8 @@ const result = await repository.create($providerIdentifier)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/companies/{providerIdentifier}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `connectUser`
 
@@ -112,6 +114,8 @@ const result = await repository.connectUser($company, $user)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/companies/connect/{company}/{user}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `exists`
 
@@ -157,6 +161,8 @@ const result = await repository.exists()
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/user/companies/exists
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `search`
@@ -207,6 +213,8 @@ const result = await repository.search($providerIdentifier)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/companies/search/{providerIdentifier}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `findAll`
 
@@ -252,6 +260,8 @@ const result = await repository.findAll($providerIdentifier)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/companies/findall/{providerIdentifier}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `updateMasterId`
@@ -301,4 +311,6 @@ const result = await repository.updateMasterId($company)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/user/companies/{company}/masterId
 ```
+
+[top](#list-of-all-available-methods)
 

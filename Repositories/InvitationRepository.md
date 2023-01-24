@@ -60,6 +60,8 @@ const result = await repository.invite($project)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/invitation/invite/{project}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `abort`
 
@@ -106,6 +108,8 @@ const result = await repository.abort($invitation)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/user/invitation/abort/{invitation}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getOpenInvitations`
 
@@ -151,4 +155,6 @@ const result = await repository.getOpenInvitations($project)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/user/invitation/open/{project}
 ```
+
+[top](#list-of-all-available-methods)
 

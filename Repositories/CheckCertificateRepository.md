@@ -53,3 +53,5 @@ const result = await repository.getExpirationResults($system)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/check/checks/{system}/certificate
 ```
 
+[top](#list-of-all-available-methods)
+

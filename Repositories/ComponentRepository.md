@@ -58,6 +58,8 @@ const result = await repository.showComponents($component)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/components/{component}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `createComponent`
 
@@ -109,6 +111,8 @@ const result = await repository.createComponent()
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/components
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `createComponents`
 
@@ -158,6 +162,8 @@ const result = await repository.createComponents()
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/components/many
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `updateComponent`
 
@@ -203,6 +209,8 @@ const result = await repository.updateComponent($component)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/project/components/{component}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `deleteComponent`
@@ -250,6 +258,8 @@ const result = await repository.deleteComponent($component)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/project/components/{component}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `showComponentTypes`
 
@@ -295,4 +305,6 @@ const result = await repository.showComponentTypes($project)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/components/componenttypes/{project}
 ```
+
+[top](#list-of-all-available-methods)
 

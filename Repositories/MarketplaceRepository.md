@@ -68,6 +68,8 @@ const result = await repository.getActiveProviderFeatures($providerIdentifier)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/features/provider/{providerIdentifier}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getActiveProjectFeatures`
 
@@ -113,6 +115,8 @@ const result = await repository.getActiveProjectFeatures($project)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/features/project/{project}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `getSystemPluginStatus`
@@ -160,6 +164,8 @@ const result = await repository.getSystemPluginStatus($system)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/plugins/incidents/system/{system}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getUserPluginStatus`
 
@@ -205,6 +211,8 @@ const result = await repository.getUserPluginStatus($user)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/plugins/incidents/user/{user}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `getComponents`
@@ -252,6 +260,8 @@ const result = await repository.getComponents($system, $featureIdentifier)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/features/components/{system}/{featureIdentifier}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `setComponent`
@@ -303,6 +313,8 @@ const result = await repository.setComponent($system, $suggestionIdentifier)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/marketplace/features/components/{system}/{suggestionIdentifier}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getFeatures`
 
@@ -349,6 +361,8 @@ const result = await repository.getFeatures($providerIdentifier, $company)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/marketplace/features/{providerIdentifier}/{company}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `getAvailableFeatures`
@@ -399,6 +413,8 @@ const result = await repository.getAvailableFeatures($project)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/available/{project}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getAllFeatures`
 
@@ -442,6 +458,8 @@ const result = await repository.getAllFeatures()
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/all
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getFavourites`
 
@@ -484,6 +502,8 @@ const result = await repository.getFavourites()
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/marketplace/favourites
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `getActiveFeatures`
@@ -530,6 +550,8 @@ const result = await repository.getActiveFeatures($project)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/active/{project}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `activateFeature`
@@ -581,6 +603,8 @@ const result = await repository.activateFeature($company, $featureIdentifier)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/activate/{company}/{featureIdentifier}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `deactivateFeature`
 
@@ -631,6 +655,8 @@ const result = await repository.deactivateFeature($company, $featureIdentifier)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/deactivate/{company}/{featureIdentifier}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getBookingLog`
 
@@ -676,6 +702,8 @@ const result = await repository.getBookingLog($company)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/log/company/{company}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `restProxy`
@@ -723,6 +751,8 @@ const result = await repository.restProxy($secret, $url)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/proxy/{secret}/{url}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `getHealthStatus`
@@ -774,4 +804,6 @@ const result = await repository.getHealthStatus($system, $featureIdentifier)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/marketplace/features/status/{system}/{featureIdentifier}
 ```
+
+[top](#list-of-all-available-methods)
 

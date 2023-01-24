@@ -54,6 +54,8 @@ const result = await repository.getSystemScreenshots($system)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/screenshots/{system}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getScreenshot`
 
@@ -99,4 +101,6 @@ const result = await repository.getScreenshot($system)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/screenshot/{system}
 ```
+
+[top](#list-of-all-available-methods)
 

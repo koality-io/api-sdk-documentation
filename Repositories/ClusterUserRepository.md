@@ -67,6 +67,8 @@ const result = await repository.activate()
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/users/activate
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `create`
 
@@ -128,6 +130,8 @@ const result = await repository.create($provider)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/users/{provider}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `setPreferredLanguage`
 
@@ -176,6 +180,8 @@ const result = await repository.setPreferredLanguage($user)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/user/users/preferredLanguage/{user}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `connectOAuthAccount`
@@ -227,6 +233,8 @@ const result = await repository.connectOAuthAccount($user)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/user/oauth/{user}/connect
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `changePassword`
 
@@ -276,6 +284,8 @@ const result = await repository.changePassword($user)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/user/users/{user}/password
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `exists`
 
@@ -321,6 +331,8 @@ const result = await repository.exists()
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/user/users/exists
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `find`
@@ -368,6 +380,8 @@ const result = await repository.find()
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/user/users/find
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `delete`
 
@@ -413,6 +427,8 @@ const result = await repository.delete($user)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/user/users/{user}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `isDeletable`
@@ -460,6 +476,8 @@ const result = await repository.isDeletable($user)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/users/deletable/{user}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `deleteByEmail`
 
@@ -505,6 +523,8 @@ const result = await repository.deleteByEmail()
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/user/users/delete/email
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `updateUser`
@@ -559,6 +579,8 @@ const result = await repository.updateUser($user)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/user/users/{user}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `updateMasterId`
 
@@ -608,6 +630,8 @@ const result = await repository.updateMasterId($user)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/user/users/{user}/masterId
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `requestPasswordReset`
 
@@ -653,6 +677,8 @@ const result = await repository.requestPasswordReset()
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/users/password/reset/request
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `resetPassword`
@@ -703,6 +729,8 @@ const result = await repository.resetPassword($user)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/user/users/password/reset/{user}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `findAll`
 
@@ -748,4 +776,6 @@ const result = await repository.findAll($providerIdentifier)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/user/users/find/all/{providerIdentifier}
 ```
+
+[top](#list-of-all-available-methods)
 

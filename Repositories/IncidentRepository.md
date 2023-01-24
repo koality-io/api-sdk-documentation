@@ -60,6 +60,8 @@ const result = await repository.search($project)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/incident/incidents/{project}/search
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `since`
 
@@ -109,6 +111,8 @@ const result = await repository.since($project)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/incident/incidents/{project}/since
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `find`
 
@@ -156,6 +160,8 @@ const result = await repository.find($project, $incident)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/incident/incidents/{project}/{incident}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `findByCompany`
 
@@ -202,6 +208,8 @@ const result = await repository.findByCompany($company)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/incident/incidents/company/{company}/search
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getConfig`
 
@@ -247,4 +255,6 @@ const result = await repository.getConfig($project)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/incident/tools/{project}
 ```
+
+[top](#list-of-all-available-methods)
 

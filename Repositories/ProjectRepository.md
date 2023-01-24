@@ -59,6 +59,8 @@ const result = await repository.getStatus($project)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/{project}/onboarding/status
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `search`
 
@@ -110,6 +112,8 @@ const result = await repository.search()
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X POST https://api.cluster1.koalityengine.com/project/projects/search
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `searchAll`
 
@@ -156,6 +160,8 @@ const result = await repository.searchAll($providerIdentifier)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/{providerIdentifier}/all
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `delete`
 
@@ -201,6 +207,8 @@ const result = await repository.delete($project)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/project/projects/{project}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `update`
@@ -251,6 +259,8 @@ const result = await repository.update($project)
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X PUT https://api.cluster1.koalityengine.com/project/projects/{project}
 ```
 
+[top](#list-of-all-available-methods)
+
 
 ## `getUsers`
 
@@ -296,6 +306,8 @@ const result = await repository.getUsers($project)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X GET https://api.cluster1.koalityengine.com/project/users/{project}
 ```
+
+[top](#list-of-all-available-methods)
 
 
 ## `removeUser`
@@ -343,4 +355,6 @@ const result = await repository.removeUser($project, $user)
 ```shell
 curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json" -X DELETE https://api.cluster1.koalityengine.com/project/users/{project}/{user}
 ```
+
+[top](#list-of-all-available-methods)
 
