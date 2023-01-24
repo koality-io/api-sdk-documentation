@@ -1,6 +1,6 @@
 # API endpoints for `CustomerMehrwertsteuercheck` repository
 
-## Methods
+## List of all available methods
 
 | Method                                        | Description                                                            |
 |:----------------------------------------------|:-----------------------------------------------------------------------|
