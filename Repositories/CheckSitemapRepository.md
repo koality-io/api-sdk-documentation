@@ -1,5 +1,11 @@
 # API endpoints for `CheckSitemap` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getResults`](#getresults) |  |
+
 
 ## `getResults`
 

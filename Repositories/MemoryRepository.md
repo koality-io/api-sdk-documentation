@@ -1,5 +1,12 @@
 # API endpoints for `memory` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`set`](#set) |  |
+| [`getAll`](#getall) |  |
+
 
 ## `set`
 

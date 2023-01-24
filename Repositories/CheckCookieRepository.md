@@ -1,5 +1,11 @@
 # API endpoints for `CheckCookie` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getDomains`](#getdomains) | This endpoint returns a list of domains that set cookies for the given system. As array elements it adds the components on that the domain sets the cookies. IMPORTANT: The leankoala worker is blocking some tracking integrations. So there will never be, for example, a Google Analytics cookie set. |
+
 
 ## `getDomains`
 

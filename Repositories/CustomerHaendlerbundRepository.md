@@ -1,5 +1,12 @@
 # API endpoints for `CustomerHaendlerbund` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`createShop`](#createshop) | Händlerbund only: the function is used to create a shop. |
+| [`updateShop`](#updateshop) | Händlerbund only: the function is used to update a shop. |
+
 
 ## `createShop`
 

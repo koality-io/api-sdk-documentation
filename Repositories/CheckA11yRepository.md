@@ -1,5 +1,11 @@
 # API endpoints for `CheckA11y` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getResults`](#getresults) | Return all current accessibility audit results for the given systems components. |
+
 
 ## `getResults`
 

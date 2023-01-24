@@ -1,5 +1,11 @@
 # API endpoints for `CheckJavaScriptErrors` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getResults`](#getresults) |  |
+
 
 ## `getResults`
 

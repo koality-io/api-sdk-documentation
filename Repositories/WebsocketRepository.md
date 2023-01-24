@@ -1,5 +1,12 @@
 # API endpoints for `websocket` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getRooms`](#getrooms) | Return a websocket server with the room names for the given user. |
+| [`getAllRooms`](#getallrooms) | Return all websocket server with the room names. |
+
 
 ## `getRooms`
 

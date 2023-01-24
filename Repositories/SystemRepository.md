@@ -1,5 +1,19 @@
 # API endpoints for `system` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`createSystem`](#createsystem) | Create a new system. |
+| [`updateSystem`](#updatesystem) | Update an existing system. |
+| [`getComponents`](#getcomponents) | Return all components for the given system. |
+| [`getSystemTypes`](#getsystemtypes) | Return all system types for the given provider. |
+| [`getComponentSuggestions`](#getcomponentsuggestions) | Return all suggested component types for the given system. |
+| [`changeLastFullRun`](#changelastfullrun) | Set the last full run timestamp on a system. |
+| [`triggerComponentFinder`](#triggercomponentfinder) | Trigger the component finder for a given system. |
+| [`getNextLastFullRun`](#getnextlastfullrun) | Return the approximated time in seconds when the next full check run is triggered. |
+| [`getComponentLimit`](#getcomponentlimit) | Return the maximum number of components that can be added to the given system. |
+
 
 ## `createSystem`
 

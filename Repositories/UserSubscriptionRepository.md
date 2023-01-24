@@ -1,5 +1,11 @@
 # API endpoints for `UserSubscription` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`update`](#update) | Update the subscription for a given user. |
+
 
 ## `update`
 

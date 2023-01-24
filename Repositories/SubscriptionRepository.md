@@ -1,5 +1,22 @@
 # API endpoints for `subscription` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getCompanySubscription`](#getcompanysubscription) | Get the companies subscription information. |
+| [`setCompanyCreditCardPlans`](#setcompanycreditcardplans) | Set the companies credit card plans. |
+| [`setCompanyFreePlans`](#setcompanyfreeplans) | Set the companies free plans. |
+| [`setCompanyFreePlansByUser`](#setcompanyfreeplansbyuser) | Set the companies free plans by user. |
+| [`setCreditCard`](#setcreditcard) | Set the companies credit card. |
+| [`setBillingAddress`](#setbillingaddress) | Set the billing address information for the given company. |
+| [`getBillingAddress`](#getbillingaddress) | Get the billing address information for the given company. |
+| [`getSubscribedFeatures`](#getsubscribedfeatures) | Get a list of features that are active. |
+| [`getCompanyInvoices`](#getcompanyinvoices) | Get a list invoices for the given company. |
+| [`setSubscriptionPlan`](#setsubscriptionplan) | Set the subscription plan of the given user. |
+| [`getQuota`](#getquota) | Get current quota for the company. |
+| [`endTrials`](#endtrials) | End all trials. |
+
 
 ## `getCompanySubscription`
 

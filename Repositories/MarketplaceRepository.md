@@ -1,5 +1,26 @@
 # API endpoints for `marketplace` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getActiveProviderFeatures`](#getactiveproviderfeatures) | Return all features that are active for the given provider. |
+| [`getActiveProjectFeatures`](#getactiveprojectfeatures) | Return all features that are active for the given project. |
+| [`getSystemPluginStatus`](#getsystempluginstatus) | Return all the status of the health checks of the systems components. |
+| [`getUserPluginStatus`](#getuserpluginstatus) | Return all the status of the health checks of the systems components. |
+| [`getComponents`](#getcomponents) | Return all component suggestions that are enabled by the active features. |
+| [`setComponent`](#setcomponent) | Set a component using a given suggestion as template. |
+| [`getFeatures`](#getfeatures) | Return all features that can be activated for the given company and provider. |
+| [`getAvailableFeatures`](#getavailablefeatures) | Return all features that are activated for the given project. |
+| [`getAllFeatures`](#getallfeatures) | Return all features that exists. |
+| [`getFavourites`](#getfavourites) | Return a list of features that where marked as favourites. |
+| [`getActiveFeatures`](#getactivefeatures) | Return all features that are activated for the given project. |
+| [`activateFeature`](#activatefeature) | Activate the given feature for the given projects. |
+| [`deactivateFeature`](#deactivatefeature) | Deactivate the given feature for the given projects. |
+| [`getBookingLog`](#getbookinglog) | Show the booking logs for the company. |
+| [`restProxy`](#restproxy) | Proxy a REST request  |
+| [`getHealthStatus`](#gethealthstatus) | Return all the status of the health checks of the systems components. |
+
 
 ## `getActiveProviderFeatures`
 

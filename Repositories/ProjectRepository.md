@@ -1,5 +1,17 @@
 # API endpoints for `project` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getStatus`](#getstatus) | This endpoint will return a detailed onboarding status. |
+| [`search`](#search) | Return all projects and the user roles for a given user. |
+| [`searchAll`](#searchall) | Return all projects and the user roles for a given user. |
+| [`delete`](#delete) | Delete the given project. |
+| [`update`](#update) | Update the given project. |
+| [`getUsers`](#getusers) | Return all users for the given project. |
+| [`removeUser`](#removeuser) | Remove a given user from the project. |
+
 
 ## `getStatus`
 

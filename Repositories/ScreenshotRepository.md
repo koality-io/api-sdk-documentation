@@ -1,5 +1,12 @@
 # API endpoints for `Screenshot` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getSystemScreenshots`](#getsystemscreenshots) | Return the screenshots for all components in the given project. |
+| [`getScreenshot`](#getscreenshot) | Return the screenshots for a single component. |
+
 
 ## `getSystemScreenshots`
 

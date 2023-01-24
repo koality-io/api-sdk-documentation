@@ -1,5 +1,12 @@
 # API endpoints for `auth` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`createTokenByCredentials`](#createtokenbycredentials) | This function creates an access token with all the permissions for the given user. The returned token has to be in the payload for every later request. |
+| [`createTokenByRefreshToken`](#createtokenbyrefreshtoken) |  |
+
 
 ## `createTokenByCredentials`
 

@@ -1,5 +1,11 @@
 # API endpoints for `CheckMobileFriendly` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getResults`](#getresults) | Get the mobile friendly result for the given system. Returns a &quot;skipped&quot; status if the test never ran. |
+
 
 ## `getResults`
 

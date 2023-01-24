@@ -1,5 +1,11 @@
 # API endpoints for `CheckHealthCheck` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getResults`](#getresults) |  |
+
 
 ## `getResults`
 

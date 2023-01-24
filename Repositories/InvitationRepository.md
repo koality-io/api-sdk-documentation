@@ -1,5 +1,13 @@
 # API endpoints for `Invitation` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`invite`](#invite) | This endpoint invites a new user to the project. |
+| [`abort`](#abort) | This endpoint aborts a given invitation. |
+| [`getOpenInvitations`](#getopeninvitations) | This endpoint returns a list of all open invitations for the given project. |
+
 
 ## `invite`
 

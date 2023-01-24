@@ -1,5 +1,11 @@
 # API endpoints for `CheckLighthouse` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getResults`](#getresults) | Return all current lighthouse results for the given systems components. |
+
 
 ## `getResults`
 

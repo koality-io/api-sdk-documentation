@@ -1,5 +1,11 @@
 # API endpoints for `CheckCertificate` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getExpirationResults`](#getexpirationresults) |  |
+
 
 ## `getExpirationResults`
 

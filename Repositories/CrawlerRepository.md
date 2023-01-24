@@ -1,5 +1,29 @@
 # API endpoints for `crawler` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`runCompanyCrawl`](#runcompanycrawl) | Run a crawl for a given checklist |
+| [`runCrawl`](#runcrawl) | Run a crawl for a given checklist |
+| [`getCrawlableCollections`](#getcrawlablecollections) | Get all collections that can be crawled. |
+| [`abortCrawl`](#abortcrawl) | Abort a running crawl. The effect can take up to 5 minutes. |
+| [`listCrawls`](#listcrawls) | Return all crawl by the given parameters |
+| [`listCompanyCrawls`](#listcompanycrawls) | Return all crawl of the given company |
+| [`getCrawlCsv`](#getcrawlcsv) | Return the detailed information for a given crawl with all results (as CSV). |
+| [`getCrawl`](#getcrawl) | Return the detailed information for a given crawl with all results. |
+| [`getCrawlerStatus`](#getcrawlerstatus) | Return the crawler status for a given project. |
+| [`getCompanyCrawlerStatus`](#getcompanycrawlerstatus) | Return the crawler status for a given company. |
+| [`setCheckStatus`](#setcheckstatus) | Set check status for a single url |
+| [`deleteCheckStatus`](#deletecheckstatus) | Delete check status by id |
+| [`listCheckStatus`](#listcheckstatus) | List check status by company |
+| [`listCrawlSchedules`](#listcrawlschedules) | List scheduled crawls by company |
+| [`showCrawlSchedule`](#showcrawlschedule) | Show scheduled crawl by id |
+| [`createCrawlSchedule`](#createcrawlschedule) | Create a crawl schedule |
+| [`updateCrawlSchedule`](#updatecrawlschedule) | Update a crawl schedule by id |
+| [`deleteCrawlSchedule`](#deletecrawlschedule) | Delete crawl schedule by id |
+| [`runScheduledCrawl`](#runscheduledcrawl) | Run a scheduled crawl immediately |
+
 
 ## `runCompanyCrawl`
 

@@ -1,5 +1,25 @@
 # API endpoints for `ClusterUser` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`activate`](#activate) | Activate an user account. The endpoint will return a valid access and refresh token so the user can be logged in without re-entering username and password. |
+| [`create`](#create) | This endpoint creates a new user. The given provider (url param) will be attached. |
+| [`setPreferredLanguage`](#setpreferredlanguage) | Update the users preferred language. |
+| [`connectOAuthAccount`](#connectoauthaccount) | This endpoint connects an OAuth provider with the current user. |
+| [`changePassword`](#changepassword) | Change the users password. This can only be done by the master server. |
+| [`exists`](#exists) | This endpoint returns true if a user exists that matches the given search criteria. |
+| [`find`](#find) | This endpoint returns a user that matches the given search criteria. |
+| [`delete`](#delete) | Delete the given user and all owned projects. |
+| [`isDeletable`](#isdeletable) | Checks if the user can be deleted. |
+| [`deleteByEmail`](#deletebyemail) |  the given user (by email) and all owned projects. |
+| [`updateUser`](#updateuser) | This endpoint updates an existing user. |
+| [`updateMasterId`](#updatemasterid) | This endpoint updates an existing users master id. |
+| [`requestPasswordReset`](#requestpasswordreset) | Request password change e-mail. |
+| [`resetPassword`](#resetpassword) | Reset the password. |
+| [`findAll`](#findall) | Return a list of all users for the given company. |
+
 
 ## `activate`
 

@@ -1,5 +1,16 @@
 # API endpoints for `CheckDeadLinks` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getResults`](#getresults) | Return a list of dead links for every component attached to the given system. |
+| [`getResultsByCompany`](#getresultsbycompany) | Return a list of dead links for every component in every project owned by the company. |
+| [`getConfiguration`](#getconfiguration) | Return the dead link check configuration for the given system. |
+| [`ignorePattern`](#ignorepattern) | Add a new ignore pattern to the configuration. |
+| [`unignorePattern`](#unignorepattern) | Remove an ignore pattern from the configuration. |
+| [`getBlockedPatterns`](#getblockedpatterns) | Return a list patterns that should be blocked in the dead link checker. |
+
 
 ## `getResults`
 

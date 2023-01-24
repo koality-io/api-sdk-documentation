@@ -1,5 +1,16 @@
 # API endpoints for `check` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`addByRecipe`](#addbyrecipe) |  |
+| [`addByChecklist`](#addbychecklist) |  |
+| [`runChecksForSystem`](#runchecksforsystem) | Run checks defined by tool identifier for all components within this system. |
+| [`showCollections`](#showcollections) | Return a list of collections for the given project. |
+| [`showActiveCollections`](#showactivecollections) | Return a list of active collections for the given system. |
+| [`updateCollections`](#updatecollections) | Update the collections. WARNING: will delete the current collection connections and create new. |
+
 
 ## `addByRecipe`
 

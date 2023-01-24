@@ -1,5 +1,14 @@
 # API endpoints for `Tool` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getChangedConfiguration`](#getchangedconfiguration) | Get the tool configurations for all tools that changed. |
+| [`findByProject`](#findbyproject) | Return all tools for the given project. |
+| [`overwrite`](#overwrite) | Overwrite tool configuration. |
+| [`getConfiguration`](#getconfiguration) | Get the tool configuration. |
+
 
 ## `getChangedConfiguration`
 

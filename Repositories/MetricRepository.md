@@ -1,5 +1,11 @@
 # API endpoints for `metric` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`findBySystem`](#findbysystem) | Search for the metrics for all eventIdentifiers in the given projects that are defined by the given tool. |
+
 
 ## `findBySystem`
 

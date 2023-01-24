@@ -1,5 +1,15 @@
 # API endpoints for `incident` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`search`](#search) | Find all open incidents for the given project. Optionally it can be filtered by system. |
+| [`since`](#since) | Find all incidents that where open in the last days. |
+| [`find`](#find) | Find a single incident by id |
+| [`findByCompany`](#findbycompany) | Find all open incidents for the given company. |
+| [`getConfig`](#getconfig) | This endpoint returns the the configuration (errors_in_a_row, success_in_a_row) of all tools in the given project. It also handles tool inheritance. |
+
 
 ## `search`
 

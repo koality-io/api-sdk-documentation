@@ -1,5 +1,12 @@
 # API endpoints for `CheckFileSize` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getResults`](#getresults) |  |
+| [`ignorePattern`](#ignorepattern) | Add a new ignore pattern to the configuration. |
+
 
 ## `getResults`
 

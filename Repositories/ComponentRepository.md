@@ -1,5 +1,16 @@
 # API endpoints for `Component` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`showComponents`](#showcomponents) | Get all information about the given component. |
+| [`createComponent`](#createcomponent) | Create a new component. |
+| [`createComponents`](#createcomponents) | Create a set of new components for a given system. |
+| [`updateComponent`](#updatecomponent) | Update the given component. |
+| [`deleteComponent`](#deletecomponent) | Mark the given component as deleted. |
+| [`showComponentTypes`](#showcomponenttypes) | Show all existing component types. |
+
 
 ## `showComponents`
 

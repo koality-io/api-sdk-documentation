@@ -1,5 +1,11 @@
 # API endpoints for `CheckInsecureContent` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getInsecureElements`](#getinsecureelements) | Return all insecure elements for all components of a system. |
+
 
 ## `getInsecureElements`
 

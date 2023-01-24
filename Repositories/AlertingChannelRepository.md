@@ -1,5 +1,14 @@
 # API endpoints for `AlertingChannel` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`list`](#list) | List all channels for the given project. |
+| [`create`](#create) | Create a new notification channel. At the moment only e-mail is provided. |
+| [`update`](#update) | Update an existing notification channel. |
+| [`delete`](#delete) | Delete the given channel. |
+
 
 ## `list`
 

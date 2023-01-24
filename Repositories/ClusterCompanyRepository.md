@@ -1,5 +1,16 @@
 # API endpoints for `ClusterCompany` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`create`](#create) | Create a new company |
+| [`connectUser`](#connectuser) | Connect a given user to a company |
+| [`exists`](#exists) | Check if the given company name already exists |
+| [`search`](#search) | Search for a given company by provider and name |
+| [`findAll`](#findall) | Return a list of all companies for the given provider. |
+| [`updateMasterId`](#updatemasterid) | This endpoint updates an existing companies master id. |
+
 
 ## `create`
 

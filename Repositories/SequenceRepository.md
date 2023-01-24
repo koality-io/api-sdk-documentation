@@ -1,5 +1,17 @@
 # API endpoints for `sequence` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getCommands`](#getcommands) | Get a list of possible commands |
+| [`getSequences`](#getsequences) | Get a list of possible commands |
+| [`createSequence`](#createsequence) | Create a new sequence. |
+| [`updateSequence`](#updatesequence) | Update an existing sequence |
+| [`activateSequence`](#activatesequence) | Activate an existing sequence. |
+| [`deactivateSequence`](#deactivatesequence) | Deactivate an existing sequence. |
+| [`getRecentRuns`](#getrecentruns) | Return a list of recent runs. |
+
 
 ## `getCommands`
 

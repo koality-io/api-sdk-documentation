@@ -1,5 +1,12 @@
 # API endpoints for `CustomerMehrwertsteuercheck` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`runMwstCrawl`](#runmwstcrawl) | Mehrwertsteuer Check only: Start a new crawl for the given start page. Max. 100 urls are crawled with 4 parallel requests. |
+| [`showCrawlResult`](#showcrawlresult) | Mehrwertsteuer Check only: get the status and check result of the crawl with the given unique identifier |
+
 
 ## `runMwstCrawl`
 

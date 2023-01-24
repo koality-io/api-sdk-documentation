@@ -1,5 +1,14 @@
 # API endpoints for `AlertingPolicy` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`list`](#list) | List all policies for the given project |
+| [`create`](#create) |  |
+| [`update`](#update) |  |
+| [`delete`](#delete) | Delete the given policy |
+
 
 ## `list`
 

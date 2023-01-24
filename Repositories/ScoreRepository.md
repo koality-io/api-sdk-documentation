@@ -1,5 +1,13 @@
 # API endpoints for `score` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getScoresByUser`](#getscoresbyuser) | Return a list of scores by the given score names for all projects and systems the user is part of. |
+| [`getScore`](#getscore) | Return the score for a given score name. |
+| [`getScores`](#getscores) | Return a list of scores by the given score names. |
+
 
 ## `getScoresByUser`
 

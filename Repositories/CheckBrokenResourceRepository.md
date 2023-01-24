@@ -1,5 +1,11 @@
 # API endpoints for `CheckBrokenResource` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`getBrokenResources`](#getbrokenresources) |  |
+
 
 ## `getBrokenResources`
 

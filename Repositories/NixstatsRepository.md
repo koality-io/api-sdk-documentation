@@ -1,5 +1,11 @@
 # API endpoints for `Nixstats` repository
 
+## Methods
+
+| Method                                        | Description                                                            |
+|:----------------------------------------------|:-----------------------------------------------------------------------|
+| [`createWebsiteMonitor`](#createwebsitemonitor) | Create a new 360 website monitor. |
+
 
 ## `createWebsiteMonitor`
 
