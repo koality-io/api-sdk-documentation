@@ -1,3 +1,4 @@
+[back to repository overview](../RepositoryOverviews.md)
 # API endpoints for `auth` repository
 
 ## List of all available methods
