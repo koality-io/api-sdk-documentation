@@ -6,10 +6,10 @@
 Get all information about the given component.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/components/{component}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/components/{component}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -52,10 +52,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Create a new component.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/components```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/components```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -103,10 +103,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Create a set of new components for a given system.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/components/many```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/components/many```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -152,10 +152,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Update the given component.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/components/{component}```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/components/{component}```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -198,10 +198,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Mark the given component as deleted.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/components/{component}```
-
-*Method*: DELETE
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/components/{component}```|
+| Method   | DELETE                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -244,10 +244,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Show all existing component types.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/components/componenttypes/{project}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/components/componenttypes/{project}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

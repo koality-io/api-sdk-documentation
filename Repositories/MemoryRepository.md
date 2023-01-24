@@ -6,10 +6,10 @@
 
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/memory/{objectType}/{objectId}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/memory/{objectType}/{objectId}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -57,10 +57,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/memory/{objectType}/{objectId}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/memory/{objectType}/{objectId}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

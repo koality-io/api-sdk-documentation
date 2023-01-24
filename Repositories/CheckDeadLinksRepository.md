@@ -6,10 +6,10 @@
 Return a list of dead links for every component attached to the given system.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -52,10 +52,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return a list of dead links for every component in every project owned by the company.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/checks/company/{company}/deadlinks```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/checks/company/{company}/deadlinks```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -98,10 +98,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return the dead link check configuration for the given system.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks/config```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks/config```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -144,10 +144,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Add a new ignore pattern to the configuration.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks/ignore```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks/ignore```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -193,10 +193,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Remove an ignore pattern from the configuration.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks/unignore```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/checks/{system}/deadlinks/unignore```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -242,10 +242,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return a list patterns that should be blocked in the dead link checker.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/checks/deadlinks/blocked```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/checks/deadlinks/blocked```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

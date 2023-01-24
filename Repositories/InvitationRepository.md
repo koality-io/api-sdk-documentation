@@ -6,10 +6,10 @@
 This endpoint invites a new user to the project.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/invitation/invite/{project}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/invitation/invite/{project}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -57,10 +57,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 This endpoint aborts a given invitation.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/invitation/abort/{invitation}```
-
-*Method*: DELETE
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/invitation/abort/{invitation}```|
+| Method   | DELETE                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -103,10 +103,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 This endpoint returns a list of all open invitations for the given project.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/invitation/open/{project}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/invitation/open/{project}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

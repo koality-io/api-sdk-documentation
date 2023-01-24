@@ -6,10 +6,10 @@
 Activate an user account. The endpoint will return a valid access and refresh token so the user can be logged in without re-entering username and password.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/users/activate```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/users/activate```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -52,10 +52,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 This endpoint creates a new user. The given provider (url param) will be attached.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/users/{provider}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/users/{provider}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -113,10 +113,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Update the users preferred language.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/users/preferredLanguage/{user}```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/users/preferredLanguage/{user}```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -162,10 +162,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 This endpoint connects an OAuth provider with the current user.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/oauth/{user}/connect```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/oauth/{user}/connect```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -212,10 +212,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Change the users password. This can only be done by the master server.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/users/{user}/password```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/users/{user}/password```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -261,10 +261,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 This endpoint returns true if a user exists that matches the given search criteria.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/users/exists```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/users/exists```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -307,10 +307,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 This endpoint returns a user that matches the given search criteria.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/users/find```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/users/find```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -353,10 +353,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Delete the given user and all owned projects.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/users/{user}```
-
-*Method*: DELETE
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/users/{user}```|
+| Method   | DELETE                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -399,10 +399,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Checks if the user can be deleted.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/users/deletable/{user}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/users/deletable/{user}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -445,10 +445,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
  the given user (by email) and all owned projects.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/users/delete/email```
-
-*Method*: DELETE
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/users/delete/email```|
+| Method   | DELETE                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -491,10 +491,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 This endpoint updates an existing user.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/users/{user}```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/users/{user}```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -544,10 +544,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 This endpoint updates an existing users master id.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/users/{user}/masterId```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/users/{user}/masterId```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -593,10 +593,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Request password change e-mail.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/users/password/reset/request```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/users/password/reset/request```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -639,10 +639,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Reset the password.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/users/password/reset/{user}```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/users/password/reset/{user}```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -688,10 +688,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return a list of all users for the given company.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/users/find/all/{providerIdentifier}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/users/find/all/{providerIdentifier}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

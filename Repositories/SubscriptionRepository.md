@@ -6,10 +6,10 @@
 Get the companies subscription information.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/subscription/company/{company}/```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/subscription/company/{company}/```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -52,10 +52,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Set the companies credit card plans.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/subscription/company/{company}/plans/creditcard```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/subscription/company/{company}/plans/creditcard```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -101,10 +101,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Set the companies free plans.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/subscription/company/{company}/plans/free```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/subscription/company/{company}/plans/free```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -150,10 +150,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Set the companies free plans by user.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/subscription/user/{user}/plans/free```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/subscription/user/{user}/plans/free```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -199,10 +199,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Set the companies credit card.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/subscription/company/{company}/creditcard```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/subscription/company/{company}/creditcard```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -250,10 +250,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Set the billing address information for the given company.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/subscription/company/{company}/billingaddress```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/subscription/company/{company}/billingaddress```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -305,10 +305,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Get the billing address information for the given company.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/subscription/company/{company}/billingaddress```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/subscription/company/{company}/billingaddress```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -351,10 +351,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Get a list of features that are active.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/subscription/company/{company}/features```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/subscription/company/{company}/features```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -397,10 +397,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Get a list invoices for the given company.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/subscription/company/{company}/invoices```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/subscription/company/{company}/invoices```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -443,10 +443,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Set the subscription plan of the given user.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/subscription/user/{user}/plan```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/subscription/user/{user}/plan```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -492,10 +492,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Get current quota for the company.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/subscription/company/{company}/quota```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/subscription/company/{company}/quota```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -538,10 +538,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 End all trials.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/subscription/trial/{providerIdentifier}/end```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/subscription/trial/{providerIdentifier}/end```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

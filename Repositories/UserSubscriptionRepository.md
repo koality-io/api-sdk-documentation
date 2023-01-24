@@ -6,10 +6,10 @@
 Update the subscription for a given user.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/subscriptions/{user}```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/subscriptions/{user}```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

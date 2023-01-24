@@ -6,10 +6,10 @@
 Return all features that are active for the given provider.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/features/provider/{providerIdentifier}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/features/provider/{providerIdentifier}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -52,10 +52,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all features that are active for the given project.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/features/project/{project}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/features/project/{project}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -98,10 +98,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all the status of the health checks of the systems components.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/plugins/incidents/system/{system}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/plugins/incidents/system/{system}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -144,10 +144,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all the status of the health checks of the systems components.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/plugins/incidents/user/{user}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/plugins/incidents/user/{user}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -190,10 +190,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all component suggestions that are enabled by the active features.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/features/components/{system}/{featureIdentifier}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/features/components/{system}/{featureIdentifier}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -237,10 +237,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Set a component using a given suggestion as template.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/features/components/{system}/{suggestionIdentifier}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/features/components/{system}/{suggestionIdentifier}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -287,10 +287,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all features that can be activated for the given company and provider.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/marketplace/features/{providerIdentifier}/{company}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/marketplace/features/{providerIdentifier}/{company}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -334,10 +334,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all features that are activated for the given project.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/available/{project}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/available/{project}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -383,10 +383,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all features that exists.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/all```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/all```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -426,10 +426,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return a list of features that where marked as favourites.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/marketplace/favourites```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/marketplace/favourites```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -469,10 +469,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all features that are activated for the given project.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/active/{project}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/active/{project}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -515,10 +515,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Activate the given feature for the given projects.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/activate/{company}/{featureIdentifier}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/activate/{company}/{featureIdentifier}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -565,10 +565,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Deactivate the given feature for the given projects.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/deactivate/{company}/{featureIdentifier}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/marketplace/feature/deactivate/{company}/{featureIdentifier}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -615,10 +615,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Show the booking logs for the company.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/log/company/{company}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/log/company/{company}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -661,10 +661,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Proxy a REST request 
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/proxy/{secret}/{url}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/proxy/{secret}/{url}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -708,10 +708,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all the status of the health checks of the systems components.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/marketplace/features/status/{system}/{featureIdentifier}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/marketplace/features/status/{system}/{featureIdentifier}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

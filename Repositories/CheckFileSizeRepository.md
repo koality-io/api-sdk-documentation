@@ -6,10 +6,10 @@
 
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/checks/{system}/performance/big```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/checks/{system}/performance/big```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -52,10 +52,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Add a new ignore pattern to the configuration.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/checks/{system}/siteinfo/ignore```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/checks/{system}/siteinfo/ignore```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

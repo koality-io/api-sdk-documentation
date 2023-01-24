@@ -6,10 +6,10 @@
 Return all current lighthouse results for the given systems components.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/checks/{system}/lighthouse/results/{category}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/checks/{system}/lighthouse/results/{category}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

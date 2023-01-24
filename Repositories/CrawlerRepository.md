@@ -6,10 +6,10 @@
 Run a crawl for a given checklist
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/crawl/company/{company}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/crawl/company/{company}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -61,10 +61,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Run a crawl for a given checklist
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/crawl/{project}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/crawl/{project}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -117,10 +117,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Get all collections that can be crawled.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/collections```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/collections```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -160,10 +160,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Abort a running crawl. The effect can take up to 5 minutes.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/crawl/{project}/{crawl}```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/crawl/{project}/{crawl}```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -207,10 +207,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all crawl by the given parameters
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/crawl/{project}/crawls```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/crawl/{project}/crawls```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -257,10 +257,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all crawl of the given company
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/crawl/company/{company}/crawls```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/crawl/company/{company}/crawls```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -309,10 +309,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return the detailed information for a given crawl with all results (as CSV).
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/crawl/detail/csv/{crawl}/{downloadSecret}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/crawl/detail/csv/{crawl}/{downloadSecret}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -356,10 +356,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return the detailed information for a given crawl with all results.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/crawl/detail/{crawl}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/crawl/detail/{crawl}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -402,10 +402,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return the crawler status for a given project.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/status/{project}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/status/{project}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -448,10 +448,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return the crawler status for a given company.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/status/company/{company}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/status/company/{company}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -494,10 +494,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Set check status for a single url
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/company/{company}/check/status```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/company/{company}/check/status```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -545,10 +545,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Delete check status by id
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/company/{company}/check/status/{crawlUrlStatus}```
-
-*Method*: DELETE
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/company/{company}/check/status/{crawlUrlStatus}```|
+| Method   | DELETE                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -592,10 +592,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 List check status by company
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/company/{company}/check/status```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/company/{company}/check/status```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -638,10 +638,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 List scheduled crawls by company
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -684,10 +684,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Show scheduled crawl by id
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -731,10 +731,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Create a crawl schedule
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -787,10 +787,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Update a crawl schedule by id
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}```
-
-*Method*: PATCH
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}```|
+| Method   | PATCH                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -845,10 +845,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Delete crawl schedule by id
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}```
-
-*Method*: DELETE
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}```|
+| Method   | DELETE                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -892,10 +892,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Run a scheduled crawl immediately
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}/crawl```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/crawler/company/{company}/schedules/{crawlSchedule}/crawl```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

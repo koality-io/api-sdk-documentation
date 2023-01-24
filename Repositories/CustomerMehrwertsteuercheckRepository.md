@@ -6,10 +6,10 @@
 Mehrwertsteuer Check only: Start a new crawl for the given start page. Max. 100 urls are crawled with 4 parallel requests.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/customers/mehrwertsteuer/crawl```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/customers/mehrwertsteuer/crawl```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -53,10 +53,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Mehrwertsteuer Check only: get the status and check result of the crawl with the given unique identifier
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/customers/mehrwertsteuer/crawl/{crawlIdentifier}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/customers/mehrwertsteuer/crawl/{crawlIdentifier}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

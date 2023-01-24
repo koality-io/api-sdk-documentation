@@ -6,10 +6,10 @@
 
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/checks/cookbook```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/checks/cookbook```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -53,10 +53,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/checks/{system}/checklist```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/checks/{system}/checklist```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -104,10 +104,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Run checks defined by tool identifier for all components within this system.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/checks/run/{system}/{toolIdentifier}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/checks/run/{system}/{toolIdentifier}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -151,10 +151,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return a list of collections for the given project.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/collections/{project}/{toolIdentifier}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/collections/{project}/{toolIdentifier}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -201,10 +201,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return a list of active collections for the given system.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/collections/system/active/{system}/{toolIdentifier}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/collections/system/active/{system}/{toolIdentifier}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -251,10 +251,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Update the collections. WARNING: will delete the current collection connections and create new.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/collections/system/{system}```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/collections/system/{system}```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

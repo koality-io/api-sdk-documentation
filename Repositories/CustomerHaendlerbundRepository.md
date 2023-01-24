@@ -6,10 +6,10 @@
 Händlerbund only: the function is used to create a shop.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/customers/haendlerbund/shops```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/customers/haendlerbund/shops```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -55,10 +55,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Händlerbund only: the function is used to update a shop.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/customers/haendlerbund/shops/{system}```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/customers/haendlerbund/shops/{system}```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

@@ -6,10 +6,10 @@
 This function creates an access token with all the permissions for the given user. The returned token has to be in the payload for every later request.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/auth/tokens/access```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/auth/tokens/access```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -55,10 +55,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/auth/tokens/refresh/{user}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/auth/tokens/refresh/{user}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

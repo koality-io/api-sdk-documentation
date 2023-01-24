@@ -6,10 +6,10 @@
 Get the mobile friendly result for the given system. Returns a &quot;skipped&quot; status if the test never ran.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/checks/{system}/mobilefriendly```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/checks/{system}/mobilefriendly```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

@@ -6,10 +6,10 @@
 Get the tool configurations for all tools that changed.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/tools/changed```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/tools/changed```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -53,10 +53,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all tools for the given project.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/tools/{project}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/tools/{project}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -99,10 +99,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Overwrite tool configuration.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/tools/{project}/{toolIdentifier}```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/tools/{project}/{toolIdentifier}```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -150,10 +150,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Get the tool configuration.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/tools/{project}/{toolIdentifier}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/tools/{project}/{toolIdentifier}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

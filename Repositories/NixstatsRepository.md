@@ -6,10 +6,10 @@
 Create a new 360 website monitor.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/check/nixtstats/{company}/monitor/website```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/check/nixtstats/{company}/monitor/website```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

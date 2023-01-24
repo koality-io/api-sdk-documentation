@@ -6,10 +6,10 @@
 Create a new system.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/systems/system```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/systems/system```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -59,10 +59,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Update an existing system.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/systems/system/{system}```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/systems/system/{system}```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -109,10 +109,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all components for the given system.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/systems/{system}/components```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/systems/{system}/components```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -155,10 +155,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all system types for the given provider.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/systems/{providerIdentifier}/systemType```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/systems/{providerIdentifier}/systemType```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -201,10 +201,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all suggested component types for the given system.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/systems/{system}/suggestions```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/systems/{system}/suggestions```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -247,10 +247,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Set the last full run timestamp on a system.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/systems/{system}/lastFullRun/{status}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/systems/{system}/lastFullRun/{status}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -294,10 +294,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Trigger the component finder for a given system.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/{project}/componentfinder/{system}/{user}/trigger```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/{project}/componentfinder/{system}/{user}/trigger```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -342,10 +342,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return the approximated time in seconds when the next full check run is triggered.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/systems/{system}/nextFullRun```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/systems/{system}/nextFullRun```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -388,10 +388,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return the maximum number of components that can be added to the given system.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/systems/{system}/component/limit```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/systems/{system}/component/limit```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

@@ -6,10 +6,10 @@
 Create a new company
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/companies/{providerIdentifier}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/companies/{providerIdentifier}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -56,10 +56,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Connect a given user to a company
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/companies/connect/{company}/{user}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/companies/connect/{company}/{user}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -106,10 +106,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Check if the given company name already exists
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/companies/exists```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/companies/exists```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -152,10 +152,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Search for a given company by provider and name
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/companies/search/{providerIdentifier}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/companies/search/{providerIdentifier}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -201,10 +201,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return a list of all companies for the given provider.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/companies/findall/{providerIdentifier}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/companies/findall/{providerIdentifier}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -247,10 +247,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 This endpoint updates an existing companies master id.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/user/companies/{company}/masterId```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/user/companies/{company}/masterId```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

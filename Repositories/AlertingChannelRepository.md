@@ -6,10 +6,10 @@
 List all channels for the given project.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/alerting/channels/{project}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/alerting/channels/{project}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -52,10 +52,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Create a new notification channel. At the moment only e-mail is provided.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/alerting/channels/{project}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/alerting/channels/{project}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -104,10 +104,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Update an existing notification channel.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/alerting/channels/{project}/{channel}```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/alerting/channels/{project}/{channel}```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -157,10 +157,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Delete the given channel.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/alerting/channels/{project}/{channel}```
-
-*Method*: DELETE
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/alerting/channels/{project}/{channel}```|
+| Method   | DELETE                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

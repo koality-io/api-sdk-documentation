@@ -6,10 +6,10 @@
 Return a list of scores by the given score names for all projects and systems the user is part of.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/score/scores/user/{user}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/score/scores/user/{user}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -57,10 +57,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return the score for a given score name.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/score/scores/{system}/{scoreName}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/score/scores/{system}/{scoreName}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -104,10 +104,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return a list of scores by the given score names.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/score/scores/{system}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/score/scores/{system}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

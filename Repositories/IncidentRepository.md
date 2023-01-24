@@ -6,10 +6,10 @@
 Find all open incidents for the given project. Optionally it can be filtered by system.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/incident/incidents/{project}/search```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/incident/incidents/{project}/search```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -55,10 +55,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Find all incidents that where open in the last days.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/incident/incidents/{project}/since```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/incident/incidents/{project}/since```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -104,10 +104,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Find a single incident by id
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/incident/incidents/{project}/{incident}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/incident/incidents/{project}/{incident}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -151,10 +151,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Find all open incidents for the given company.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/incident/incidents/company/{company}/search```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/incident/incidents/company/{company}/search```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -197,10 +197,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 This endpoint returns the the configuration (errors_in_a_row, success_in_a_row) of all tools in the given project. It also handles tool inheritance.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/incident/tools/{project}```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/incident/tools/{project}```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

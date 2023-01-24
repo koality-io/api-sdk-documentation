@@ -6,10 +6,10 @@
 Return a websocket server with the room names for the given user.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/websockets/rooms```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/websockets/rooms```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -49,10 +49,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return all websocket server with the room names.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/websockets/rooms/all```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/websockets/rooms/all```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

@@ -6,10 +6,10 @@
 Return the screenshots for all components in the given project.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/screenshots/{system}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/screenshots/{system}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -52,10 +52,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return the screenshots for a single component.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/project/screenshot/{system}```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/project/screenshot/{system}```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

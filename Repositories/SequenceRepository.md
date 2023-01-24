@@ -6,10 +6,10 @@
 Get a list of possible commands
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/sequences/{project}/commands```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/sequences/{project}/commands```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -52,10 +52,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Get a list of possible commands
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/sequences/{project}/sequences```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/sequences/{project}/sequences```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -98,10 +98,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Create a new sequence.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/sequences/{project}/sequence```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/sequences/{project}/sequence```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -149,10 +149,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Update an existing sequence
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/sequences/{project}/sequence```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/sequences/{project}/sequence```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -200,10 +200,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Activate an existing sequence.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/sequences/{sequence}/activate```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/sequences/{sequence}/activate```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -246,10 +246,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Deactivate an existing sequence.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/sequences/{sequence}/deactivate```
-
-*Method*: PUT
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/sequences/{sequence}/deactivate```|
+| Method   | PUT                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
@@ -292,10 +292,10 @@ curl -d '{"key1":"value1", "key2":"value2"}' -H "Content-Type: application/json"
 Return a list of recent runs.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/sequences/{sequence}/recent```
-
-*Method*: GET
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/sequences/{sequence}/recent```|
+| Method   | GET                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 

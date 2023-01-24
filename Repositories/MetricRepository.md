@@ -6,10 +6,10 @@
 Search for the metrics for all eventIdentifiers in the given projects that are defined by the given tool.
 
 ### Endpoint
-
-*Url*: ```https://api.cluster1.koalityengine.com/metric/eventidentifier/{system}/search```
-
-*Method*: POST
+| Endpoint |                                                                       |
+|:---------|:----------------------------------------------------------------------|
+| Url      | ```https://api.cluster1.koalityengine.com/metric/eventidentifier/{system}/search```|
+| Method   | POST                                      |
 
 Be aware that the cluster ID (e.g. `cluster1`) depends on the user you are logged in with.
 
