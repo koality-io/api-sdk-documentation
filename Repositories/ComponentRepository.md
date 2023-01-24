@@ -69,6 +69,10 @@ All payload parameters have to be encrypted as a JSON body in the request.
 |:----|:------|:----------|:-------------|:-------------|
 | system  | `INTEGER` |  yes        |   |            |
 | enableToolsBySystem  | `BOOLEAN` |  no        | true  |            |
+| url  | `STRING` |  yes        |   |            |
+| name  | `STRING` |  yes        |   | The name of the component that is used to identify it.           |
+| device_id  | `INTEGER` |  yes        |   |            |
+| system_type_id  | `INTEGER` |  yes        |   |            |
 
 ### SDK
 
