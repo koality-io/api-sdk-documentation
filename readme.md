@@ -10,6 +10,8 @@ This is the official API documentation for the KoalityEngine. It can be used aut
 
 This documentation is a living document. If something is missing please contact out support team (support@koality.io).
 
+- [General API information](docs/general.md)
+
 ## Applications
 
 When using the KoalityEngine API you will often see the `Application` as a concept. If you just want to use the API to manage your koality.io accounts the application id will be `koality`, if you create your own independent application you will get your own application id from our team.
@@ -25,7 +27,7 @@ We provide a list of standard workflows that should be part of every application
 - [Create a new system](examples/create/createSystem.md)
   - [Get all system types](examples/read/getSystemTypes.md)
 - [Add new component (url) to project](examples/create/createComponent.md)
-
+  - [Get all component types](examples/read/getComponentTypes.md)
 ### Retrieve data
 
 - [List all projects](examples/read/listProjects.md)

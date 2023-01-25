@@ -6,7 +6,7 @@ When creating a new system it is important to select the matching system type. D
 If users should have full flexibility we recommend to take `custom project` as system type.
 
 - All project specific methods can be found in the [System repository](../../Repositories/SystemRepository.md).
-- `getSystemType` API method [documentation](../../Repositories/ProjectRepository.md#search)
+- `getSystemType` API method [documentation](../../Repositories/SystemRepository.md#getSystemType)
 
 ## PHP
 
