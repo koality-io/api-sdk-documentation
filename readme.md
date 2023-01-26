@@ -4,13 +4,13 @@
 # KoalityEngine API documentation
 
 > **Note**
-> We highly recommend not to use the plain HTTP API endpoints. The KoalityEngine provided different SDK that should be used instead. 
+> We highly recommend not to use the plain HTTP API endpoints. The KoalityEngine provided different [SDKs](#sdk) that should be used instead. 
 
 This is the official API documentation for the KoalityEngine. It can be used automate workflows in koality.io or even to create a new products or integrate data and functionalities into other products.
 
 This documentation is a living document. If something is missing please contact out support team (support@koality.io).
 
-- [General API information](docs/general.md)
+- [General information](docs/general.md)
 
 ## Applications
 
@@ -28,10 +28,11 @@ We provide a list of standard workflows that should be part of every application
   - [Get all system types](examples/read/getSystemTypes.md)
 - [Add new component (url) to project](examples/create/createComponent.md)
   - [Get all component types](examples/read/getComponentTypes.md)
+
 ### Retrieve data
 
 - [List all projects](examples/read/listProjects.md)
-- Get scores
+- [Get scores by user](examples/read/listScores.md)
 - Get get historical data
 
 ## API Endpoints
