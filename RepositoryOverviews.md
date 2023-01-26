@@ -2,6 +2,7 @@
 
 A repository or repo is a collection of API functions that belong together.
 
+## Cluster API / Repositories
  - [AlertingChannel](./Repositories/AlertingChannelRepository.md)
  - [AlertingPolicy](./Repositories/AlertingPolicyRepository.md)
  - [Auth](./Repositories/AuthRepository.md)

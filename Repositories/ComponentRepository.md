@@ -82,11 +82,11 @@ All payload parameters have to be encrypted as a JSON body in the request.
 | Name                    | Type  | Required  | Default   | Desciption   |
 |:----|:------|:----------|:-------------|:-------------|
 | system  | `INTEGER` |  yes        |   | The id of the system the component should be added to.           |
-| enableToolsBySystem  | `BOOLEAN` |  no        | true  | If true, the most important checks for that system and system_type are already added. This is recommended.           |
+| enableToolsBySystem  | `BOOLEAN` |  no        |   | If true, the most important checks for that system and system_type are already added. This is recommended.           |
 | url  | `STRING` |  yes        |   | The URL of the component. It must be the same main domain as the system.           |
 | name  | `STRING` |  yes        |   | The name of the component that is used to identify it.           |
 | device_id  | `INTEGER` |  yes        |   | The id of the device that is used to make the checks. It changes viewport and user agent.           |
-| system_type_id  | `INTEGER` |  yes        |   | The id of the system type that was chosen for the compoent.           |
+| system_type_id  | `INTEGER` |  yes        |   | The id of the system type that was chosen for the component.           |
 
 ### SDK
 
