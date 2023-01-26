@@ -1,6 +1,3 @@
-> **Warning**
-> This API documentation is work in progress and only ALPHA. Please do not use it at the moment.
-
 # KoalityEngine API documentation
 
 > **Note**
@@ -32,8 +29,8 @@ We provide a list of standard workflows that should be part of every application
 ### Retrieve data
 
 - [List all projects](examples/read/listProjects.md)
-- [Get scores by user](examples/read/listScores.md)
-- Get get historical data
+- [List scores by user](examples/read/listScores.md)
+- [List open incidents](examples/read/listIncidents.md)
 
 ## API Endpoints
 
